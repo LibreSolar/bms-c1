@@ -1,0 +1,6 @@
+# Set the default behavior, in case people don't have core.autocrlf set.
+* text=auto
+
+# Make github detect this repository as KiCad files
+*.kicad_pcb linguist-detectable=true
+manual/* linguist-documentation
