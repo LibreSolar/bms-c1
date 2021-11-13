@@ -1,0 +1,28 @@
+name: Pandoc Deployment
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  convert_via_pandoc:
+    runs-on: ubuntu-18.04
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Run Pandoc
+        uses: docker://pandoc/ubuntu-latex:2.16
+        with:
+          entrypoint: /bin/sh
+          args: -c "cd spec; chmod +x build.sh; ./build.sh"
+
+      - name: GH Pages Deployment
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./deploy/
+          enable_jekyll: false
+          allow_empty_commit: false
+          force_orphan: true
+          publish_branch: gh-pages
