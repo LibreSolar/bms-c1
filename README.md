@@ -6,6 +6,8 @@ This repository contains the files for ongoing development of the Libre Solar BM
 
 The project is funded by the [EnAccess foundation](https://enaccess.org).
 
+Technical specification: [spec folder](./spec/) (work in progress)
+
 ## Features:
 
 - 3 to 16 Li-ion cells in series (using bq76952)

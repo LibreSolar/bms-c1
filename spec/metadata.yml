@@ -1,0 +1,18 @@
+---
+title: "BMS 16S100 SC"
+title-prefix: "Technical Specification"
+subtitle: "Technical Specification"
+author: Martin Jäger
+subject: "Markdown"
+keywords: [Markdown, Example]
+lang: "en"
+titlepage: true
+titlepage-text-color: "005e85"
+titlepage-rule-height: 0
+titlepage-background: "images/libresolar-background.pdf"
+toc-own-page: true
+header-right: Technical Specification
+footer-left: Libre Solar
+block-headings: true    # otherwise, #### will not have a separate line
+colorlinks: true
+...

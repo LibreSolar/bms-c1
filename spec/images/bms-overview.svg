@@ -1,0 +1,2083 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="600"
+   height="500"
+   viewBox="0 0 158.75 132.29167"
+   version="1.1"
+   id="svg5625"
+   inkscape:version="1.1 (c4e8f9ed74, 2021-05-24)"
+   sodipodi:docname="enaccess-bms-overview.svg"
+   inkscape:export-filename="/home/martin/LibreSolar/4_Projects/Anträge/EnAccess_2021/enaccess-bms-overview.png"
+   inkscape:export-xdpi="200.1694"
+   inkscape:export-ydpi="200.1694"
+   style="enable-background:new"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <defs
+     id="defs5619">
+    <marker
+       inkscape:stockid="DotS"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="DotS"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         id="path16850"
+         d="m -2.5,-1 c 0,2.76 -2.24,5 -5,5 -2.76,0 -5,-2.24 -5,-5 0,-2.76 2.24,-5 5,-5 2.76,0 5,2.24 5,5 z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1"
+         transform="matrix(0.2,0,0,0.2,1.48,0.2)"
+         inkscape:connector-curvature="0" />
+    </marker>
+    <marker
+       inkscape:stockid="DotM"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="DotM"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         id="path16847"
+         d="m -2.5,-1 c 0,2.76 -2.24,5 -5,5 -2.76,0 -5,-2.24 -5,-5 0,-2.76 2.24,-5 5,-5 2.76,0 5,2.24 5,5 z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1"
+         transform="matrix(0.4,0,0,0.4,2.96,0.4)"
+         inkscape:connector-curvature="0" />
+    </marker>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="1"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.456708"
+     inkscape:cx="314.06431"
+     inkscape:cy="273.56203"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="true"
+     showguides="false"
+     inkscape:snap-grids="true"
+     inkscape:snap-to-guides="true"
+     inkscape:window-width="1920"
+     inkscape:window-height="1016"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     units="px"
+     scale-x="2"
+     inkscape:document-rotation="0"
+     inkscape:snap-center="false"
+     inkscape:snap-object-midpoints="false"
+     inkscape:snap-midpoints="false"
+     inkscape:pagecheckerboard="0">
+    <inkscape:grid
+       type="xygrid"
+       id="grid6225"
+       spacingx="2.6458333"
+       spacingy="2.6458333"
+       dotted="false" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata5622">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <cc:license
+           rdf:resource="http://creativecommons.org/licenses/by-sa/4.0/" />
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>Martin Jäger</dc:title>
+          </cc:Agent>
+        </dc:creator>
+      </cc:Work>
+      <cc:License
+         rdf:about="http://creativecommons.org/licenses/by-sa/4.0/">
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Reproduction" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Distribution" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#Notice" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#Attribution" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#DerivativeWorks" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#ShareAlike" />
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="Ebene 2"
+     style="display:inline"
+     transform="translate(0,-269.64611)" />
+  <g
+     inkscape:label="Ebene 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-269.64611)">
+    <rect
+       style="fill:#9cb3f2;fill-opacity:1;stroke:#000000;stroke-width:0.264584;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:1.05834, 1.05834;stroke-dashoffset:0;stroke-opacity:1;paint-order:fill markers stroke;enable-background:new"
+       id="rect14998-1-7-6-2"
+       width="134.93748"
+       height="50.101833"
+       x="13.229167"
+       y="274.93777"
+       ry="0.00014163263"
+       inkscape:export-filename="/home/martin/LibreSolar/4_Projects/Anträge/EnAccess_2021/enaccess-bms-overview.png"
+       inkscape:export-xdpi="200.1694"
+       inkscape:export-ydpi="200.1694" />
+    <rect
+       style="fill:#68e06e;fill-opacity:1;stroke:#000000;stroke-width:0.265;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:1.06, 1.06;stroke-dashoffset:0;paint-order:fill markers stroke;enable-background:new"
+       id="rect14998-1-7"
+       width="55.562511"
+       height="29.104153"
+       x="89.958328"
+       y="290.81277"
+       ry="8.227439e-05"
+       inkscape:export-filename="/home/martin/LibreSolar/4_Projects/Anträge/EnAccess_2021/enaccess-bms-overview.png"
+       inkscape:export-xdpi="200.1694"
+       inkscape:export-ydpi="200.1694" />
+    <rect
+       style="fill:none;stroke:#000000;stroke-width:0.529166;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;paint-order:fill markers stroke;enable-background:new"
+       id="rect7773-0"
+       width="142.875"
+       height="82.020828"
+       x="7.9375005"
+       y="280.22943"
+       ry="4.637285e-05"
+       inkscape:export-filename="/home/martin/LibreSolar/4_Projects/Anträge/EnAccess_2021/enaccess-bms-overview.png"
+       inkscape:export-xdpi="200.1694"
+       inkscape:export-ydpi="200.1694" />
+    <rect
+       style="fill:none;stroke:#000000;stroke-width:0.264584;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;paint-order:fill markers stroke;enable-background:new"
+       id="rect15014-0-7-2"
+       width="7.9374981"
+       height="26.458342"
+       x="15.875"
+       y="330.50027"
+       ry="7.479496e-05"
+       inkscape:export-filename="/home/martin/LibreSolar/4_Projects/Anträge/EnAccess_2021/enaccess-bms-overview.png"
+       inkscape:export-xdpi="200.1694"
+       inkscape:export-ydpi="200.1694" />
+    <rect
+       style="fill:none;stroke:#000000;stroke-width:0.264584;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;paint-order:fill markers stroke;enable-background:new"
+       id="rect15014-0-7-2-3"
+       width="7.9375029"
+       height="26.458342"
+       x="23.8125"
+       y="330.50027"
+       ry="7.479496e-05"
+       inkscape:export-filename="/home/martin/LibreSolar/4_Projects/Anträge/EnAccess_2021/enaccess-bms-overview.png"
+       inkscape:export-xdpi="200.1694"
+       inkscape:export-ydpi="200.1694" />
+    <rect
+       style="fill:none;stroke:#000000;stroke-width:0.264584;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;paint-order:fill markers stroke;enable-background:new"
+       id="rect15014-0-7-2-3-6"
+       width="7.9375005"
+       height="26.458342"
+       x="134.93753"
+       y="330.50027"
+       ry="7.479496e-05"
+       inkscape:export-filename="/home/martin/LibreSolar/4_Projects/Anträge/EnAccess_2021/enaccess-bms-overview.png"
+       inkscape:export-xdpi="200.1694"
+       inkscape:export-ydpi="200.1694" />
+    <rect
+       style="fill:none;stroke:#000000;stroke-width:0.264584;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;paint-order:fill markers stroke;enable-background:new"
+       id="rect15014-0-7-2-3-6-7"
+       width="7.9375005"
+       height="26.458342"
+       x="127"
+       y="330.50027"
+       ry="7.479496e-05"
+       inkscape:export-filename="/home/martin/LibreSolar/4_Projects/Anträge/EnAccess_2021/enaccess-bms-overview.png"
+       inkscape:export-xdpi="200.1694"
+       inkscape:export-ydpi="200.1694" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:3.88056px;line-height:1.25;font-family:sans-serif;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="18.954687"
+       y="335.16769"
+       id="text13775"
+       inkscape:export-filename="/home/martin/LibreSolar/4_Projects/Anträge/EnAccess_2021/enaccess-bms-overview.png"
+       inkscape:export-xdpi="200.1694"
+       inkscape:export-ydpi="200.1694"><tspan
+         sodipodi:role="line"
+         id="tspan13773"
+         style="text-align:start;text-anchor:start;stroke-width:0.264583"
+         x="18.954687"
+         y="335.16769">1</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:3.88056px;line-height:1.25;font-family:sans-serif;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583;enable-background:new"
+       x="136.66461"
+       y="335.1658"
+       id="text13775-3"
+       inkscape:export-filename="/home/martin/LibreSolar/4_Projects/Anträge/EnAccess_2021/enaccess-bms-overview.png"
+       inkscape:export-xdpi="200.1694"
+       inkscape:export-ydpi="200.1694"><tspan
+         sodipodi:role="line"
+         id="tspan13773-6"
+         style="text-align:start;text-anchor:start;stroke-width:0.264583"
+         x="136.66461"
+         y="335.1658">16</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:3.88056px;line-height:1.25;font-family:sans-serif;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583;enable-background:new"
+       x="26.974318"
+       y="335.19327"
+       id="text13775-0"
+       inkscape:export-filename="/home/martin/LibreSolar/4_Projects/Anträge/EnAccess_2021/enaccess-bms-overview.png"
+       inkscape:export-xdpi="200.1694"
+       inkscape:export-ydpi="200.1694"><tspan
+         sodipodi:role="line"
+         id="tspan13773-62"
+         style="text-align:start;text-anchor:start;stroke-width:0.264583"
+         x="26.974318"
+         y="335.19327">2</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:3.88056px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="128.77856"
+       y="335.14023"
+       id="text27351"
+       inkscape:export-filename="/home/martin/LibreSolar/4_Projects/Anträge/EnAccess_2021/enaccess-bms-overview.png"
+       inkscape:export-xdpi="200.1694"
+       inkscape:export-ydpi="200.1694"><tspan
+         sodipodi:role="line"
+         id="tspan27349"
+         style="stroke-width:0.264583"
+         x="128.77856"
+         y="335.14023">15</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 21.166666,330.5003 v -2.64584 h 5.291666 v 2.64584"
+       id="path31499"
+       inkscape:export-filename="/home/martin/LibreSolar/4_Projects/Anträge/EnAccess_2021/enaccess-bms-overview.png"
+       inkscape:export-xdpi="200.1694"
+       inkscape:export-ydpi="200.1694" />
+    <rect
+       style="fill:none;stroke:#000000;stroke-width:0.264584;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;paint-order:fill markers stroke;enable-background:new"
+       id="rect15014-0-7-2-3-9"
+       width="7.9375029"
+       height="26.458342"
+       x="31.75"
+       y="330.50027"
+       ry="7.479496e-05"
+       inkscape:export-filename="/home/martin/LibreSolar/4_Projects/Anträge/EnAccess_2021/enaccess-bms-overview.png"
+       inkscape:export-xdpi="200.1694"
+       inkscape:export-ydpi="200.1694" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:3.88056px;line-height:1.25;font-family:sans-serif;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583;enable-background:new"
+       x="34.863201"
+       y="335.1658"
+       id="text13775-0-4"
+       inkscape:export-filename="/home/martin/LibreSolar/4_Projects/Anträge/EnAccess_2021/enaccess-bms-overview.png"
+       inkscape:export-xdpi="200.1694"
+       inkscape:export-ydpi="200.1694"><tspan
+         sodipodi:role="line"
+         id="tspan13773-62-7"
+         style="text-align:start;text-anchor:start;stroke-width:0.264583"
+         x="34.863201"
+         y="335.1658">3</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;enable-background:new"
+       d="m 29.104166,330.50028 v -2.64584 h 5.291666 v 2.64584"
+       id="path31499-8"
+       inkscape:export-filename="/home/martin/LibreSolar/4_Projects/Anträge/EnAccess_2021/enaccess-bms-overview.png"
+       inkscape:export-xdpi="200.1694"
+       inkscape:export-ydpi="200.1694" />
+    <rect
+       style="fill:none;stroke:#000000;stroke-width:0.264584;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;paint-order:fill markers stroke;enable-background:new"
+       id="rect15014-0-7-2-3-4"
+       width="7.9375029"
+       height="26.458342"
+       x="39.6875"
+       y="330.50027"
+       ry="7.479496e-05"
+       inkscape:export-filename="/home/martin/LibreSolar/4_Projects/Anträge/EnAccess_2021/enaccess-bms-overview.png"
+       inkscape:export-xdpi="200.1694"
+       inkscape:export-ydpi="200.1694" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:3.88056px;line-height:1.25;font-family:sans-serif;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583;enable-background:new"
+       x="42.803253"
+       y="335.16769"
+       id="text13775-0-5"
+       inkscape:export-filename="/home/martin/LibreSolar/4_Projects/Anträge/EnAccess_2021/enaccess-bms-overview.png"
+       inkscape:export-xdpi="200.1694"
+       inkscape:export-ydpi="200.1694"><tspan
+         sodipodi:role="line"
+         id="tspan13773-62-0"
+         style="text-align:start;text-anchor:start;stroke-width:0.264583"
+         x="42.803253"
+         y="335.16769">4</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;enable-background:new"
+       d="m 37.041669,330.5003 v -2.64584 h 5.291666 v 2.64584"
+       id="path31499-3"
+       inkscape:export-filename="/home/martin/LibreSolar/4_Projects/Anträge/EnAccess_2021/enaccess-bms-overview.png"
+       inkscape:export-xdpi="200.1694"
+       inkscape:export-ydpi="200.1694" />
+    <rect
+       style="fill:none;stroke:#000000;stroke-width:0.264584;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;paint-order:fill markers stroke;enable-background:new"
+       id="rect15014-0-7-2-3-61"
+       width="7.9375029"
+       height="26.458342"
+       x="47.625"
+       y="330.50027"
+       ry="7.479496e-05"
+       inkscape:export-filename="/home/martin/LibreSolar/4_Projects/Anträge/EnAccess_2021/enaccess-bms-overview.png"
+       inkscape:export-xdpi="200.1694"
+       inkscape:export-ydpi="200.1694" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:3.88056px;line-height:1.25;font-family:sans-serif;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583;enable-background:new"
+       x="50.742352"
+       y="335.14023"
+       id="text13775-0-0"
+       inkscape:export-filename="/home/martin/LibreSolar/4_Projects/Anträge/EnAccess_2021/enaccess-bms-overview.png"
+       inkscape:export-xdpi="200.1694"
+       inkscape:export-ydpi="200.1694"><tspan
+         sodipodi:role="line"
+         id="tspan13773-62-6"
+         style="text-align:start;text-anchor:start;stroke-width:0.264583"
+         x="50.742352"
+         y="335.14023">5</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;enable-background:new"
+       d="m 44.979166,330.50028 v -2.64584 h 5.291666 v 2.64584"
+       id="path31499-32"
+       inkscape:export-filename="/home/martin/LibreSolar/4_Projects/Anträge/EnAccess_2021/enaccess-bms-overview.png"
+       inkscape:export-xdpi="200.1694"
+       inkscape:export-ydpi="200.1694" />
+    <rect
+       style="fill:none;stroke:#000000;stroke-width:0.264584;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;paint-order:fill markers stroke;enable-background:new"
+       id="rect15014-0-7-2-3-0"
+       width="7.9375029"
+       height="26.458342"
+       x="55.562504"
+       y="330.50027"
+       ry="7.479496e-05"
+       inkscape:export-filename="/home/martin/LibreSolar/4_Projects/Anträge/EnAccess_2021/enaccess-bms-overview.png"
+       inkscape:export-xdpi="200.1694"
+       inkscape:export-ydpi="200.1694" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:3.88056px;line-height:1.25;font-family:sans-serif;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583;enable-background:new"
+       x="58.642609"
+       y="335.1658"
+       id="text13775-0-6"
+       inkscape:export-filename="/home/martin/LibreSolar/4_Projects/Anträge/EnAccess_2021/enaccess-bms-overview.png"
+       inkscape:export-xdpi="200.1694"
+       inkscape:export-ydpi="200.1694"><tspan
+         sodipodi:role="line"
+         id="tspan13773-62-1"
+         style="text-align:start;text-anchor:start;stroke-width:0.264583"
+         x="58.642609"
+         y="335.1658">6</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;enable-background:new"
+       d="m 52.916667,330.50028 v -2.64584 h 5.291666 v 2.64584"
+       id="path31499-5"
+       inkscape:export-filename="/home/martin/LibreSolar/4_Projects/Anträge/EnAccess_2021/enaccess-bms-overview.png"
+       inkscape:export-xdpi="200.1694"
+       inkscape:export-ydpi="200.1694" />
+    <rect
+       style="fill:none;stroke:#000000;stroke-width:0.264584;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;paint-order:fill markers stroke;enable-background:new"
+       id="rect15014-0-7-2-3-5"
+       width="7.9375029"
+       height="26.458342"
+       x="63.500004"
+       y="330.50027"
+       ry="7.479496e-05"
+       inkscape:export-filename="/home/martin/LibreSolar/4_Projects/Anträge/EnAccess_2021/enaccess-bms-overview.png"
+       inkscape:export-xdpi="200.1694"
+       inkscape:export-ydpi="200.1694" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:3.88056px;line-height:1.25;font-family:sans-serif;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583;enable-background:new"
+       x="66.595917"
+       y="335.16769"
+       id="text13775-0-47"
+       inkscape:export-filename="/home/martin/LibreSolar/4_Projects/Anträge/EnAccess_2021/enaccess-bms-overview.png"
+       inkscape:export-xdpi="200.1694"
+       inkscape:export-ydpi="200.1694"><tspan
+         sodipodi:role="line"
+         id="tspan13773-62-65"
+         style="text-align:start;text-anchor:start;stroke-width:0.264583"
+         x="66.595917"
+         y="335.16769">7</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;enable-background:new"
+       d="m 60.854169,330.5003 v -2.64584 h 5.291666 v 2.64584"
+       id="path31499-6"
+       inkscape:export-filename="/home/martin/LibreSolar/4_Projects/Anträge/EnAccess_2021/enaccess-bms-overview.png"
+       inkscape:export-xdpi="200.1694"
+       inkscape:export-ydpi="200.1694" />
+    <rect
+       style="fill:none;stroke:#000000;stroke-width:0.264584;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;paint-order:fill markers stroke;enable-background:new"
+       id="rect15014-0-7-2-3-93"
+       width="7.9375029"
+       height="26.458342"
+       x="71.4375"
+       y="330.50027"
+       ry="7.479496e-05"
+       inkscape:export-filename="/home/martin/LibreSolar/4_Projects/Anträge/EnAccess_2021/enaccess-bms-overview.png"
+       inkscape:export-xdpi="200.1694"
+       inkscape:export-ydpi="200.1694" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:3.88056px;line-height:1.25;font-family:sans-serif;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583;enable-background:new"
+       x="74.523659"
+       y="335.1658"
+       id="text13775-0-7"
+       inkscape:export-filename="/home/martin/LibreSolar/4_Projects/Anträge/EnAccess_2021/enaccess-bms-overview.png"
+       inkscape:export-xdpi="200.1694"
+       inkscape:export-ydpi="200.1694"><tspan
+         sodipodi:role="line"
+         id="tspan13773-62-4"
+         style="text-align:start;text-anchor:start;stroke-width:0.264583"
+         x="74.523659"
+         y="335.1658">8</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;enable-background:new"
+       d="m 68.791666,330.5003 v -2.64584 h 5.291666 v 2.64584"
+       id="path31499-52"
+       inkscape:export-filename="/home/martin/LibreSolar/4_Projects/Anträge/EnAccess_2021/enaccess-bms-overview.png"
+       inkscape:export-xdpi="200.1694"
+       inkscape:export-ydpi="200.1694" />
+    <rect
+       style="fill:none;stroke:#000000;stroke-width:0.264584;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;paint-order:fill markers stroke;enable-background:new"
+       id="rect15014-0-7-2-3-54"
+       width="7.9375029"
+       height="26.458342"
+       x="79.375"
+       y="330.50027"
+       ry="7.479496e-05"
+       inkscape:export-filename="/home/martin/LibreSolar/4_Projects/Anträge/EnAccess_2021/enaccess-bms-overview.png"
+       inkscape:export-xdpi="200.1694"
+       inkscape:export-ydpi="200.1694" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:3.88056px;line-height:1.25;font-family:sans-serif;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583;enable-background:new"
+       x="82.470329"
+       y="335.1658"
+       id="text13775-0-74"
+       inkscape:export-filename="/home/martin/LibreSolar/4_Projects/Anträge/EnAccess_2021/enaccess-bms-overview.png"
+       inkscape:export-xdpi="200.1694"
+       inkscape:export-ydpi="200.1694"><tspan
+         sodipodi:role="line"
+         id="tspan13773-62-43"
+         style="text-align:start;text-anchor:start;stroke-width:0.264583"
+         x="82.470329"
+         y="335.1658">9</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;enable-background:new"
+       d="m 76.729166,330.50028 v -2.64584 h 5.291666 v 2.64584"
+       id="path31499-0"
+       inkscape:export-filename="/home/martin/LibreSolar/4_Projects/Anträge/EnAccess_2021/enaccess-bms-overview.png"
+       inkscape:export-xdpi="200.1694"
+       inkscape:export-ydpi="200.1694" />
+    <rect
+       style="fill:none;stroke:#000000;stroke-width:0.264584;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;paint-order:fill markers stroke;enable-background:new"
+       id="rect15014-0-7-2-3-7"
+       width="7.9375029"
+       height="26.458342"
+       x="87.3125"
+       y="330.50027"
+       ry="7.479496e-05"
+       inkscape:export-filename="/home/martin/LibreSolar/4_Projects/Anträge/EnAccess_2021/enaccess-bms-overview.png"
+       inkscape:export-xdpi="200.1694"
+       inkscape:export-ydpi="200.1694" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:3.88056px;line-height:1.25;font-family:sans-serif;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583;enable-background:new"
+       x="89.070747"
+       y="335.1658"
+       id="text13775-0-8"
+       inkscape:export-filename="/home/martin/LibreSolar/4_Projects/Anträge/EnAccess_2021/enaccess-bms-overview.png"
+       inkscape:export-xdpi="200.1694"
+       inkscape:export-ydpi="200.1694"><tspan
+         sodipodi:role="line"
+         id="tspan13773-62-68"
+         style="text-align:start;text-anchor:start;stroke-width:0.264583"
+         x="89.070747"
+         y="335.1658">10</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;enable-background:new"
+       d="m 84.666668,330.50029 v -2.64584 h 5.29166 v 2.64584"
+       id="path31499-84"
+       inkscape:export-filename="/home/martin/LibreSolar/4_Projects/Anträge/EnAccess_2021/enaccess-bms-overview.png"
+       inkscape:export-xdpi="200.1694"
+       inkscape:export-ydpi="200.1694" />
+    <rect
+       style="fill:none;stroke:#000000;stroke-width:0.264584;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;paint-order:fill markers stroke;enable-background:new"
+       id="rect15014-0-7-2-3-3"
+       width="7.9375029"
+       height="26.458342"
+       x="95.249992"
+       y="330.50027"
+       ry="7.479496e-05"
+       inkscape:export-filename="/home/martin/LibreSolar/4_Projects/Anträge/EnAccess_2021/enaccess-bms-overview.png"
+       inkscape:export-xdpi="200.1694"
+       inkscape:export-ydpi="200.1694" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:3.88056px;line-height:1.25;font-family:sans-serif;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583;enable-background:new"
+       x="97.054382"
+       y="335.16769"
+       id="text13775-0-1"
+       inkscape:export-filename="/home/martin/LibreSolar/4_Projects/Anträge/EnAccess_2021/enaccess-bms-overview.png"
+       inkscape:export-xdpi="200.1694"
+       inkscape:export-ydpi="200.1694"><tspan
+         sodipodi:role="line"
+         id="tspan13773-62-49"
+         style="text-align:start;text-anchor:start;stroke-width:0.264583"
+         x="97.054382"
+         y="335.16769">11</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;enable-background:new"
+       d="m 92.604168,330.50028 v -2.64584 h 5.29166 v 2.64584"
+       id="path31499-2"
+       inkscape:export-filename="/home/martin/LibreSolar/4_Projects/Anträge/EnAccess_2021/enaccess-bms-overview.png"
+       inkscape:export-xdpi="200.1694"
+       inkscape:export-ydpi="200.1694" />
+    <rect
+       style="fill:none;stroke:#000000;stroke-width:0.264584;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;paint-order:fill markers stroke;enable-background:new"
+       id="rect15014-0-7-2-3-06"
+       width="7.9375029"
+       height="26.458342"
+       x="103.18749"
+       y="330.50027"
+       ry="7.479496e-05"
+       inkscape:export-filename="/home/martin/LibreSolar/4_Projects/Anträge/EnAccess_2021/enaccess-bms-overview.png"
+       inkscape:export-xdpi="200.1694"
+       inkscape:export-ydpi="200.1694" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:3.88056px;line-height:1.25;font-family:sans-serif;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583;enable-background:new"
+       x="105.00294"
+       y="335.19327"
+       id="text13775-0-89"
+       inkscape:export-filename="/home/martin/LibreSolar/4_Projects/Anträge/EnAccess_2021/enaccess-bms-overview.png"
+       inkscape:export-xdpi="200.1694"
+       inkscape:export-ydpi="200.1694"><tspan
+         sodipodi:role="line"
+         id="tspan13773-62-2"
+         style="text-align:start;text-anchor:start;stroke-width:0.264583"
+         x="105.00294"
+         y="335.19327">12</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;enable-background:new"
+       d="m 100.54166,330.50029 v -2.64584 h 5.29167 v 2.64584"
+       id="path31499-66"
+       inkscape:export-filename="/home/martin/LibreSolar/4_Projects/Anträge/EnAccess_2021/enaccess-bms-overview.png"
+       inkscape:export-xdpi="200.1694"
+       inkscape:export-ydpi="200.1694" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 137.58337,330.50028 v -2.64584 h -5.29167 v 2.64584"
+       id="path31507"
+       inkscape:export-filename="/home/martin/LibreSolar/4_Projects/Anträge/EnAccess_2021/enaccess-bms-overview.png"
+       inkscape:export-xdpi="200.1694"
+       inkscape:export-ydpi="200.1694" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:3.88056px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="94.969742"
+       y="296.0791"
+       id="text36607"
+       inkscape:export-filename="/home/martin/LibreSolar/4_Projects/Anträge/EnAccess_2021/enaccess-bms-overview.png"
+       inkscape:export-xdpi="200.1694"
+       inkscape:export-ydpi="200.1694"><tspan
+         sodipodi:role="line"
+         id="tspan36605"
+         style="stroke-width:0.264583;font-weight:bold"
+         x="94.969742"
+         y="296.0791">Power Board</tspan><tspan
+         sodipodi:role="line"
+         style="stroke-width:0.264583"
+         x="94.969742"
+         y="300.92981"
+         id="tspan220720" /></text>
+    <rect
+       style="fill:#68e06e;fill-opacity:1;stroke:#000000;stroke-width:0.264999;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:1.06, 1.06;stroke-dashoffset:0;paint-order:fill markers stroke;enable-background:new"
+       id="rect14998-1-7-6"
+       width="55.5625"
+       height="29.104166"
+       x="26.458328"
+       y="290.81277"
+       ry="8.2274426e-05"
+       inkscape:export-filename="/home/martin/LibreSolar/4_Projects/Anträge/EnAccess_2021/enaccess-bms-overview.png"
+       inkscape:export-xdpi="200.1694"
+       inkscape:export-ydpi="200.1694" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 140.22916,317.27111 v 13.22917"
+       id="path49933"
+       inkscape:export-filename="/home/martin/LibreSolar/4_Projects/Anträge/EnAccess_2021/enaccess-bms-overview.png"
+       inkscape:export-xdpi="200.1694"
+       inkscape:export-ydpi="200.1694" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 18.520833,330.50028 V 282.87531"
+       id="path50208"
+       inkscape:export-filename="/home/martin/LibreSolar/4_Projects/Anträge/EnAccess_2021/enaccess-bms-overview.png"
+       inkscape:export-xdpi="200.1694"
+       inkscape:export-ydpi="200.1694" />
+    <path
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.529167;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 15.875,277.58362 h 5.291667 v 5.29166 H 15.875 Z"
+       id="path50210"
+       inkscape:export-filename="/home/martin/LibreSolar/4_Projects/Anträge/EnAccess_2021/enaccess-bms-overview.png"
+       inkscape:export-xdpi="200.1694"
+       inkscape:export-ydpi="200.1694" />
+    <path
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.529167;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;enable-background:new"
+       d="m 137.58332,277.58364 h 5.29167 v 5.29166 h -5.29167 z"
+       id="path50210-1"
+       inkscape:export-filename="/home/martin/LibreSolar/4_Projects/Anträge/EnAccess_2021/enaccess-bms-overview.png"
+       inkscape:export-xdpi="200.1694"
+       inkscape:export-ydpi="200.1694" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 140.22915,278.90655 v 2.64583"
+       id="path53603"
+       inkscape:export-filename="/home/martin/LibreSolar/4_Projects/Anträge/EnAccess_2021/enaccess-bms-overview.png"
+       inkscape:export-xdpi="200.1694"
+       inkscape:export-ydpi="200.1694" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 17.197916,280.22945 H 19.84375"
+       id="path53605"
+       inkscape:export-filename="/home/martin/LibreSolar/4_Projects/Anträge/EnAccess_2021/enaccess-bms-overview.png"
+       inkscape:export-xdpi="200.1694"
+       inkscape:export-ydpi="200.1694" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;enable-background:new"
+       d="m 138.90624,280.22947 h 2.64583"
+       id="path53605-8"
+       inkscape:export-filename="/home/martin/LibreSolar/4_Projects/Anträge/EnAccess_2021/enaccess-bms-overview.png"
+       inkscape:export-xdpi="200.1694"
+       inkscape:export-ydpi="200.1694" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:3.88056px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="31.945158"
+       y="295.95309"
+       id="text57117"
+       inkscape:export-filename="/home/martin/LibreSolar/4_Projects/Anträge/EnAccess_2021/enaccess-bms-overview.png"
+       inkscape:export-xdpi="200.1694"
+       inkscape:export-ydpi="200.1694"><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';stroke-width:0.264583"
+         x="31.945158"
+         y="295.95309"
+         id="tspan207626">Control Board</tspan><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';stroke-width:0.264583"
+         x="31.945158"
+         y="300.8038"
+         id="tspan207628" /></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:3.88056px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="33.5798"
+       y="286.5199"
+       id="text114635"
+       inkscape:export-filename="/home/martin/LibreSolar/4_Projects/Anträge/EnAccess_2021/enaccess-bms-overview.png"
+       inkscape:export-xdpi="200.1694"
+       inkscape:export-ydpi="200.1694"><tspan
+         sodipodi:role="line"
+         id="tspan114633"
+         style="font-weight:bold;stroke-width:0.264583"
+         x="33.5798"
+         y="286.5199">Battery Management System <tspan
+   style="font-weight:normal"
+   id="tspan332401">(Project Scope)</tspan></tspan></text>
+    <image
+       width="29.104158"
+       height="10.732159"
+       preserveAspectRatio="none"
+       xlink:href="data:image/png;base64,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
+"
+       id="image116345"
+       x="82.020836"
+       y="370.18777"
+       style="stroke-width:2.90909"
+       inkscape:export-filename="/home/martin/LibreSolar/4_Projects/Anträge/EnAccess_2021/enaccess-bms-overview.png"
+       inkscape:export-xdpi="200.1694"
+       inkscape:export-ydpi="200.1694" />
+    <image
+       width="21.460493"
+       height="16.023836"
+       preserveAspectRatio="none"
+       xlink:href="data:image/png;base64,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
+JcEEOAAAAABJRU5ErkJggg==
+"
+       id="image116357"
+       x="47.331181"
+       y="367.54193"
+       style="stroke-width:9.24666"
+       inkscape:export-filename="/home/martin/LibreSolar/4_Projects/Anträge/EnAccess_2021/enaccess-bms-overview.png"
+       inkscape:export-xdpi="200.1694"
+       inkscape:export-ydpi="200.1694" />
+    <image
+       width="29.736008"
+       height="23.8125"
+       preserveAspectRatio="none"
+       xlink:href="data:image/png;base64,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
+"
+       id="image116369"
+       x="7.9375"
+       y="364.89612"
+       style="stroke-width:2.23333"
+       inkscape:export-filename="/home/martin/LibreSolar/4_Projects/Anträge/EnAccess_2021/enaccess-bms-overview.png"
+       inkscape:export-xdpi="200.1694"
+       inkscape:export-ydpi="200.1694" />
+    <image
+       width="26.458332"
+       height="10.779321"
+       preserveAspectRatio="none"
+       xlink:href="data:image/png;base64,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
+"
+       id="image116381"
+       x="121.70833"
+       y="369.99179"
+       style="stroke-width:4.85999"
+       inkscape:export-filename="/home/martin/LibreSolar/4_Projects/Anträge/EnAccess_2021/enaccess-bms-overview.png"
+       inkscape:export-xdpi="200.1694"
+       inkscape:export-ydpi="200.1694" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:3.88056px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="96.251328"
+       y="389.47336"
+       id="text118301"
+       inkscape:export-filename="/home/martin/LibreSolar/4_Projects/Anträge/EnAccess_2021/enaccess-bms-overview.png"
+       inkscape:export-xdpi="200.1694"
+       inkscape:export-ydpi="200.1694"><tspan
+         sodipodi:role="line"
+         style="text-align:center;text-anchor:middle;stroke-width:0.264583"
+         x="96.251328"
+         y="389.47336"
+         id="tspan123787">TI bq76952</tspan><tspan
+         sodipodi:role="line"
+         style="text-align:center;text-anchor:middle;stroke-width:0.264583"
+         x="96.251328"
+         y="394.32407"
+         id="tspan128461">BMS ASIC</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:3.88056px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="59.752659"
+       y="389.44888"
+       id="text120153"
+       inkscape:export-filename="/home/martin/LibreSolar/4_Projects/Anträge/EnAccess_2021/enaccess-bms-overview.png"
+       inkscape:export-xdpi="200.1694"
+       inkscape:export-ydpi="200.1694"><tspan
+         sodipodi:role="line"
+         id="tspan120151"
+         style="text-align:center;text-anchor:middle;stroke-width:0.264583"
+         x="59.752659"
+         y="389.44888">STM32 series</tspan><tspan
+         sodipodi:role="line"
+         style="text-align:center;text-anchor:middle;stroke-width:0.264583"
+         x="59.752659"
+         y="394.29959"
+         id="tspan121577">microcontroller</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:3.88056px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="125.17443"
+       y="391.55447"
+       id="text132057"
+       inkscape:export-filename="/home/martin/LibreSolar/4_Projects/Anträge/EnAccess_2021/enaccess-bms-overview.png"
+       inkscape:export-xdpi="200.1694"
+       inkscape:export-ydpi="200.1694"><tspan
+         sodipodi:role="line"
+         style="stroke-width:0.264583"
+         x="125.17443"
+         y="391.55447"
+         id="tspan132059">PCB design</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:3.88056px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="24.618652"
+       y="389.59055"
+       id="text134001"
+       inkscape:export-filename="/home/martin/LibreSolar/4_Projects/Anträge/EnAccess_2021/enaccess-bms-overview.png"
+       inkscape:export-xdpi="200.1694"
+       inkscape:export-ydpi="200.1694"><tspan
+         sodipodi:role="line"
+         style="text-align:center;text-anchor:middle;stroke-width:0.264583"
+         x="24.618652"
+         y="389.59055"
+         id="tspan134755">Zephyr RTOS</tspan><tspan
+         sodipodi:role="line"
+         style="text-align:center;text-anchor:middle;stroke-width:0.264583"
+         x="24.618652"
+         y="394.44125"
+         id="tspan137281">for firmware</tspan></text>
+    <path
+       inkscape:connector-curvature="0"
+       d="m 140.22915,304.04195 v -1.5875"
+       style="fill:none;stroke:#000000;stroke-width:0.264583;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none"
+       id="path5307-9-6-5"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="/home/martin/LibreSolar/4_Projects/Anträge/EnAccess_2021/enaccess-bms-overview.png"
+       inkscape:export-xdpi="200.1694"
+       inkscape:export-ydpi="200.1694" />
+    <circle
+       cx="301.92529"
+       cy="140.22917"
+       transform="matrix(0,1,1,0,0,0)"
+       style="fill:none;stroke:#000000;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
+       id="path8029-79-22"
+       r="0.52916664"
+       inkscape:export-filename="/home/martin/LibreSolar/4_Projects/Anträge/EnAccess_2021/enaccess-bms-overview.png"
+       inkscape:export-xdpi="200.1694"
+       inkscape:export-ydpi="200.1694" />
+    <path
+       sodipodi:nodetypes="cc"
+       inkscape:connector-curvature="0"
+       d="m 138.90624,296.63362 1.17615,4.7625"
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:round"
+       id="path8033-2-8"
+       inkscape:export-filename="/home/martin/LibreSolar/4_Projects/Anträge/EnAccess_2021/enaccess-bms-overview.png"
+       inkscape:export-xdpi="200.1694"
+       inkscape:export-ydpi="200.1694" />
+    <g
+       transform="matrix(0,-0.26458333,0.26458333,0,-53.895842,479.98986)"
+       id="g2333-0-9"
+       inkscape:export-filename="/home/martin/LibreSolar/4_Projects/Anträge/EnAccess_2021/enaccess-bms-overview.png"
+       inkscape:export-xdpi="200.1694"
+       inkscape:export-ydpi="200.1694">
+      <circle
+         r="2"
+         id="path8029-79-2-7"
+         style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
+         transform="scale(-1,1)"
+         cy="733.70081"
+         cx="-697" />
+      <path
+         id="path8033-2-3-3"
+         style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:round"
+         d="m 705,733.70079 h -6"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="cc" />
+    </g>
+    <g
+       id="g31462-3"
+       transform="translate(12.569026,15.214855)"
+       style="enable-background:new"
+       inkscape:export-filename="/home/martin/LibreSolar/4_Projects/Anträge/EnAccess_2021/enaccess-bms-overview.png"
+       inkscape:export-xdpi="200.1694"
+       inkscape:export-ydpi="200.1694">
+      <rect
+         x="292.79849"
+         y="-128.98305"
+         width="7.9375"
+         height="2.6458333"
+         style="color:#000000;fill:none;stroke:#000000;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:1.76"
+         id="rect10224-9-8-2-43-72-6-2-6-3-9-5-66-1-29-5-7"
+         transform="rotate(90)" />
+      <path
+         inkscape:connector-curvature="0"
+         d="m 127.66013,300.73863 v 1.31762"
+         style="fill:#ffffff;fill-rule:evenodd;stroke:#000000;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
+         id="path1450-1-5-3-4-1-0-3-3-6-5-90-3-0-3-5" />
+      <path
+         inkscape:connector-curvature="0"
+         d="m 127.66013,291.47556 v 1.32292"
+         style="fill:#ffffff;fill-rule:evenodd;stroke:#000000;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
+         id="path1450-1-5-3-4-1-0-3-8-8-0-2-2-8-3-8-9" />
+      <path
+         inkscape:connector-curvature="0"
+         d="m 125.0143,292.79848 h 1.32292"
+         style="fill:#ffffff;fill-rule:evenodd;stroke:#000000;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
+         id="path1450-1-5-3-4-1-0-3-8-8-0-2-2-8-3-8-1-2"
+         sodipodi:nodetypes="cc" />
+      <path
+         inkscape:connector-curvature="0"
+         d="m 125.0143,300.73598 h 1.32292"
+         style="fill:#ffffff;fill-rule:evenodd;stroke:#000000;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
+         id="path1450-1-5-3-4-1-0-3-8-8-0-2-2-8-3-8-1-1-2"
+         sodipodi:nodetypes="cc" />
+    </g>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:3.88056px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="95.245529"
+       y="302.13568"
+       id="text235716"
+       inkscape:export-filename="/home/martin/LibreSolar/4_Projects/Anträge/EnAccess_2021/enaccess-bms-overview.png"
+       inkscape:export-xdpi="200.1694"
+       inkscape:export-ydpi="200.1694"><tspan
+         sodipodi:role="line"
+         id="tspan235714"
+         style="stroke-width:0.264583"
+         x="95.245529"
+         y="302.13568">- Battery</tspan><tspan
+         sodipodi:role="line"
+         style="stroke-width:0.264583"
+         x="95.245529"
+         y="306.98639"
+         id="tspan235718">  Protection</tspan><tspan
+         sodipodi:role="line"
+         style="stroke-width:0.264583"
+         x="95.245529"
+         y="311.83707"
+         id="tspan235720">- Current</tspan><tspan
+         sodipodi:role="line"
+         style="stroke-width:0.264583"
+         x="95.245529"
+         y="316.68777"
+         id="tspan235724">  Monitoring</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:3.88056px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="31.750002"
+       y="301.92529"
+       id="text251199"
+       inkscape:export-filename="/home/martin/LibreSolar/4_Projects/Anträge/EnAccess_2021/enaccess-bms-overview.png"
+       inkscape:export-xdpi="200.1694"
+       inkscape:export-ydpi="200.1694"><tspan
+         sodipodi:role="line"
+         id="tspan251197"
+         style="stroke-width:0.264583"
+         x="31.750002"
+         y="301.92529">- Single Cell Voltage </tspan><tspan
+         sodipodi:role="line"
+         style="stroke-width:0.264583"
+         x="31.750002"
+         y="306.776"
+         id="tspan251201">  Monitoring</tspan><tspan
+         sodipodi:role="line"
+         style="stroke-width:0.264583"
+         x="31.750002"
+         y="311.62668"
+         id="tspan251203">- Cell Balancing</tspan><tspan
+         sodipodi:role="line"
+         style="stroke-width:0.264583"
+         x="31.750002"
+         y="316.47739"
+         id="tspan251205">- Communcation</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 140.22915,293.45861 V 282.87528"
+       id="path254994"
+       inkscape:export-filename="/home/martin/LibreSolar/4_Projects/Anträge/EnAccess_2021/enaccess-bms-overview.png"
+       inkscape:export-xdpi="200.1694"
+       inkscape:export-ydpi="200.1694" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 140.22915,306.68778 v -2.64584"
+       id="path255109"
+       inkscape:export-filename="/home/martin/LibreSolar/4_Projects/Anträge/EnAccess_2021/enaccess-bms-overview.png"
+       inkscape:export-xdpi="200.1694"
+       inkscape:export-ydpi="200.1694" />
+    <rect
+       style="fill:none;stroke:#000000;stroke-width:0.264584;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;paint-order:fill markers stroke;enable-background:new"
+       id="rect15014-0-7-2-3-49"
+       width="7.9375029"
+       height="26.458342"
+       x="111.125"
+       y="330.50027"
+       ry="7.479496e-05"
+       inkscape:export-filename="/home/martin/LibreSolar/4_Projects/Anträge/EnAccess_2021/enaccess-bms-overview.png"
+       inkscape:export-xdpi="200.1694"
+       inkscape:export-ydpi="200.1694" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:3.88056px;line-height:1.25;font-family:sans-serif;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583;enable-background:new"
+       x="112.89752"
+       y="335.1658"
+       id="text13775-0-50"
+       inkscape:export-filename="/home/martin/LibreSolar/4_Projects/Anträge/EnAccess_2021/enaccess-bms-overview.png"
+       inkscape:export-xdpi="200.1694"
+       inkscape:export-ydpi="200.1694"><tspan
+         sodipodi:role="line"
+         id="tspan13773-62-48"
+         style="text-align:start;text-anchor:start;stroke-width:0.264583"
+         x="112.89752"
+         y="335.1658">13</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;enable-background:new"
+       d="m 108.47917,330.50029 v -2.64584 h 5.29167 v 2.64584"
+       id="path31499-7"
+       inkscape:export-filename="/home/martin/LibreSolar/4_Projects/Anträge/EnAccess_2021/enaccess-bms-overview.png"
+       inkscape:export-xdpi="200.1694"
+       inkscape:export-ydpi="200.1694" />
+    <rect
+       style="fill:none;stroke:#000000;stroke-width:0.264584;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;paint-order:fill markers stroke;enable-background:new"
+       id="rect15014-0-7-2-3-1"
+       width="7.9375029"
+       height="26.458342"
+       x="119.0625"
+       y="330.50027"
+       ry="7.479496e-05"
+       inkscape:export-filename="/home/martin/LibreSolar/4_Projects/Anträge/EnAccess_2021/enaccess-bms-overview.png"
+       inkscape:export-xdpi="200.1694"
+       inkscape:export-ydpi="200.1694" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:3.88056px;line-height:1.25;font-family:sans-serif;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583;enable-background:new"
+       x="120.78451"
+       y="335.16769"
+       id="text13775-0-72"
+       inkscape:export-filename="/home/martin/LibreSolar/4_Projects/Anträge/EnAccess_2021/enaccess-bms-overview.png"
+       inkscape:export-xdpi="200.1694"
+       inkscape:export-ydpi="200.1694"><tspan
+         sodipodi:role="line"
+         id="tspan13773-62-72"
+         style="text-align:start;text-anchor:start;stroke-width:0.264583"
+         x="120.78451"
+         y="335.16769">14</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;enable-background:new"
+       d="m 116.41666,330.50029 v -2.64584 h 5.29167 v 2.64584"
+       id="path31499-26"
+       inkscape:export-filename="/home/martin/LibreSolar/4_Projects/Anträge/EnAccess_2021/enaccess-bms-overview.png"
+       inkscape:export-xdpi="200.1694"
+       inkscape:export-ydpi="200.1694" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;enable-background:new"
+       d="m 124.35416,330.50028 v -2.64584 h 5.29167 v 2.64584"
+       id="path31499-26-1"
+       inkscape:export-filename="/home/martin/LibreSolar/4_Projects/Anträge/EnAccess_2021/enaccess-bms-overview.png"
+       inkscape:export-xdpi="200.1694"
+       inkscape:export-ydpi="200.1694" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 23.812499,327.85444 v -2.64583"
+       id="path306570" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 31.75,327.85444 v -2.64583"
+       id="path306572" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;enable-background:new"
+       d="m 39.6875,327.85444 v -2.64583"
+       id="path306572-0" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;enable-background:new"
+       d="m 47.624999,327.85444 v -2.64583"
+       id="path306572-6" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;enable-background:new"
+       d="m 55.5625,327.85444 v -2.64583"
+       id="path306572-1" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;enable-background:new"
+       d="m 63.499999,327.85444 v -2.64583"
+       id="path306572-5" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;enable-background:new"
+       d="m 71.437499,327.85444 v -2.64583"
+       id="path306572-9" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;enable-background:new"
+       d="m 79.374999,327.85444 v -2.64583"
+       id="path306572-4" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;enable-background:new"
+       d="m 87.312499,327.85444 v -2.64583"
+       id="path306572-90" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;enable-background:new"
+       d="m 95.249999,327.85444 v -2.64583"
+       id="path306572-91" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;enable-background:new"
+       d="m 103.1875,327.85444 v -2.64583"
+       id="path306572-7" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;enable-background:new"
+       d="m 111.125,327.85444 v -2.64583"
+       id="path306572-71" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;enable-background:new"
+       d="m 119.0625,327.85444 v -2.64583"
+       id="path306572-15" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;enable-background:new"
+       d="m 127,327.85444 v -2.64583"
+       id="path306572-97" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;enable-background:new"
+       d="m 134.9375,327.85444 v -2.64583"
+       id="path306572-76" />
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:1.05833, 1.05833;stroke-dashoffset:0;stroke-opacity:1;paint-order:fill markers stroke"
+       id="rect307141"
+       width="89.958328"
+       height="10.583324"
+       x="34.395832"
+       y="341.08362"
+       ry="6.1890578e-06" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:4.93889px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="39.038773"
+       y="347.69373"
+       id="text83422"
+       inkscape:export-filename="/home/martin/LibreSolar/4_Projects/Anträge/EnAccess_2021/enaccess-bms-overview.png"
+       inkscape:export-xdpi="200.1694"
+       inkscape:export-ydpi="200.1694"><tspan
+         sodipodi:role="line"
+         id="tspan83420"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.93889px;font-family:sans-serif;-inkscape-font-specification:sans-serif;fill:#000000;fill-opacity:1;stroke-width:0.264583"
+         x="39.038773"
+         y="347.69373">12V-48V Lithium-Ion Battery Pack</tspan></text>
+  </g>
+</svg>
