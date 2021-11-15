@@ -22,7 +22,7 @@ The distributed topology is not considered feasible either, as it requires a sin
 
 ## System integration
 
-As the BMS boards will be integrated into a battery system with its own enclosure, it does not require a fully protected enclosure itself. However, the design for a plastic enclosure to protect the circuit during assembly (e.g. against short circuits by tools) and to allow fixation inside the battery together with a heat sink will be provided.
+The BMS boards will be integrated into a battery system with its own enclosure. It will have a plastic enclosure to protect the circuit during assembly (e.g. against short circuits by tools) and to allow fixation inside the battery together with a heat sink.
 
 ## External interfaces
 
