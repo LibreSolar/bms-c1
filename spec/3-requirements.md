@@ -43,7 +43,7 @@ Two different MCUs supported (to avoid chip supply shortages): STM32G0B1 und ESP
 
 #### Considered alternatives
 
-Nordic nRF52940, but does not have CAN and WiFi compared to ESP32.
+Nordic nRF52840, but does not have CAN and WiFi compared to ESP32.
 
 ### ASIC selection
 
@@ -83,7 +83,7 @@ Analog Devices **ADBMS1818** (compatible to LTC68xx series)
 **Cons:**
 
 - Significantly more expensive than bq76952 (approx. 3 times more)
-- No integrated pack-level protection (intended for modular high-voltag BMS)
+- No integrated pack-level protection (intended for modular high-voltage BMS)
 
 Features according to Datasheet:
 
