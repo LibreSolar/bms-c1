@@ -14,7 +14,9 @@ Wires of up to 35 mm² cross-section must be supported by the terminals.
 
 The height is the same as typical 18650 cells so that it can be easily integrated into existing housings.
 
-![BMS top view (DRAFT)](./images/bms-top-view.png)
+![BMS top view complete (DRAFT)](./images/bms-top-view.png)
+
+![BMS top view power part (DRAFT)](./images/bms-top-view-power.png)
 
 ![BMS front view (DRAFT)](./images/bms-front-view.png)
 
@@ -156,9 +158,13 @@ The lowest price per chip from distributors is around $9.50 for an order of 1000
 
 The positive battery terminal can be disconnected by the BMS for safety reasons or upon demand of the user via a communicatoin interface.
 
-The disconnect switch will be built using N-channel MOSFETs a back-to-back configuration to be able to interrupt current in both directions (see also bq76952 datasheet). In order to allow the high currents, multiple MOSFETs will be connected in parallel (estimation: up to 10 MOSFETs in TO-220 package in parallel).
+The disconnect switch will be built using N-channel MOSFETs a back-to-back configuration to be able to interrupt current in both directions (see also bq76952 datasheet). In order to allow the high currents, multiple MOSFETs will be connected in parallel.
 
-The MOSFETs can be screwed to a heat sink to dissipate the heat at high continuous currents.
+The power PCB can be attached to a heat sink to dissipate the heat at high continuous currents.
+
+Suggested MOSFETs: IPT015N10N5. Rds(on) at 80°C is max. 2 mOhm, leading to a total of 1 mOhm (4p2s) and 10W of heat dissipation at 100A.
+
+There are cheaper alternatives with higher Rds(on), also from other manufacturers.
 
 #### Considered alternatives
 
@@ -170,11 +176,9 @@ The current will be measured using a shunt, located in the negative voltage path
 
 Time-critical safety features like overcurrent and short circuit protection are implemented directly in the ASIC and can be calibrated via firmware.
 
-Suggested part: [Vishay WSMS5512 series](https://www.vishay.com/docs/30135/wsms5515.pdf)
+Suggested part: KOA Speer PSJ2NTEBL500F or Bourns CSS2H-3920R-L500F
 
-The part can be mounted directly to the PCB using soldering pins or screws.
-
-**Attention:** This part is a single-sourcing option. No other manufacturer with a part with similar specifications and dimensions could be found so far.
+The SMD shunt will be soldered directly to the power PCB, as close as possible to the copper bus bars for the high current connectors.
 
 #### Considered alternatives
 
@@ -196,10 +200,13 @@ BMS boards available on eBay or AliExpress often use connectors similar to JST P
 
 The BMS will be designed for up to 100A continuous current. As the MOSFETs are soldered to the power PCB, the current has to go through the PCB. The connection from wire to board is critical and must handle the required current reliably.
 
-High-current wire-to-board connector is rather expensive. As a good compromise regarding price, flexibility and packaging volume the currently suggested connection technology is:
+High-current wire-to-board connectors are rather expensive. As a good compromise regarding price, flexibility and packaging volume this BMS uses a custom-made (yet simple) copper bus bar of e.g. 2 mm thickness with a clinch nut pressed in from the back. The bus bar will be soldered directly onto the PCB and can spread the current as well as heat.
 
-1. Two 9x9 mm Würth WP-BUCF press-fit terminals in parallel, each handling 50 A. The wire can be connected using crimped ring terminals and M5 screws.
-2. Solder-pad next to the terminals for direct soldering of the wires to the PCB.
+The [KVT PEM](https://www.kvt-fastening.de/en/products/brands/pem/) clinch nut (CLS type) is currently planned.
+
+#### Considered Alternatives
+
+Two 9x9 mm Würth WP-BUCF press-fit terminals in parallel, each handling 50 A. The wire can be connected using crimped ring terminals and M5 screws.
 
 The following image shows an example of the terminals.
 
@@ -208,6 +215,8 @@ The following image shows an example of the terminals.
 The terminals require an additional assembly step after soldering. However, similar connectors with through-hole reflow assembly methods have proven to be very difficult to solder together with smaller components on the same PCB because auf their high thermal mass. It makes sense to add the terminals in a separate step.
 
 As the cheapest solution, the terminals can be omitted and the wires can be soldered directly to the PCB. This solution is not considered as reliable, especially if the board can be exposed to vibrations.
+
+The press-fit terminals were the first idea, but were dropped because the custom busbar with clinch nut is considered cheaper and more suitable for the application.
 
 ### Power PCB specifications
 
@@ -223,30 +232,9 @@ In order to provide the hardware interfaces required to add custom extensions, t
 
 #### CAN bus
 
-The connector is a standard RJ45 jack as used for Ethernet. Also the same wires (Cat. 5e twisted pair or better) are used, allowing reliable communication with easily available parts.
+The board will have another Molex MicroFit type connector with pins for CANH and CANL.
 
-The pinout of the connector is similar to the CANopen specification:
-
-| Pin # | Name  | Description |
-|-------|-------|-------------|
-| 1     | CAN_H | CAN bus high signal |
-| 2     | CAN_L | CAN bus low signal |
-| 3     | GND   | CAN and power supply GND (optional) |
-| 4     | V+    | Bus power supply (optional, 12-24V nominal) |
-| 5     | V+    | Bus power supply (optional, 12-24V nominal) |
-| 6     | -     | reserved (do not connect) |
-| 7     | GND   | CAN and power supply GND (optional) |
-| 8     | (V+)  | Unconnected by default, optional jumper to V+ |
-
-The pinout specification aims to create as little interference with existing standards as possible. Most important, any damage must be prevented if a LS.bus device is accidentally connected to a standard Ethernet jack.
-
-In contrast to the CANopen specification, pin 8 is not used as the bus power supply (V+). 10/100 MBit Ethernet jacks with integrated magnetics (e.g. [these ones](https://katalog.we-online.de/pbs/download/Tutorials_Connecting+LAN+Transformers_EN+%28rev1%29.pdf)) internally connect pin 4 to 5 and pin 7 to 8. In addition to that, Power over Ethernet (PoE) uses pins 4+5 for positive power rail and pins 7+8 for GND. So it's not ideal to use pin 7 as GND and pin 8 as V+.
-
-The CAN bus will **not** provide galvanic isolation. The additional cost is not justified, as all other components will be connected to the battery via thick wires and CAN can handle significant ground offsets.
-
-One board has 2 RJ45 jacks for daisy-chaining and maintaining the bus topology. The endpoints have to be terminated with termination plugs or or via a jumper on the board.
-
-The BMS will not use the power supply pins, as its voltage can exceed nominal 24V. The CAN interface will only be used for communication.
+Other Libre Solar devices usually have a standard RJ45 jack on the board. However, the RJ45 jack must be accessible from the outside of the battery pack to connect multiple packs with each other. As the BMS PCB can be located anywhere in the battery pack housing, having the connectors directly on the BMS PCB does not make. The MicroFit provides flexibility to make custom adapters to connect CAN with the outside world.
 
 #### UEXT connector
 
