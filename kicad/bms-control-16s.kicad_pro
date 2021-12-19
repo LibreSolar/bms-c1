@@ -483,6 +483,10 @@
     [
       "d9b3e854-8397-4f10-8ba3-eaabcdb88ed1",
       "ESP32 MCU"
+    ],
+    [
+      "f5083d12-cc79-4e17-a1e8-fb375c7c4469",
+      "CAN interface"
     ]
   ],
   "text_variables": {}

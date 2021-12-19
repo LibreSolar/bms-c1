@@ -45,7 +45,7 @@
         "silk_text_upright": false,
         "zones": {
           "45_degree_only": false,
-          "min_clearance": 0.3
+          "min_clearance": 0.39999999999999997
         }
       },
       "diff_pair_dimensions": [
@@ -395,9 +395,6 @@
         "name": "Power",
         "nets": [
           "/BAT+",
-          "/CHG+",
-          "/LOAD+",
-          "/LOAD-",
           "GND"
         ],
         "pcb_color": "rgba(0, 0, 0, 0.000)",
