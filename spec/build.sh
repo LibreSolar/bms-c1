@@ -4,6 +4,7 @@
 # a CI/CD environment. See also .github/workflows/pandoc.yml
 
 # Add potentially missing LaTeX packages for Eisvogel template
+tlmgr update --self
 tlmgr install adjustbox babel-german background bidi collectbox csquotes everypage filehook \
         footmisc footnotebackref framed fvextra letltxmacro ly1 mdframed mweights needspace \
         pagecolor sourcecodepro sourcesanspro titling ucharcat ulem unicode-math upquote xecjk \
@@ -20,3 +21,6 @@ make all
 mv spec.html index.html
 mkdir -p ../deploy/spec
 cp -r index.html spec.pdf template images ../deploy/spec/
+
+# Also copy interactive BOM from build folder (if existing)
+cp -r ../build/*_ibom.html ../deploy
