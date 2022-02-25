@@ -4,6 +4,8 @@
 
 This repository contains the files for ongoing development of the Libre Solar BMS 16S100 SC.
 
+![BMS 16S100 SC (control part)](build/bms-assembly.png)
+
 The project is funded by the [EnAccess foundation](https://enaccess.org).
 
 Technical specification: [libre.solar/bms-16s100-sc/spec/](https://libre.solar/bms-16s100-sc/spec/) (work in progress)
