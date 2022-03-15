@@ -6,8 +6,8 @@
 
   (title_block
     (title "BMS 16S Control Board")
-    (date "2022-02-24")
-    (rev "0.1")
+    (date "2022-03-15")
+    (rev "0.2")
     (company "Libre Solar Technologies GmbH")
     (comment 1 "Website: https://libre.solar")
     (comment 2 "Author: Martin Jäger")
