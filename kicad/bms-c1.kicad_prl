@@ -63,11 +63,11 @@
       35,
       36
     ],
-    "visible_layers": "000ffff_80000001",
+    "visible_layers": "000ffef_80000007",
     "zone_display_mode": 0
   },
   "meta": {
-    "filename": "bms-control-16s.kicad_prl",
+    "filename": "bms-c1.kicad_prl",
     "version": 3
   },
   "project": {

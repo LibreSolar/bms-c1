@@ -2,7 +2,7 @@
   "board": {
     "design_settings": {
       "defaults": {
-        "board_outline_line_width": 0.15,
+        "board_outline_line_width": 0.09999999999999999,
         "copper_line_width": 0.19999999999999998,
         "copper_text_italic": false,
         "copper_text_size_h": 1.5,
@@ -33,9 +33,9 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 0.0,
-          "height": 0.85,
-          "width": 4.7
+          "drill": 5.3,
+          "height": 5.8,
+          "width": 5.8
         },
         "silk_line_width": 0.15,
         "silk_text_italic": false,
@@ -45,7 +45,7 @@
         "silk_text_upright": false,
         "zones": {
           "45_degree_only": false,
-          "min_clearance": 0.39999999999999997
+          "min_clearance": 0.5
         }
       },
       "diff_pair_dimensions": [
@@ -105,20 +105,21 @@
         "allow_microvias": false,
         "max_error": 0.005,
         "min_clearance": 0.0,
-        "min_copper_edge_clearance": 0.075,
+        "min_copper_edge_clearance": 0.049999999999999996,
         "min_hole_clearance": 0.0,
         "min_hole_to_hole": 0.25,
         "min_microvia_diameter": 0.19999999999999998,
         "min_microvia_drill": 0.09999999999999999,
         "min_silk_clearance": 0.0,
-        "min_through_hole_diameter": 0.3,
+        "min_through_hole_diameter": 0.19999999999999998,
         "min_track_width": 0.19999999999999998,
         "min_via_annular_width": 0.049999999999999996,
-        "min_via_diameter": 0.39999999999999997,
+        "min_via_diameter": 0.19999999999999998,
         "use_height_for_length_calcs": true
       },
       "track_widths": [
         0.0,
+        0.2,
         0.25,
         0.3,
         0.4,
@@ -128,6 +129,10 @@
         {
           "diameter": 0.0,
           "drill": 0.0
+        },
+        {
+          "diameter": 0.5,
+          "drill": 0.2
         },
         {
           "diameter": 0.7,
@@ -152,7 +157,10 @@
     "equivalence_files": []
   },
   "erc": {
-    "erc_exclusions": [],
+    "erc_exclusions": [
+      "pin_to_pin|1498600|584200|3f133845-e8f8-4d72-bd1f-0478e5a9df17|d9b5de66-2df3-42f7-a7d0-e6cbe3ddd910",
+      "pin_to_pin|317500|1524000|e9d927fd-daa9-4cd9-a790-5062f6af1424|fae48810-65e3-4f8f-a875-16ce213b70e4"
+    ],
     "meta": {
       "version": 0
     },
@@ -361,7 +369,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "bms-power-100a.kicad_pro",
+    "filename": "bms-16s100-icb.kicad_pro",
     "version": 1
   },
   "net_settings": {
@@ -385,6 +393,29 @@
       },
       {
         "bus_width": 12.0,
+        "clearance": 0.3,
+        "diff_pair_gap": 0.25,
+        "diff_pair_via_gap": 0.25,
+        "diff_pair_width": 0.2,
+        "line_style": 0,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "HV",
+        "nets": [
+          "/BAT+",
+          "/CHG+",
+          "/FUSE",
+          "/PACK+"
+        ],
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.3,
+        "via_diameter": 0.7,
+        "via_drill": 0.3,
+        "wire_width": 6.0
+      },
+      {
+        "bus_width": 12.0,
         "clearance": 0.2,
         "diff_pair_gap": 0.25,
         "diff_pair_via_gap": 0.25,
@@ -394,7 +425,8 @@
         "microvia_drill": 0.1,
         "name": "Power",
         "nets": [
-          "/BAT+",
+          "+3V3",
+          "+5V",
           "GND"
         ],
         "pcb_color": "rgba(0, 0, 0, 0.000)",
@@ -414,9 +446,9 @@
     "last_paths": {
       "gencad": "",
       "idf": "",
-      "netlist": "../../../../../",
+      "netlist": "",
       "specctra_dsn": "",
-      "step": "bms-power-100a.step",
+      "step": "bms-control-16s.step",
       "vrml": ""
     },
     "page_layout_descr_file": "libre_solar.kicad_wks"
@@ -464,8 +496,24 @@
   },
   "sheets": [
     [
-      "2eac49ed-0938-421f-8431-00083fef2e45",
+      "5335aa43-6e7e-459f-9425-0b3d35652705",
       ""
+    ],
+    [
+      "00000000-0000-0000-0000-00005c64ed50",
+      "BQ76952"
+    ],
+    [
+      "00000000-0000-0000-0000-000058363b12",
+      "Power Supply"
+    ],
+    [
+      "1a7f6efa-ef60-433d-acc0-6f9a9126bc57",
+      "Power Part"
+    ],
+    [
+      "d21cbda1-30c1-4b54-a854-165aa2a6eeba",
+      "ESP32-C3 MCU"
     ]
   ],
   "text_variables": {}
