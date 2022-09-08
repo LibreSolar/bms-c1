@@ -12,46 +12,35 @@ Wires of up to 35 mm² cross-section must be supported by the terminals.
 
 ### Outside dimensions and shape
 
-The height is the same as typical 18650 cells so that it can be easily integrated into existing housings.
+The height is 70 mm so that it can be easily integrated into existing housings with typical 18650 or 2170 cells.
 
-![BMS top view complete (DRAFT)](./images/bms-top-view.png)
-
-![BMS top view power part (DRAFT)](./images/bms-top-view-power.png)
-
-![BMS front view (DRAFT)](./images/bms-front-view.png)
-
-The larger cell depicted at the left side is a 2170-type cell, which has a height of 70 mm instead of 65 mm.
+![BMS top view](./images/bms-c1.png)
 
 ## Electronics Hardware
 
-### Board split
+### Board design
 
-The electronics circuits should be split into 3 parts:
+All electronics components (power and control) are integrated into a single PCB in order to reduce cost and size.
 
-- Control PCB
+The board contains the following main subsystems:
+
+- Power part
+  - High current terminals
+  - MOSFETs (4 in parallel, 2 in series for bi-directional switching)
+  - Current measurement shunt
+- Control part
   - Microcontroller
   - BMS ASIC
   - Internal power supply
-  - Communication interfaces (CAN and UEXT)
-- Power PCB
-  - High current terminals
-  - MOSFETs (approx. 10 in parallel)
-  - Current measurement shunt
-- Active Balancing PCB (optional, not part of this project)
-  - Circuitry required for active balancing
-  - Potentially additional microcontroller
+  - Communication interfaces (CAN, UART, I2C, USB)
 
 ### MCU selection
 
-It is planned to support two different MCUs on the board in order to avoid chip supply shortage problems. The main MCU will be from the STM32G0B1 series. The alternative will be from the ESP32 series.
-
-As the available space for the MCUs is very tight, the alternative MCU may have to be mounted to the bottom side of the PCB, even though all other parts can hopefully be placed from a single side only.
-
-The STM32 series is very well supported by Zephyr RTOS. For the ESP32 series, some peripherals like CAN bus don't work out of the box, yet, as the drivers are not yet ported. The support for ESP32 is expected to improve significantly till the end of the project.
+It was originally planned to support two different MCUs (STM32G0B1 and ESP32-C3) on the board in order to avoid chip supply shortage problems. During the prototyping phase it was decided to use only the ESP32-C3 (because of availability in 2022) and not waste board space for an additional MCU.
 
 #### Considered alternatives
 
-Nordic nRF52840, but does not have CAN and WiFi compared to ESP32.
+Nordic nRF52840, but does not have CAN and WiFi compared to ESP32 series.
 
 ### ASIC selection
 
@@ -158,13 +147,15 @@ The lowest price per chip from distributors is around $9.50 for an order of 1000
 
 The positive battery terminal can be disconnected by the BMS for safety reasons or upon demand of the user via a communicatoin interface.
 
-The disconnect switch will be built using N-channel MOSFETs a back-to-back configuration to be able to interrupt current in both directions (see also bq76952 datasheet). In order to allow the high currents, multiple MOSFETs will be connected in parallel.
+The disconnect switch will be built using N-channel MOSFETs in a back-to-back configuration to be able to interrupt current in both directions (see also bq76952 datasheet). In order to allow the high currents, multiple MOSFETs are connected in parallel.
 
-The power PCB can be attached to a heat sink to dissipate the heat at high continuous currents.
+The bottom side of the PCB can be attached to a heat sink to dissipate the heat at high continuous currents.
 
-Suggested MOSFETs: IPT015N10N5. Rds(on) at 80°C is max. 2 mOhm, leading to a total of 1 mOhm (4p2s) and 10W of heat dissipation at 100A.
+Suggested MOSFETs: IPT015N10N5 with TOLL package. Rds(on) at 80°C is max. 2 mOhm, leading to a total of 1 mOhm (4p2s) and 10W of heat dissipation at 100A.
 
 There are cheaper alternatives with higher Rds(on), also from other manufacturers.
+
+The cell connector will have a pin to trigger a fuse at the pack positive terminal as a secondary protection if the MOSFETs fail short.
 
 #### Considered alternatives
 
@@ -200,51 +191,39 @@ BMS boards available on eBay or AliExpress often use connectors similar to JST P
 
 The BMS will be designed for up to 100A continuous current. As the MOSFETs are soldered to the power PCB, the current has to go through the PCB. The connection from wire to board is critical and must handle the required current reliably.
 
-High-current wire-to-board connectors are rather expensive. As a good compromise regarding price, flexibility and packaging volume this BMS uses a custom-made (yet simple) copper bus bar of e.g. 2 mm thickness with a clinch nut pressed in from the back. The bus bar will be soldered directly onto the PCB and can spread the current as well as heat.
+Würth WP-BUCF press-fit terminals with M5 threads are used for wire-to-board connections.
 
-The [KVT PEM](https://www.kvt-fastening.de/en/products/brands/pem/) clinch nut (CLS type) is currently planned.
-
-#### Considered Alternatives
-
-Two 9x9 mm Würth WP-BUCF press-fit terminals in parallel, each handling 50 A. The wire can be connected using crimped ring terminals and M5 screws.
-
-The following image shows an example of the terminals.
+The following image shows an example of such terminals.
 
 ![Würth WP-BUCF press-fit terminals (Source: Würth)](./images/wp-bucf.png)
 
 The terminals require an additional assembly step after soldering. However, similar connectors with through-hole reflow assembly methods have proven to be very difficult to solder together with smaller components on the same PCB because auf their high thermal mass. It makes sense to add the terminals in a separate step.
 
-As the cheapest solution, the terminals can be omitted and the wires can be soldered directly to the PCB. This solution is not considered as reliable, especially if the board can be exposed to vibrations.
+#### Considered Alternatives
 
-The press-fit terminals were the first idea, but were dropped because the custom busbar with clinch nut is considered cheaper and more suitable for the application.
+High-current wire-to-board connectors are rather expensive. As a good compromise regarding price, flexibility and packaging volume custom-made (yet simple) copper bus bar of e.g. 2 mm thickness with a clinch nut pressed in from the back were considered in the first design iteration. The bus bar would be soldered directly onto the PCB and can spread the current as well as heat.
+
+The soldering proces has proven to be very difficult due to the high thermal mass. For this reason, this solution was omitted for further design iterations.
+
+As the cheapest solution, the terminals can be omitted and the wires can be soldered directly to the PCB. This solution is not considered as reliable, especially if the board can be exposed to vibrations.
 
 ### Power PCB specifications
 
-The current plan is to manufacture the power PCB (for 100A) as a 4-layer PCB with outer layers of 105 µm copper thickness. Technologies like thick copper inlays should be avoided in order to reduce cost, if possible.
-
-Whether 105 µm copper is sufficient is yet to be tested with first prototypes.
+The current plan is to manufacture the PCB (for 100A) as a 4-layer PCB with outer layers of 105 µm copper thickness. Technologies like thick copper inlays should be avoided in order to reduce cost, if possible.
 
 ### Communication interfaces
 
 One major advantage of an open source design is its extensibility and adaptation to specific requirements.
 
-In order to provide the hardware interfaces required to add custom extensions, two options are offered. Communication between multiple BMSs or other devices like charge controllers can be achieved via CAN bus, while the UEXT connector allows to add communication modules (e.g. GSM, LoRa) that directly inteface with the MCU's I2C, SPI or UART peripherals.
+In order to provide the hardware interfaces required to add custom extensions, two options are offered. Communication between multiple BMSs or other devices like charge controllers can be achieved via CAN bus, while the addional interfaces like I2C, UART and USB can be used for extension of the board with internal feature like display.
+
+The MCU features built-in WiFi and Bluetooth communication.
 
 #### CAN bus
 
-The board will have another Molex MicroFit type connector with pins for CANH and CANL.
+The board will have JST PH connector with pins for CANH and CANL.
 
-Other Libre Solar devices usually have a standard RJ45 jack on the board. However, the RJ45 jack must be accessible from the outside of the battery pack to connect multiple packs with each other. As the BMS PCB can be located anywhere in the battery pack housing, having the connectors directly on the BMS PCB does not make. The MicroFit provides flexibility to make custom adapters to connect CAN with the outside world.
-
-#### UEXT connector
-
-The Universal Extension Connector is a 10-pin connector featuring most important microcontroller interfaces I2C, UART and SPI. With the integrated 3V3 power supply, it can be used to connect different communication modules to a given device.
-
-![UEXT connector pinout (Source: Wikipedia)](./images/uext_pins.jpg)
-
-All Libre Solar devices are equipped with a UEXT connector.
-
-Several UEXT modules are available at [Olimex](https://www.olimex.com/Products/Modules/UEXT/), the inventor of the UEXT standard.
+Other Libre Solar devices usually have a standard RJ45 jack on the board. However, the RJ45 jack must be accessible from the outside of the battery pack to connect multiple packs with each other. As the BMS PCB can be located anywhere in the battery pack housing, having the connectors directly on the BMS PCB does not make. The JST PH provides flexibility to make custom adapters to connect CAN with the outside world.
 
 ## Firmware Features
 
@@ -257,10 +236,9 @@ Amongst all features inherited from underlying Zephyr, the BMS firmware will hav
 - Monitoring and configuration using the [ThingSet](https://thingset.io/) protocol (mapping to MQTT, CoAP and HTTP possible)
   - Serial interface
   - CAN bus
-- Extensions via [UEXT connector](https://en.wikipedia.org/wiki/UEXT) possible
   - I2C
-  - SPI
-  - UART
+  - Bluetooth
+  - WiFi
 - SOC estimation based on coulomb counting
 - Configuration options
   - Pack layout

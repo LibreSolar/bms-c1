@@ -4,7 +4,7 @@ This chapter gives a high-level introduction into the battery management system 
 
 ## BMS topology
 
-The BMS will follow the centralized topology approach where a single unit includes pack-level and cell-level measurement and protection functions.
+The BMS will follow the centralized topology approach where a single unit includes pack-level and cell-level measurement and protection functions. The C in the name stands for centralized / compact.
 
 A schematic diagram of the centralized topology is shown in below figure.
 

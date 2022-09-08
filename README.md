@@ -16,6 +16,8 @@ Firmware repository: [LibreSolar/bms-firmware](https://github.com/LibreSolar/bms
 
 ![BMS C1](build/bms-c1.png)
 
+Technical specification: [libre.solar/bms-c1/spec/](https://libre.solar/bms-c1/spec/) (work in progress)
+
 ## Features
 
 - 3 to 16 Li-ion cells in series
