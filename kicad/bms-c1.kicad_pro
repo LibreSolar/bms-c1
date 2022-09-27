@@ -157,10 +157,7 @@
     "equivalence_files": []
   },
   "erc": {
-    "erc_exclusions": [
-      "pin_to_pin|1498600|584200|3f133845-e8f8-4d72-bd1f-0478e5a9df17|d9b5de66-2df3-42f7-a7d0-e6cbe3ddd910",
-      "pin_to_pin|317500|1524000|e9d927fd-daa9-4cd9-a790-5062f6af1424|fae48810-65e3-4f8f-a875-16ce213b70e4"
-    ],
+    "erc_exclusions": [],
     "meta": {
       "version": 0
     },
@@ -369,7 +366,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "bms-16s100-icb.kicad_pro",
+    "filename": "bms-c1.kicad_pro",
     "version": 1
   },
   "net_settings": {
