@@ -6,8 +6,8 @@
 
   (title_block
     (title "Libre Solar BMS C1")
-    (date "2022-08-27")
-    (rev "0.3")
+    (date "2022-09-30")
+    (rev "0.3.1")
     (company "Libre Solar Technologies GmbH")
     (comment 1 "Website: https://libre.solar")
     (comment 2 "Author: Martin Jäger")
@@ -6393,6 +6393,9 @@
     )
     (path "/00000000-0000-0000-0000-00005c64ed50/901671a5-4d74-4301-a54b-b7f1a8cde32d"
       (reference "TP10") (unit 1) (value "TestPoint") (footprint "TestPoint:TestPoint_Pad_D1.5mm")
+    )
+    (path "/d21cbda1-30c1-4b54-a854-165aa2a6eeba/0538782c-9a06-47d7-ba35-90ce2c9a6076"
+      (reference "TP11") (unit 1) (value "TestPoint") (footprint "TestPoint:TestPoint_Pad_D1.5mm")
     )
     (path "/d21cbda1-30c1-4b54-a854-165aa2a6eeba/97f82840-401c-4ae6-aba1-409953533e77"
       (reference "TP12") (unit 1) (value "TestPoint") (footprint "TestPoint:TestPoint_Pad_D1.5mm")
