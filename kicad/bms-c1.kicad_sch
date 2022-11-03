@@ -5791,15 +5791,6 @@
     (path "/d21cbda1-30c1-4b54-a854-165aa2a6eeba/20580f11-327b-459e-ba03-5a967d91191a"
       (reference "#PWR0139") (unit 1) (value "+3V3") (footprint "")
     )
-    (path "/00000000-0000-0000-0000-00005c64ed50/750edca5-db48-4f5c-83d9-ade7173ea3cf"
-      (reference "#PWR0140") (unit 1) (value "+3.3V") (footprint "")
-    )
-    (path "/00000000-0000-0000-0000-00005c64ed50/a7e36e21-ebc9-4597-8620-adcd36f4c100"
-      (reference "#PWR0141") (unit 1) (value "GND") (footprint "")
-    )
-    (path "/00000000-0000-0000-0000-00005c64ed50/79a2e1b9-ace6-4ffe-9447-c0dadd81ddfe"
-      (reference "#PWR0142") (unit 1) (value "GND") (footprint "")
-    )
     (path "/00000000-0000-0000-0000-000058363b12/ccebc212-9f81-4645-9465-3ad083c3b7d2"
       (reference "#PWR0143") (unit 1) (value "+5V") (footprint "")
     )
@@ -5898,9 +5889,6 @@
     )
     (path "/00000000-0000-0000-0000-00005c64ed50/f7fb9cc7-8dc5-4520-8ca3-24e0d01da2ae"
       (reference "C20") (unit 1) (value "2.2µF") (footprint "LibreSolar:C_0603_1608")
-    )
-    (path "/00000000-0000-0000-0000-00005c64ed50/d380d268-90cd-4cef-a901-3e129863defe"
-      (reference "C21") (unit 1) (value "100nF") (footprint "LibreSolar:C_0603_1608")
     )
     (path "/00000000-0000-0000-0000-000058363b12/219da447-058b-4f90-b082-062913bd0570"
       (reference "C22") (unit 1) (value "2.2µF") (footprint "LibreSolar:C_1210_3225")
@@ -6154,9 +6142,6 @@
     (path "/1a7f6efa-ef60-433d-acc0-6f9a9126bc57/00000000-0000-0000-0000-000058f82d00"
       (reference "Q12") (unit 1) (value "ZXMP10A17GTA") (footprint "Package_TO_SOT_SMD:SOT-223-3_TabPin2")
     )
-    (path "/00000000-0000-0000-0000-00005c64ed50/3849a955-a216-42ef-a2de-c347a5e1f114"
-      (reference "Q13") (unit 1) (value "BSS123N") (footprint "LibreSolar:SOT-23")
-    )
     (path "/00000000-0000-0000-0000-00005c64ed50/00000000-0000-0000-0000-00005c656c21"
       (reference "R1") (unit 1) (value "20") (footprint "LibreSolar:R_2010_5025")
     )
@@ -6259,12 +6244,6 @@
     (path "/00000000-0000-0000-0000-000058363b12/c4a9aa1d-b051-456e-8247-fe9c20b9bb68"
       (reference "R34") (unit 1) (value "49.9k") (footprint "LibreSolar:R_0603_1608")
     )
-    (path "/00000000-0000-0000-0000-00005c64ed50/579bd071-acdc-4b7d-8f58-2f3a50cfaef1"
-      (reference "R35") (unit 1) (value "1M") (footprint "LibreSolar:R_0603_1608")
-    )
-    (path "/00000000-0000-0000-0000-00005c64ed50/c0f6ceda-fca2-4b8f-86c3-765405d78cd8"
-      (reference "R36") (unit 1) (value "100k") (footprint "LibreSolar:R_0603_1608")
-    )
     (path "/f5cbf907-4dc4-42f8-9357-4c6cb0a689c4"
       (reference "R37") (unit 1) (value "0R") (footprint "LibreSolar:R_0603_1608")
     )
@@ -6318,9 +6297,6 @@
     )
     (path "/00000000-0000-0000-0000-00005c64ed50/00000000-0000-0000-0000-00005c8ac658"
       (reference "R54") (unit 1) (value "4.7k") (footprint "LibreSolar:R_0603_1608")
-    )
-    (path "/00000000-0000-0000-0000-00005c64ed50/21eefa95-9be5-400f-8c30-dddcb59bd50f"
-      (reference "R55") (unit 1) (value "100k") (footprint "LibreSolar:R_0603_1608")
     )
     (path "/d21cbda1-30c1-4b54-a854-165aa2a6eeba/1d32165a-7398-497b-96c7-9093bae16f8e"
       (reference "R56") (unit 1) (value "62R") (footprint "LibreSolar:R_0603_1608")
@@ -6402,6 +6378,9 @@
     )
     (path "/d21cbda1-30c1-4b54-a854-165aa2a6eeba/a9f4044a-b10f-4ba8-b214-7b35bfee6c5b"
       (reference "TP13") (unit 1) (value "TestPoint") (footprint "TestPoint:TestPoint_Pad_D1.5mm")
+    )
+    (path "/00000000-0000-0000-0000-00005c64ed50/c64ff700-440b-46ae-a53a-e0e70874da95"
+      (reference "TP14") (unit 1) (value "TestPoint") (footprint "TestPoint:TestPoint_Pad_D1.5mm")
     )
     (path "/00000000-0000-0000-0000-00005c64ed50/7b61f4b9-d19c-43b7-8d80-cb00eea7ccba"
       (reference "TP15") (unit 1) (value "TestPoint") (footprint "TestPoint:TestPoint_Pad_D1.5mm")
