@@ -1,6 +1,6 @@
 # Libre Solar BMS C1
 
-![Development Stage](https://img.shields.io/badge/development%20stage-beta-orange.svg) Prototype built, development ongoing (some issues might still be open).
+![Development Stage](https://img.shields.io/badge/development%20stage-eval-yellow.svg) Tested prototype, only minor issues left.
 
 This repository contains the files for ongoing development of the Libre Solar BMS C1.
 
