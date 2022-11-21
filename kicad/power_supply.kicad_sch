@@ -6,8 +6,8 @@
 
   (title_block
     (title "Libre Solar BMS C1")
-    (date "2022-11-07")
-    (rev "0.3.2")
+    (date "2022-11-21")
+    (rev "0.3.3")
     (company "Libre Solar Technologies GmbH")
     (comment 1 "Website: https://libre.solar")
     (comment 2 "Author: Martin Jäger")

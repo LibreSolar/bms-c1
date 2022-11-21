@@ -6,8 +6,8 @@
 
   (title_block
     (title "Libre Solar BMS C1")
-    (date "2022-11-07")
-    (rev "0.3.2")
+    (date "2022-11-21")
+    (rev "0.3.3")
     (company "Libre Solar Technologies GmbH")
     (comment 1 "Website: https://libre.solar")
     (comment 2 "Author: Martin Jäger")
@@ -809,7 +809,6 @@
   )
 
   (no_connect (at 195.58 73.66) (uuid 33a36cc0-b6d3-4f14-96ef-9b27fd9ac55d))
-  (no_connect (at 167.64 63.5) (uuid bea21648-c8e4-4733-ab92-3551a29bce53))
 
   (wire (pts (xy 48.26 58.42) (xy 53.34 58.42))
     (stroke (width 0) (type default) (color 0 0 0 0))
@@ -1118,17 +1117,12 @@
     (uuid 1c52beca-bea9-442d-962e-fc90ab79c2ca)
   )
   (text "GPIO2 needs to be pulled high during start-up,\nwhich is achieved by the bq76952 ALERT pull-up."
-    (at 93.98 175.26 0)
+    (at 96.52 144.78 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 38a74769-f8d6-46c1-990b-195ae014239b)
   )
-  (text "SPI0 and SPI1 are used internally\nfor flash memory access, so we use\nSPI2 here."
-    (at 93.98 154.94 0)
-    (effects (font (size 1.27 1.27)) (justify left bottom))
-    (uuid 497f2d58-73e4-4138-a36e-a4eae626b2cd)
-  )
-  (text "BOOT pin (GPIO9) has an internal pull-up.\nIf connected to GND during start-up, chip\nenters bootloader mode.\nExpecting BOOT pin is not required if \nbuilt-in JTAG is used for firmware upload."
-    (at 93.98 167.64 0)
+  (text "BOOT pin (GPIO9) has an internal pull-up.\nIf connected to GND during start-up, chip\nenters bootloader mode.\n\nIt is required to \"un-brick\" the device if\nthe internal USB serial/JTAG is accidentally\ndisabled in the firmware."
+    (at 96.52 134.62 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 6ea865ab-f4e0-4f57-9ba2-d054738fb94c)
   )
@@ -1149,11 +1143,6 @@
     (at 175.26 104.14 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid ecb47660-34df-4e87-b868-66b86676b506)
-  )
-  (text "The ESP32-C3 has only one I2C peripheral,\nwhich is required for communication with\nthe BMS IC bq76952.\n\nThe UEXT I2C pins will not be connected."
-    (at 93.98 147.32 0)
-    (effects (font (size 1.27 1.27)) (justify left bottom))
-    (uuid f0201507-6c74-4ac4-a6a7-1c4ff8828e03)
   )
 
   (label "CAN_STB" (at 81.28 73.66 0)
@@ -1410,7 +1399,7 @@
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "TestPoint" (id 1) (at 53.34 91.44 90)
-      (effects (font (size 1.27 1.27)) (justify left))
+      (effects (font (size 1.27 1.27)) (justify left) hide)
     )
     (property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm" (id 2) (at 58.42 88.9 0)
       (effects (font (size 1.27 1.27)) hide)
@@ -1809,12 +1798,6 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "http://www.ti.com/lit/ds/symlink/sn65hvd230.pdf" (id 4) (at 205.74 71.12 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Reference" "U3" (id 5) (at 205.74 71.12 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "SN65HVD230" (id 6) (at 205.74 71.12 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Manufacturer" "Texas Instruments" (id 7) (at 205.74 71.12 0)
