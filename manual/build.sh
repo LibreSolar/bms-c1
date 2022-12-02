@@ -21,9 +21,9 @@ apt-get install -y make
 make all
 
 # Copy relevant stuff into deploy folder
-mv spec.html index.html
-mkdir -p ../deploy/spec
-cp -r index.html spec.pdf template images ../deploy/spec/
+mv manual.html index.html
+mkdir -p ../deploy/manual
+cp -r index.html manual.pdf template images ../deploy/manual/
 
 # Also copy interactive BOM from build folder (if existing)
 cp -r ../build/*_ibom.html ../deploy

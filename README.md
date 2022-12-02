@@ -16,7 +16,7 @@ Firmware repository: [LibreSolar/bms-firmware](https://github.com/LibreSolar/bms
 
 ![BMS C1](build/bms-c1.png)
 
-Technical specification: [libre.solar/bms-c1/spec/](https://libre.solar/bms-c1/spec/) (work in progress)
+User manual: [libre.solar/bms-c1/manual/](https://libre.solar/bms-c1/manual/) (work in progress)
 
 Mechanical CAD file: [bms-c1.FCStd](housing/bms-c1.FCStd)
 

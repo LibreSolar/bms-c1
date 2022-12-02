@@ -1,6 +1,6 @@
-# Technical Specificaton Document
+# User Manual
 
-This specification uses [Pandoc](https://pandoc.org/) to auto-generate PDF and HTML files based on markdown content.
+This user manual uses [Pandoc](https://pandoc.org/) to auto-generate PDF and HTML files based on markdown content.
 
 It can be easily integrated into existing repositories and deployed via [gh-pages](https://pages.github.com).
 
@@ -8,7 +8,7 @@ Please install the most recent Pandoc package to get best results on your local 
 
 ## Content editing
 
-The text of the specification is located in the *.md files in this folder. Images are stored in the `images` folder.
+The text of the manual is located in the *.md files in this folder. Images are stored in the `images` folder.
 
 ## PDF generation
 
