@@ -18,6 +18,12 @@ Firmware repository: [LibreSolar/bms-firmware](https://github.com/LibreSolar/bms
 
 Technical specification: [libre.solar/bms-c1/spec/](https://libre.solar/bms-c1/spec/) (work in progress)
 
+Mechanical CAD file: [bms-c1.FCStd](housing/bms-c1.FCStd)
+
+Mechanical BOM: [bms-c1_bom_mechanical.csv](housing/bms-c1_bom_mechanical.csv)
+
+Heat sink drawings: [10003_BackPlateAsm.pdf](housing/10003_BackPlateAsm.pdf)
+
 ## Features
 
 - 3 to 16 Li-ion cells in series

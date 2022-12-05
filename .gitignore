@@ -10,6 +10,8 @@ _autosave-*
 *.tmp
 fp-info-cache
 *-backups
+*_bak
+*.FCStd1
 
 # Netlist files (exported from Eeschema)
 *.net

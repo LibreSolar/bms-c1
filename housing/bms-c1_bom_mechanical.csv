@@ -1,0 +1,12 @@
+Component,Quantity,Description,Material,Supplier,Part Number / Type,Remarks
+1,4,"Cable lugs 25mm², M5",Copper,Klauke,704F5,Other supplier or cross-section possible depending on application.
+2,4,"Nut, M5",A2 stainless steel,any,,
+3,4,"Washer, M5",A2 stainless steel,any,,
+4,6,"Screws for fixation, M3, ISO 7380-2",A2 stainless steel,any,,
+5,1,Thermal pad,"0.5 mm, >1 W/m.K",Henkel / Bergquist,GAP PAD A2000,"Only required for high current, other supplier with similar material properties possible."
+6,1,Heat sink,Aluminum,Fischer Elektronik,SK553,"Only required for high current, other supplies/types possible."
+7,1,Cell connector,Plastic,Würth Elektronik,662024113322,
+8,1,Button connector + wires,,JST,"PH, 2-pin","Optional, depending on application."
+9,1,CAN connector + wires,,JST,"PH, 3-pin","Optional, depending on application."
+10,1,Serial connector + wires,,JST,"PH, 4-pin","Optional, depending on application."
+11,1,I2C connector + wires,,JST,"PH, 4-pin","Optional, depending on application."
