@@ -1,7 +1,7 @@
 ---
 title: "Libre Solar BMS C1"
-title-prefix: "Technical Specification"
-subtitle: "Technical Specification"
+title-prefix: "User Manual"
+subtitle: "User Manual"
 author: Martin Jäger
 subject: "Markdown"
 keywords: [Markdown, Example]
@@ -11,8 +11,9 @@ titlepage-text-color: "005e85"
 titlepage-rule-height: 0
 titlepage-background: "images/libresolar-background.pdf"
 toc-own-page: true
-header-right: Technical Specification
+header-right: User Manual
 footer-left: Libre Solar
 block-headings: true    # otherwise, #### will not have a separate line
 colorlinks: true
+listings-disable-line-numbers: true
 ...

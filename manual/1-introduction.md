@@ -1,6 +1,12 @@
 # Introduction
 
-This technical specification describes the functions and requirements for a flexible open-source Battery Management System (BMS) suitable for various applications.
+The Libre Solar BMS C1 is a flexible Open Source Battery Management System (BMS) suitable for various applications.
+
+This manual describes the usage and most important functions of the BMS. Please visit [learn.libre.solar](https://learn.libre.solar) for general information about battery management systems, charge controllers and other devices for DC energy systems.
+
+Read this manual carefully and make sure you understand everything before starting with installation of the BMS.
+
+Same as the hardware and firmware of the BMS, also this manual is Open Source. If you find any errors or have suggestions for improvement, please contribute to [the repository on GitHub](https://github.com/LibreSolar/bms-c1/).
 
 ## Project background
 
@@ -18,33 +24,13 @@ The development is driven by the Libre Solar and EnAccess Communities. Visit the
 
 Hardware and firmware source files are published on GitHub:
 
-- Hardware Repository: [github.com/LibreSolar/bms-16s100-sc](https://github.com/LibreSolar/bms-16s100-sc)
+- Hardware Repository: [github.com/LibreSolar/bms-c1](https://github.com/LibreSolar/bms-c1)
 
 - Firmware Repository: [github.com/LibreSolar/bms-firmware](https://github.com/LibreSolar/bms-firmware)
 
-## System overview
-
-The BMS is the heart of every Li-ion battery. It is needed to equalize series connected cells and protect the battery from current, voltages and temperatures outside the allowed operating range.
-
-Below figure shows a complete battery system with the integrated BMS. The BMS electronics are split into two separate boards, one for signal processing and control, the other one for high currents (power board).
-
-![Overview of the BMS integrated into a Li-ion battery pack.](./images/bms-overview.svg)
-
-This BMS will have the following high-level features:
-
-- Flexible and fully open-source design
-- Suitable for 12V, 24V or 48V systems (up to 16 cells in series)
-- Continuous currents of up to 100A
-
-With above specifications it will be suitable for for the following applications:
-
-- Poductive use appliances like milling machines
-- Energy storage for AC mini-grid applications with up to 4 kVA inverters
-- Second-life batteries built e.g. from recycled EV batteries
-
 ## Disclaimer
 
-This specification has been written and checked with care and to the best of our knowledge.
+This user manual has been written and checked with care and to the best of our knowledge.
 
 Libre Solar assumes no liability for the accuracy, completeness or quality of the information provided. Liability claims against the team for material, physical or immaterial damages caused by the use or non-use of the information provided or by the use of incorrect and/or incomplete information are excluded.
 
@@ -52,7 +38,7 @@ All information and instructions are non-binding. Libre Solar reserves the right
 
 ## License
 
-This specification document is licensed under the Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0) License.
+This user manual document is licensed under the Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0) License.
 
 ![](./images/cc-by-sa-centered.png)
 
