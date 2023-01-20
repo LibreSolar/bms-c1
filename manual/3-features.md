@@ -11,7 +11,7 @@ Below figure shows a complete battery system with the integrated BMS.
 This BMS has the following high-level features:
 
 - Flexible and fully Open Source design
-- Suitable for 12V, 24V or 48V systems (up to 16 cells in series)
+- Suitable for 12V, 24V or 48V systems (up to 16 LFP cells in series)
 - Continuous currents of up to 100A
 
 With above specifications it is suitable for the following applications:
