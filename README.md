@@ -14,9 +14,9 @@ Bill of Materials: [CSV file](build/bms-c1_bom.csv) or [interactive HTML BOM](ht
 
 Firmware repository: [LibreSolar/bms-firmware](https://github.com/LibreSolar/bms-firmware)
 
-![BMS C1](build/bms-c1.png)
+![BMS C1](build/bms-c1.jpg)
 
-User manual: [libre.solar/bms-c1/manual/](https://libre.solar/bms-c1/manual/) (work in progress)
+User manual: [libre.solar/bms-c1/manual/](https://libre.solar/bms-c1/manual/)
 
 Mechanical CAD file: [bms-c1.FCStd](housing/bms-c1.FCStd)
 
