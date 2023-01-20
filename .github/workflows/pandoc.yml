@@ -15,7 +15,7 @@ jobs:
         uses: docker://pandoc/latex:latest-ubuntu
         with:
           entrypoint: /bin/sh
-          args: -c "cd spec; chmod +x build.sh; ./build.sh"
+          args: -c "cd manual; chmod +x build.sh; ./build.sh"
 
       - name: GH Pages Deployment
         uses: peaceiris/actions-gh-pages@v3
