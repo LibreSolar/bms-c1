@@ -24,6 +24,8 @@ Mechanical BOM: [bms-c1_bom_mechanical.csv](housing/bms-c1_bom_mechanical.csv)
 
 Heat sink drawings: [10003_BackPlateAsm.pdf](housing/10003_BackPlateAsm.pdf)
 
+Test report: [testing/v0.3](testing/v0.3/README.md)
+
 ## Features
 
 - 3 to 16 Li-ion cells in series
