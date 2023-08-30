@@ -73,7 +73,7 @@ The configuration for a particular cell type and battery size can be preset with
 For an LFP battery with 45 Ah, send the following command to the BMS:
 
 ```
-!Conf/xPresetNMC [45]
+!Conf/xPresetLFP [45]
 ```
 
 The expected response if the parameters were successfully set:
