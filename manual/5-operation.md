@@ -42,7 +42,32 @@ Device information, configuration values and measurements can be explored using 
 
 For details regarding the protocol consider the specification linked above. The basic setup is explained below.
 
-### Serial
+### USB Serial
+
+The USB virtual COM port exposes log data and the Zephyr shell. Among other commands, the shell can also be used for communication using the ThingSet protocool.
+
+A terminal program like `picocom` is recommended:
+
+```
+picocom /dev/ttyACM0
+```
+
+The shell command for the ThingSet protocol is `thingset`. Either prefix it for every command or `select thingset` to switch into ThingSet mode.
+
+```
+select thingset
+?Meas
+:85 {"rPackVoltage_V":13.71,"rStackVoltage_V":13.91,"rPackCurrent_A":0.05,"rBatTemp_degC":29.4,"rICTemp_degC":34.2,"rMOSFETTemp_degC":31.8,"rSOC_pct":100.0,"rErrorFlags":0,"rBmsState":3,"rCellVoltages_V":[3.495,3.497,3.486,3.495,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000],"rCellAvgVoltage_V":3.493,"rCellMinVoltage_V":3.486,"rCellMaxVoltage_V":3.497,"rBalancingStatus":0}
+```
+
+When using the shell, the quotation marks in JSON data have to be escaped. See below for an example:
+
+```
+=Conf {\"sCellOvervoltage_V\": 3.8}
+:84
+```
+
+### UART Serial
 
 The serial interface uses a baud-rate of 115200 bps. Depending on the operating system, you can use different tools to communicate with the serial interface manually.
 
@@ -52,7 +77,9 @@ The [Serial2Websocket Python script](https://github.com/ThingSet/thingset-serial
 
 ### BLE
 
-A Bluetooth app is currently under development by Libre Solar. For own developments see the BLE transport layer specification on the ThingSet website and consider the implementation of the device side in the [ThingSet Zephyr SDK](https://github.com/ThingSet/thingset-zephyr-sdk).
+The generic [ThingSet app](https://github.com/ThingSet/thingset-app) can be used to connect to the BMS via Bluetooth LE.
+
+For own developments see the BLE transport layer specification on the ThingSet website and consider the implementation of the device side in the [ThingSet Zephyr SDK](https://github.com/ThingSet/thingset-zephyr-sdk).
 
 ## Configuration
 
@@ -79,7 +106,7 @@ For an LFP battery with 45 Ah, send the following command to the BMS:
 The expected response if the parameters were successfully set:
 
 ```
-:83 Valid.
+:84 0
 ```
 
 ### Adjust thresholds
