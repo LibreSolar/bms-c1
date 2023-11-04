@@ -7,10 +7,12 @@
 *.bck
 *~
 _autosave-*
+~_autosave-*
 *.tmp
 fp-info-cache
 *-backups
 *_bak
+*.lck
 *.FCStd1
 
 # Netlist files (exported from Eeschema)

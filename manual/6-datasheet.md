@@ -7,7 +7,7 @@ Feature                         Value                   Comment
 
 Nominal voltage range           12 V to 48 V
 
-Maximum voltage                 60 V                    (only 14s for NMC allowed)
+Maximum voltage                 70 V
 
 Maximum current                 70 A - 100 A            Depending on ambient conditions and
                                                         heat sink
@@ -21,6 +21,8 @@ Cell types                      LFP, NMC and others     Customizable through fir
 **Interfaces**
 
 CAN 2.0
+
+RS-485 (connector shared with CAN)
 
 USB CDC-ACM
 

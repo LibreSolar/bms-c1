@@ -35,12 +35,13 @@ Test report: [testing/v0.3](testing/v0.3/README.md)
   - Cell voltages
   - Pack voltage
   - Pack current
-  - Pack (2x) and MOSFET temperatures
+  - Pack (2x), MOSFET and shunt temperatures
 - Based on Texas Instruments bq76952
 - Integrated high-side MOSFET switch and current sensor
 - Espressif ESP32-C3 microcontroller
 - Communication interfaces:
   - CAN
+  - RS-485 (connector shared with CAN)
   - USB (CDC-ACM and JTAG)
   - USART
   - I2C
