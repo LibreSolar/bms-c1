@@ -1,22 +1,22 @@
 # Datasheet
 
 --------------------------------------------------------------------------------------------
-Feature                         Value                   Comment
-------------------------------  ----------------------- ------------------------------------
+Feature                             Value                   Comment
+----------------------------------  ----------------------- ------------------------------------
 **Battery**
 
-Nominal voltage range           12 V to 48 V
+Nominal voltage range               12 V to 48 V
 
-Maximum voltage                 70 V
+Maximum voltage                     70 V
 
-Maximum current                 70 A - 100 A            Depending on ambient conditions and
+Maximum current                     70 A - 100 A            Depending on ambient conditions and
                                                         heat sink
 
-Self consumption                < 20 mA                 Exact value t.b.d.
+Self consumption                    < 20 mA                 Exact value t.b.d.
 
-Shutdown current                < 1 mA                  Exact value t.b.d.
+Shutdown current                    < 1 mA                  Exact value t.b.d.
 
-Cell types                      LFP, NMC and others     Customizable through firmware
+Cell types                          LFP, NMC and others     Customizable through firmware
 
 **Interfaces**
 
@@ -42,17 +42,17 @@ Over-/undertemperature
 
 **Environmental conditions**
 
-Operating ambient temperature   -10 °C to +50 °C
+Operating ambient temperature       -10 °C to +50 °C
 
-Storage temperature             -20 °C to +60 °C
+Storage temperature                 -20 °C to +60 °C
 
-Humidity                        <95%, non-condensing
+Humidity                            <95%, non-condensing
 
 **Mechanical design**
 
-Screw terminals                 M5, torque: 2.2 Nm
+Screw terminals                     M5, torque: 2.2 Nm
 
-Weight                          t.b.d.
+Weight                              t.b.d.
 
-Dimensions                      70 mm x 135 mm
-------------------------------  ----------------------- ------------------------------------
+Dimensions                          70 mm x 135 mm
+----------------------------------  ----------------------- ------------------------------------
