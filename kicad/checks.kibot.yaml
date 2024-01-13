@@ -1,0 +1,33 @@
+kibot:
+  version: 1
+
+preflight:
+  run_erc: true
+  update_xml: true
+  run_drc: true
+  filters:
+    # ERC filters
+    - filter: "Error reading simulation model from symbol"
+      error: 'simulation_model_issue'
+      regex: "Error reading simulation model from symbol '.*'"
+    - filter: "Input Power pin not driven by any Output Power pin"
+      error: 'power_pin_not_driven'
+      regex: "Input Power pin not driven by any Output Power pin"
+    - filter: "Pins of type A and B are connected"
+      error: 'pin_to_pin'
+      regex: "Pins of type .* and .* are connected"
+    # DRC filters
+    - filter: "Ignore specific clearance error 0.5000 mm"
+      error: 'clearance'
+      regex: ".*Clearance violation.*zone clearance 0.5000 mm; actual 0.0000 mm.*"
+    - filter: "Ignore specific clearance error 0.3000 mm"
+      error: 'clearance'
+      regex: ".*Clearance violation.*zone clearance 0.3000 mm; actual 0.0000 mm.*"
+    - filter: "Ignore library footprint mismatches"
+      error: 'W058'
+      regex: "lib_footprint_mismatch.*Footprint .* does not match copy in library"
+    - filter: "Footprint component type doesn't match footprint pads"
+      error: 'footprint_type_mismatch'
+      regex: "Footprint component type doesn't match footprint pads .*expected 'Through hole'; actual 'SMD'"
+  check_zone_fills: true
+  ignore_unconnected: true
