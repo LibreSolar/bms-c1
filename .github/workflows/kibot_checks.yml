@@ -1,0 +1,36 @@
+name: Run KiBot Checks
+
+on:
+  push:
+    paths:
+      - '*.kicad_sch'
+      - '*.kicad_pcb'
+      - '.github/workflows/kibot_checks.yml'
+    branches-ignore:
+      - gh-pages
+  pull_request:
+    paths:
+      - '*.kicad_sch'
+      - '*.kicad_pcb'
+      - '.github/workflows/kibot_checks.yml'
+    branches-ignore:
+      - gh-pages
+
+jobs:
+  kibot-check:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Get repo
+      uses: actions/checkout@v3
+
+    - name: Run KiBot
+      uses: INTI-CMNB/KiBot@v2_k7
+      with:
+        config: kicad/checks.kibot.yaml
+        # optional - prefix to output defined in config
+        dir: output
+        # optional - schematic file
+        schema: 'kicad/bms-c1.kicad_sch'
+        # optional - PCB design file
+        board: 'kicad/bms-c1.kicad_pcb'
