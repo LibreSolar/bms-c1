@@ -1936,7 +1936,7 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 00262554-0e0b-4f25-8e07-569cdc6c9426)
   )
-  (text "Switching time constant estimation:\n- 4x IPT015N10N5 with C_iss = 16nF: 64nF\n- Gate resistor: 470R\n- Time constant: R*C = 30us"
+  (text "Switching time constant estimation:\n- 4x IPT015N10N5 with C_iss = 16nF: 64nF\n- Gate resistor: 47R\n- Time constant: R*C = 3us"
     (at 36.83 185.42 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 04c3aad4-711d-414d-8726-2d0444751027)
