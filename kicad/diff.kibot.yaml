@@ -1,0 +1,29 @@
+kibot:
+  version: 1
+
+outputs:
+- name: basic_diff_pcb
+  comment: PCB diff between the last two changes
+  type: diff
+  dir: diff
+  layers: all
+  options:
+    old: main
+    old_type: git
+    new: HEAD
+    new_type: git
+    add_link_id: true
+    pcb: true
+    only_different: true
+- name: basic_diff_sch
+  comment: Schematic diff between the last two changes
+  type: diff
+  dir: diff
+  options:
+    old: main
+    old_type: git
+    new: HEAD
+    new_type: git
+    add_link_id: true
+    pcb: false
+    only_different: true

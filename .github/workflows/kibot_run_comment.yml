@@ -1,0 +1,46 @@
+# This file, 'kibot_run_comment.yml', along with 'kibot_diff.yml', forms a two-stage GitHub Actions workflow for secure KiCad diffs management.
+# 'kibot_diff.yml' executes the KiBot diff process, while this file handles safe posting of results to pull requests.
+# This method follows the security guidelines from the GitHub Security Lab (https://securitylab.github.com/research/github-actions-preventing-pwn-requests/)
+# and addresses the 'Resource not accessible by integration' issue in workflows triggered by forks.
+
+name: Comment with PDF-diff
+
+on:
+  workflow_run:
+    workflows: ["Run PDF-diff"]
+    types:
+      - completed
+
+jobs:
+  comment-diff:
+    runs-on: ubuntu-latest
+    if: ${{ github.event.workflow_run.event == 'pull_request' && github.event.workflow_run.conclusion == 'success' }}
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          name: pr-metadata
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          repository: ${{ github.repository }}
+          run-id: ${{ github.event.workflow_run.id }}
+
+      - name: 'Restore preserved ENV'
+        run: cat pr.env >> "${GITHUB_ENV}"
+
+      - name: Find Comment
+        uses: peter-evans/find-comment@v2
+        id: fc
+        with:
+          issue-number: ${{ env.PR_NUMBER }}
+          comment-author: 'github-actions[bot]'
+          body-regex: 'Diff between .* \(\S+\) and .* \(\S+\):'
+
+      - name: Create or update comment
+        uses: peter-evans/create-or-update-comment@v3
+        with:
+          comment-id: ${{ steps.fc.outputs.comment-id }}
+          issue-number: ${{ env.PR_NUMBER }}
+          body: |
+            Diff between ${{ env.PR_BASE_REF }} (${{ env.PR_BASE_SHORT }}) and ${{ env.PR_HEAD_REF }} (${{ env.PR_HEAD_SHORT }}):
+            - [bms-c1-diff_sch.pdf](${{ env.PR_LINK_SCH }})
+            - [bms-c1-diff_pcb.pdf](${{ env.PR_LINK_PCB }})
+          edit-mode: replace
