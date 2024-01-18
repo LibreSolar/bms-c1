@@ -3,15 +3,15 @@ name: Run KiBot Checks
 on:
   push:
     paths:
-      - '*.kicad_sch'
-      - '*.kicad_pcb'
+      - '**.kicad_sch'
+      - '**.kicad_pcb'
       - '.github/workflows/kibot_checks.yml'
     branches-ignore:
       - gh-pages
   pull_request:
     paths:
-      - '*.kicad_sch'
-      - '*.kicad_pcb'
+      - '**.kicad_sch'
+      - '**.kicad_pcb'
       - '.github/workflows/kibot_checks.yml'
     branches-ignore:
       - gh-pages
