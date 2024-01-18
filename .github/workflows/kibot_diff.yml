@@ -1,0 +1,64 @@
+name: Run PDF-diff
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened, edited]
+
+jobs:
+  run-diff:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+        with:
+          # So we can run a diff between changes
+          fetch-depth: '0'
+
+      - name: Run KiBot
+        uses: INTI-CMNB/KiBot@v2_k7
+        with:
+          config: kicad/diff.kibot.yaml
+          # optional - prefix to output defined in config
+          dir: output
+          # optional - schematic file
+          schema: 'kicad/bms-c1.kicad_sch'
+          # optional - PCB design file
+          board: 'kicad/bms-c1.kicad_pcb'
+
+      - name: Upload pcb
+        uses: actions/upload-artifact@v4
+        id: artifact-upload-step-pcb
+        with:
+          name: bms-c1-diff_pcb.pdf.pdf
+          path: output/diff/bms-c1-diff_pcb.pdf
+
+      - name: Upload schematic
+        uses: actions/upload-artifact@v4
+        id: artifact-upload-step-sch
+        with:
+          name: bms-c1-diff_sch.pdf
+          path: output/diff/bms-c1-diff_sch.pdf
+
+      - name: Prepare variables for comment body
+        id: comment-body
+        run: |
+          echo "base_short=$(git rev-parse --short ${{ github.event.pull_request.base.sha }})" >> "$GITHUB_OUTPUT"
+          echo "head_short=$(git rev-parse --short ${{ github.event.pull_request.head.sha }})" >> "$GITHUB_OUTPUT"
+
+      - name: 'Prepare artifact for transfer'
+        run: |
+          # Save ENV for transfer
+          echo "PR_BASE_SHORT=${{ steps.comment-body.outputs.base_short }}" >> pr.env
+          echo "PR_HEAD_SHORT=${{ steps.comment-body.outputs.head_short }}" >> pr.env
+          echo "PR_BASE_REF=${{ github.event.pull_request.base.ref }}" >> pr.env
+          echo "PR_HEAD_REF=${{ github.event.pull_request.head.ref }}" >> pr.env
+          echo "PR_LINK_SCH=https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}/artifacts/${{ steps.artifact-upload-step-sch.outputs.artifact-id }}" >> pr.env
+          echo "PR_LINK_PCB=https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}/artifacts/${{ steps.artifact-upload-step-pcb.outputs.artifact-id }}" >> pr.env
+          echo "PR_NUMBER=${{ github.event.pull_request.number }}" >> pr.env
+
+      - name: 'Upload artifact for workflow transfer'
+        uses: actions/upload-artifact@v4
+        with:
+          name: pr-metadata
+          path: pr.env
+          retention-days: 1
