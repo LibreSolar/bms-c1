@@ -15,7 +15,7 @@ jobs:
           fetch-depth: '0'
 
       - name: Run KiBot
-        uses: INTI-CMNB/KiBot@v2_k7
+        uses: INTI-CMNB/KiBot@v2_k7_1_6_3
         with:
           config: kicad/diff.kibot.yaml
           # optional - prefix to output defined in config
