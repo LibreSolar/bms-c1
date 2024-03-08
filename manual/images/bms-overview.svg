@@ -1,0 +1,1030 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="600"
+   height="370"
+   viewBox="0 0 158.75 97.895839"
+   version="1.1"
+   id="svg5625"
+   inkscape:version="1.2.1 (9c6d41e410, 2022-07-14, custom)"
+   sodipodi:docname="bms-overview.svg"
+   inkscape:export-filename="/home/martin/LibreSolar/4_Projects/Anträge/EnAccess_2021/enaccess-bms-overview.png"
+   inkscape:export-xdpi="200.1694"
+   inkscape:export-ydpi="200.1694"
+   style="enable-background:new"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <defs
+     id="defs5619">
+    <marker
+       inkscape:stockid="DotS"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="DotS"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         id="path16850"
+         d="m -2.5,-1 c 0,2.76 -2.24,5 -5,5 -2.76,0 -5,-2.24 -5,-5 0,-2.76 2.24,-5 5,-5 2.76,0 5,2.24 5,5 z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1"
+         transform="matrix(0.2,0,0,0.2,1.48,0.2)"
+         inkscape:connector-curvature="0" />
+    </marker>
+    <marker
+       inkscape:stockid="DotM"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="DotM"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         id="path16847"
+         d="m -2.5,-1 c 0,2.76 -2.24,5 -5,5 -2.76,0 -5,-2.24 -5,-5 0,-2.76 2.24,-5 5,-5 2.76,0 5,2.24 5,5 z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1"
+         transform="matrix(0.4,0,0,0.4,2.96,0.4)"
+         inkscape:connector-curvature="0" />
+    </marker>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="1"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.0300481"
+     inkscape:cx="178.14702"
+     inkscape:cy="290.27771"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="true"
+     showguides="false"
+     inkscape:snap-grids="true"
+     inkscape:snap-to-guides="true"
+     inkscape:window-width="1920"
+     inkscape:window-height="1011"
+     inkscape:window-x="0"
+     inkscape:window-y="32"
+     inkscape:window-maximized="1"
+     units="px"
+     scale-x="2"
+     inkscape:document-rotation="0"
+     inkscape:snap-center="false"
+     inkscape:snap-object-midpoints="false"
+     inkscape:snap-midpoints="false"
+     inkscape:pagecheckerboard="0"
+     inkscape:showpageshadow="2"
+     inkscape:deskcolor="#d1d1d1">
+    <inkscape:grid
+       type="xygrid"
+       id="grid6225"
+       spacingx="2.6458333"
+       spacingy="2.6458333"
+       dotted="false"
+       originx="0"
+       originy="0" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata5622">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <cc:license
+           rdf:resource="http://creativecommons.org/licenses/by-sa/4.0/" />
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>Martin Jäger</dc:title>
+          </cc:Agent>
+        </dc:creator>
+      </cc:Work>
+      <cc:License
+         rdf:about="http://creativecommons.org/licenses/by-sa/4.0/">
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Reproduction" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Distribution" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#Notice" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#Attribution" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#DerivativeWorks" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#ShareAlike" />
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="Ebene 2"
+     style="display:inline"
+     transform="translate(0,-269.64611)" />
+  <g
+     inkscape:label="Ebene 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-269.64611)">
+    <rect
+       style="fill:#b3b3b3;fill-opacity:1;stroke:#000000;stroke-width:0.265;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:fill markers stroke;enable-background:new"
+       id="rect14998-1-7-6-2"
+       width="134.93748"
+       height="50.101833"
+       x="13.229167"
+       y="274.93777"
+       ry="2.6458352"
+       inkscape:export-filename="/home/martin/LibreSolar/4_Projects/Anträge/EnAccess_2021/enaccess-bms-overview.png"
+       inkscape:export-xdpi="200.1694"
+       inkscape:export-ydpi="200.1694" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;enable-background:new"
+       d="M 18.520833,298.75028 V 282.87527"
+       id="path50208-3"
+       inkscape:export-filename="/home/martin/LibreSolar/4_Projects/Anträge/EnAccess_2021/enaccess-bms-overview.png"
+       inkscape:export-xdpi="200.1694"
+       inkscape:export-ydpi="200.1694" />
+    <rect
+       style="fill:#005e83;fill-opacity:1;stroke:none;stroke-width:0.265;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;paint-order:fill markers stroke;enable-background:new"
+       id="rect14998-1-7"
+       width="42.333332"
+       height="29.104153"
+       x="89.958328"
+       y="290.81277"
+       ry="2.6458349"
+       inkscape:export-filename="/home/martin/LibreSolar/4_Projects/Anträge/EnAccess_2021/enaccess-bms-overview.png"
+       inkscape:export-xdpi="200.1694"
+       inkscape:export-ydpi="200.1694" />
+    <rect
+       style="fill:none;stroke:#000000;stroke-width:0.529166;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;paint-order:fill markers stroke;enable-background:new"
+       id="rect7773-0"
+       width="142.875"
+       height="82.020828"
+       x="7.9375005"
+       y="280.22943"
+       ry="2.6458454"
+       inkscape:export-filename="/home/martin/LibreSolar/4_Projects/Anträge/EnAccess_2021/enaccess-bms-overview.png"
+       inkscape:export-xdpi="200.1694"
+       inkscape:export-ydpi="200.1694" />
+    <rect
+       style="fill:none;stroke:#000000;stroke-width:0.264584;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;paint-order:fill markers stroke;enable-background:new"
+       id="rect15014-0-7-2"
+       width="7.9374981"
+       height="26.458342"
+       x="15.875"
+       y="330.50027"
+       ry="7.479496e-05"
+       inkscape:export-filename="/home/martin/LibreSolar/4_Projects/Anträge/EnAccess_2021/enaccess-bms-overview.png"
+       inkscape:export-xdpi="200.1694"
+       inkscape:export-ydpi="200.1694" />
+    <rect
+       style="fill:none;stroke:#000000;stroke-width:0.264584;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;paint-order:fill markers stroke;enable-background:new"
+       id="rect15014-0-7-2-3"
+       width="7.9375029"
+       height="26.458342"
+       x="23.8125"
+       y="330.50027"
+       ry="7.479496e-05"
+       inkscape:export-filename="/home/martin/LibreSolar/4_Projects/Anträge/EnAccess_2021/enaccess-bms-overview.png"
+       inkscape:export-xdpi="200.1694"
+       inkscape:export-ydpi="200.1694" />
+    <rect
+       style="fill:none;stroke:#000000;stroke-width:0.264584;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;paint-order:fill markers stroke;enable-background:new"
+       id="rect15014-0-7-2-3-6"
+       width="7.9375005"
+       height="26.458342"
+       x="134.93753"
+       y="330.50027"
+       ry="7.479496e-05"
+       inkscape:export-filename="/home/martin/LibreSolar/4_Projects/Anträge/EnAccess_2021/enaccess-bms-overview.png"
+       inkscape:export-xdpi="200.1694"
+       inkscape:export-ydpi="200.1694" />
+    <rect
+       style="fill:none;stroke:#000000;stroke-width:0.264584;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;paint-order:fill markers stroke;enable-background:new"
+       id="rect15014-0-7-2-3-6-7"
+       width="7.9375005"
+       height="26.458342"
+       x="127"
+       y="330.50027"
+       ry="7.479496e-05"
+       inkscape:export-filename="/home/martin/LibreSolar/4_Projects/Anträge/EnAccess_2021/enaccess-bms-overview.png"
+       inkscape:export-xdpi="200.1694"
+       inkscape:export-ydpi="200.1694" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:3.88056px;line-height:1.25;font-family:sans-serif;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="18.954687"
+       y="335.16769"
+       id="text13775"
+       inkscape:export-filename="/home/martin/LibreSolar/4_Projects/Anträge/EnAccess_2021/enaccess-bms-overview.png"
+       inkscape:export-xdpi="200.1694"
+       inkscape:export-ydpi="200.1694"><tspan
+         sodipodi:role="line"
+         id="tspan13773"
+         style="text-align:start;text-anchor:start;stroke-width:0.264583"
+         x="18.954687"
+         y="335.16769">1</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:3.88056px;line-height:1.25;font-family:sans-serif;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583;enable-background:new"
+       x="136.66461"
+       y="335.1658"
+       id="text13775-3"
+       inkscape:export-filename="/home/martin/LibreSolar/4_Projects/Anträge/EnAccess_2021/enaccess-bms-overview.png"
+       inkscape:export-xdpi="200.1694"
+       inkscape:export-ydpi="200.1694"><tspan
+         sodipodi:role="line"
+         id="tspan13773-6"
+         style="text-align:start;text-anchor:start;stroke-width:0.264583"
+         x="136.66461"
+         y="335.1658">16</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:3.88056px;line-height:1.25;font-family:sans-serif;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583;enable-background:new"
+       x="26.974318"
+       y="335.19327"
+       id="text13775-0"
+       inkscape:export-filename="/home/martin/LibreSolar/4_Projects/Anträge/EnAccess_2021/enaccess-bms-overview.png"
+       inkscape:export-xdpi="200.1694"
+       inkscape:export-ydpi="200.1694"><tspan
+         sodipodi:role="line"
+         id="tspan13773-62"
+         style="text-align:start;text-anchor:start;stroke-width:0.264583"
+         x="26.974318"
+         y="335.19327">2</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:3.88056px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="128.77856"
+       y="335.14023"
+       id="text27351"
+       inkscape:export-filename="/home/martin/LibreSolar/4_Projects/Anträge/EnAccess_2021/enaccess-bms-overview.png"
+       inkscape:export-xdpi="200.1694"
+       inkscape:export-ydpi="200.1694"><tspan
+         sodipodi:role="line"
+         id="tspan27349"
+         style="stroke-width:0.264583"
+         x="128.77856"
+         y="335.14023">15</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 21.166666,330.5003 v -2.64584 h 5.291666 v 2.64584"
+       id="path31499"
+       inkscape:export-filename="/home/martin/LibreSolar/4_Projects/Anträge/EnAccess_2021/enaccess-bms-overview.png"
+       inkscape:export-xdpi="200.1694"
+       inkscape:export-ydpi="200.1694" />
+    <rect
+       style="fill:none;stroke:#000000;stroke-width:0.264584;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;paint-order:fill markers stroke;enable-background:new"
+       id="rect15014-0-7-2-3-9"
+       width="7.9375029"
+       height="26.458342"
+       x="31.75"
+       y="330.50027"
+       ry="7.479496e-05"
+       inkscape:export-filename="/home/martin/LibreSolar/4_Projects/Anträge/EnAccess_2021/enaccess-bms-overview.png"
+       inkscape:export-xdpi="200.1694"
+       inkscape:export-ydpi="200.1694" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:3.88056px;line-height:1.25;font-family:sans-serif;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583;enable-background:new"
+       x="34.863201"
+       y="335.1658"
+       id="text13775-0-4"
+       inkscape:export-filename="/home/martin/LibreSolar/4_Projects/Anträge/EnAccess_2021/enaccess-bms-overview.png"
+       inkscape:export-xdpi="200.1694"
+       inkscape:export-ydpi="200.1694"><tspan
+         sodipodi:role="line"
+         id="tspan13773-62-7"
+         style="text-align:start;text-anchor:start;stroke-width:0.264583"
+         x="34.863201"
+         y="335.1658">3</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;enable-background:new"
+       d="m 29.104166,330.50028 v -2.64584 h 5.291666 v 2.64584"
+       id="path31499-8"
+       inkscape:export-filename="/home/martin/LibreSolar/4_Projects/Anträge/EnAccess_2021/enaccess-bms-overview.png"
+       inkscape:export-xdpi="200.1694"
+       inkscape:export-ydpi="200.1694" />
+    <rect
+       style="fill:none;stroke:#000000;stroke-width:0.264584;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;paint-order:fill markers stroke;enable-background:new"
+       id="rect15014-0-7-2-3-4"
+       width="7.9375029"
+       height="26.458342"
+       x="39.6875"
+       y="330.50027"
+       ry="7.479496e-05"
+       inkscape:export-filename="/home/martin/LibreSolar/4_Projects/Anträge/EnAccess_2021/enaccess-bms-overview.png"
+       inkscape:export-xdpi="200.1694"
+       inkscape:export-ydpi="200.1694" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:3.88056px;line-height:1.25;font-family:sans-serif;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583;enable-background:new"
+       x="42.803253"
+       y="335.16769"
+       id="text13775-0-5"
+       inkscape:export-filename="/home/martin/LibreSolar/4_Projects/Anträge/EnAccess_2021/enaccess-bms-overview.png"
+       inkscape:export-xdpi="200.1694"
+       inkscape:export-ydpi="200.1694"><tspan
+         sodipodi:role="line"
+         id="tspan13773-62-0"
+         style="text-align:start;text-anchor:start;stroke-width:0.264583"
+         x="42.803253"
+         y="335.16769">4</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;enable-background:new"
+       d="m 37.041669,330.5003 v -2.64584 h 5.291666 v 2.64584"
+       id="path31499-3"
+       inkscape:export-filename="/home/martin/LibreSolar/4_Projects/Anträge/EnAccess_2021/enaccess-bms-overview.png"
+       inkscape:export-xdpi="200.1694"
+       inkscape:export-ydpi="200.1694" />
+    <rect
+       style="fill:none;stroke:#000000;stroke-width:0.264584;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;paint-order:fill markers stroke;enable-background:new"
+       id="rect15014-0-7-2-3-61"
+       width="7.9375029"
+       height="26.458342"
+       x="47.625"
+       y="330.50027"
+       ry="7.479496e-05"
+       inkscape:export-filename="/home/martin/LibreSolar/4_Projects/Anträge/EnAccess_2021/enaccess-bms-overview.png"
+       inkscape:export-xdpi="200.1694"
+       inkscape:export-ydpi="200.1694" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:3.88056px;line-height:1.25;font-family:sans-serif;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583;enable-background:new"
+       x="50.742352"
+       y="335.14023"
+       id="text13775-0-0"
+       inkscape:export-filename="/home/martin/LibreSolar/4_Projects/Anträge/EnAccess_2021/enaccess-bms-overview.png"
+       inkscape:export-xdpi="200.1694"
+       inkscape:export-ydpi="200.1694"><tspan
+         sodipodi:role="line"
+         id="tspan13773-62-6"
+         style="text-align:start;text-anchor:start;stroke-width:0.264583"
+         x="50.742352"
+         y="335.14023">5</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;enable-background:new"
+       d="m 44.979166,330.50028 v -2.64584 h 5.291666 v 2.64584"
+       id="path31499-32"
+       inkscape:export-filename="/home/martin/LibreSolar/4_Projects/Anträge/EnAccess_2021/enaccess-bms-overview.png"
+       inkscape:export-xdpi="200.1694"
+       inkscape:export-ydpi="200.1694" />
+    <rect
+       style="fill:none;stroke:#000000;stroke-width:0.264584;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;paint-order:fill markers stroke;enable-background:new"
+       id="rect15014-0-7-2-3-0"
+       width="7.9375029"
+       height="26.458342"
+       x="55.562504"
+       y="330.50027"
+       ry="7.479496e-05"
+       inkscape:export-filename="/home/martin/LibreSolar/4_Projects/Anträge/EnAccess_2021/enaccess-bms-overview.png"
+       inkscape:export-xdpi="200.1694"
+       inkscape:export-ydpi="200.1694" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:3.88056px;line-height:1.25;font-family:sans-serif;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583;enable-background:new"
+       x="58.642609"
+       y="335.1658"
+       id="text13775-0-6"
+       inkscape:export-filename="/home/martin/LibreSolar/4_Projects/Anträge/EnAccess_2021/enaccess-bms-overview.png"
+       inkscape:export-xdpi="200.1694"
+       inkscape:export-ydpi="200.1694"><tspan
+         sodipodi:role="line"
+         id="tspan13773-62-1"
+         style="text-align:start;text-anchor:start;stroke-width:0.264583"
+         x="58.642609"
+         y="335.1658">6</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;enable-background:new"
+       d="m 52.916667,330.50028 v -2.64584 h 5.291666 v 2.64584"
+       id="path31499-5"
+       inkscape:export-filename="/home/martin/LibreSolar/4_Projects/Anträge/EnAccess_2021/enaccess-bms-overview.png"
+       inkscape:export-xdpi="200.1694"
+       inkscape:export-ydpi="200.1694" />
+    <rect
+       style="fill:none;stroke:#000000;stroke-width:0.264584;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;paint-order:fill markers stroke;enable-background:new"
+       id="rect15014-0-7-2-3-5"
+       width="7.9375029"
+       height="26.458342"
+       x="63.500004"
+       y="330.50027"
+       ry="7.479496e-05"
+       inkscape:export-filename="/home/martin/LibreSolar/4_Projects/Anträge/EnAccess_2021/enaccess-bms-overview.png"
+       inkscape:export-xdpi="200.1694"
+       inkscape:export-ydpi="200.1694" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:3.88056px;line-height:1.25;font-family:sans-serif;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583;enable-background:new"
+       x="66.595917"
+       y="335.16769"
+       id="text13775-0-47"
+       inkscape:export-filename="/home/martin/LibreSolar/4_Projects/Anträge/EnAccess_2021/enaccess-bms-overview.png"
+       inkscape:export-xdpi="200.1694"
+       inkscape:export-ydpi="200.1694"><tspan
+         sodipodi:role="line"
+         id="tspan13773-62-65"
+         style="text-align:start;text-anchor:start;stroke-width:0.264583"
+         x="66.595917"
+         y="335.16769">7</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;enable-background:new"
+       d="m 60.854169,330.5003 v -2.64584 h 5.291666 v 2.64584"
+       id="path31499-6"
+       inkscape:export-filename="/home/martin/LibreSolar/4_Projects/Anträge/EnAccess_2021/enaccess-bms-overview.png"
+       inkscape:export-xdpi="200.1694"
+       inkscape:export-ydpi="200.1694" />
+    <rect
+       style="fill:none;stroke:#000000;stroke-width:0.264584;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;paint-order:fill markers stroke;enable-background:new"
+       id="rect15014-0-7-2-3-93"
+       width="7.9375029"
+       height="26.458342"
+       x="71.4375"
+       y="330.50027"
+       ry="7.479496e-05"
+       inkscape:export-filename="/home/martin/LibreSolar/4_Projects/Anträge/EnAccess_2021/enaccess-bms-overview.png"
+       inkscape:export-xdpi="200.1694"
+       inkscape:export-ydpi="200.1694" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:3.88056px;line-height:1.25;font-family:sans-serif;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583;enable-background:new"
+       x="74.523659"
+       y="335.1658"
+       id="text13775-0-7"
+       inkscape:export-filename="/home/martin/LibreSolar/4_Projects/Anträge/EnAccess_2021/enaccess-bms-overview.png"
+       inkscape:export-xdpi="200.1694"
+       inkscape:export-ydpi="200.1694"><tspan
+         sodipodi:role="line"
+         id="tspan13773-62-4"
+         style="text-align:start;text-anchor:start;stroke-width:0.264583"
+         x="74.523659"
+         y="335.1658">8</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;enable-background:new"
+       d="m 68.791666,330.5003 v -2.64584 h 5.291666 v 2.64584"
+       id="path31499-52"
+       inkscape:export-filename="/home/martin/LibreSolar/4_Projects/Anträge/EnAccess_2021/enaccess-bms-overview.png"
+       inkscape:export-xdpi="200.1694"
+       inkscape:export-ydpi="200.1694" />
+    <rect
+       style="fill:none;stroke:#000000;stroke-width:0.264584;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;paint-order:fill markers stroke;enable-background:new"
+       id="rect15014-0-7-2-3-54"
+       width="7.9375029"
+       height="26.458342"
+       x="79.375"
+       y="330.50027"
+       ry="7.479496e-05"
+       inkscape:export-filename="/home/martin/LibreSolar/4_Projects/Anträge/EnAccess_2021/enaccess-bms-overview.png"
+       inkscape:export-xdpi="200.1694"
+       inkscape:export-ydpi="200.1694" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:3.88056px;line-height:1.25;font-family:sans-serif;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583;enable-background:new"
+       x="82.470329"
+       y="335.1658"
+       id="text13775-0-74"
+       inkscape:export-filename="/home/martin/LibreSolar/4_Projects/Anträge/EnAccess_2021/enaccess-bms-overview.png"
+       inkscape:export-xdpi="200.1694"
+       inkscape:export-ydpi="200.1694"><tspan
+         sodipodi:role="line"
+         id="tspan13773-62-43"
+         style="text-align:start;text-anchor:start;stroke-width:0.264583"
+         x="82.470329"
+         y="335.1658">9</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;enable-background:new"
+       d="m 76.729166,330.50028 v -2.64584 h 5.291666 v 2.64584"
+       id="path31499-0"
+       inkscape:export-filename="/home/martin/LibreSolar/4_Projects/Anträge/EnAccess_2021/enaccess-bms-overview.png"
+       inkscape:export-xdpi="200.1694"
+       inkscape:export-ydpi="200.1694" />
+    <rect
+       style="fill:none;stroke:#000000;stroke-width:0.264584;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;paint-order:fill markers stroke;enable-background:new"
+       id="rect15014-0-7-2-3-7"
+       width="7.9375029"
+       height="26.458342"
+       x="87.3125"
+       y="330.50027"
+       ry="7.479496e-05"
+       inkscape:export-filename="/home/martin/LibreSolar/4_Projects/Anträge/EnAccess_2021/enaccess-bms-overview.png"
+       inkscape:export-xdpi="200.1694"
+       inkscape:export-ydpi="200.1694" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:3.88056px;line-height:1.25;font-family:sans-serif;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583;enable-background:new"
+       x="89.070747"
+       y="335.1658"
+       id="text13775-0-8"
+       inkscape:export-filename="/home/martin/LibreSolar/4_Projects/Anträge/EnAccess_2021/enaccess-bms-overview.png"
+       inkscape:export-xdpi="200.1694"
+       inkscape:export-ydpi="200.1694"><tspan
+         sodipodi:role="line"
+         id="tspan13773-62-68"
+         style="text-align:start;text-anchor:start;stroke-width:0.264583"
+         x="89.070747"
+         y="335.1658">10</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;enable-background:new"
+       d="m 84.666668,330.50029 v -2.64584 h 5.29166 v 2.64584"
+       id="path31499-84"
+       inkscape:export-filename="/home/martin/LibreSolar/4_Projects/Anträge/EnAccess_2021/enaccess-bms-overview.png"
+       inkscape:export-xdpi="200.1694"
+       inkscape:export-ydpi="200.1694" />
+    <rect
+       style="fill:none;stroke:#000000;stroke-width:0.264584;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;paint-order:fill markers stroke;enable-background:new"
+       id="rect15014-0-7-2-3-3"
+       width="7.9375029"
+       height="26.458342"
+       x="95.249992"
+       y="330.50027"
+       ry="7.479496e-05"
+       inkscape:export-filename="/home/martin/LibreSolar/4_Projects/Anträge/EnAccess_2021/enaccess-bms-overview.png"
+       inkscape:export-xdpi="200.1694"
+       inkscape:export-ydpi="200.1694" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:3.88056px;line-height:1.25;font-family:sans-serif;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583;enable-background:new"
+       x="97.054382"
+       y="335.16769"
+       id="text13775-0-1"
+       inkscape:export-filename="/home/martin/LibreSolar/4_Projects/Anträge/EnAccess_2021/enaccess-bms-overview.png"
+       inkscape:export-xdpi="200.1694"
+       inkscape:export-ydpi="200.1694"><tspan
+         sodipodi:role="line"
+         id="tspan13773-62-49"
+         style="text-align:start;text-anchor:start;stroke-width:0.264583"
+         x="97.054382"
+         y="335.16769">11</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;enable-background:new"
+       d="m 92.604168,330.50028 v -2.64584 h 5.29166 v 2.64584"
+       id="path31499-2"
+       inkscape:export-filename="/home/martin/LibreSolar/4_Projects/Anträge/EnAccess_2021/enaccess-bms-overview.png"
+       inkscape:export-xdpi="200.1694"
+       inkscape:export-ydpi="200.1694" />
+    <rect
+       style="fill:none;stroke:#000000;stroke-width:0.264584;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;paint-order:fill markers stroke;enable-background:new"
+       id="rect15014-0-7-2-3-06"
+       width="7.9375029"
+       height="26.458342"
+       x="103.18749"
+       y="330.50027"
+       ry="7.479496e-05"
+       inkscape:export-filename="/home/martin/LibreSolar/4_Projects/Anträge/EnAccess_2021/enaccess-bms-overview.png"
+       inkscape:export-xdpi="200.1694"
+       inkscape:export-ydpi="200.1694" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:3.88056px;line-height:1.25;font-family:sans-serif;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583;enable-background:new"
+       x="105.00294"
+       y="335.19327"
+       id="text13775-0-89"
+       inkscape:export-filename="/home/martin/LibreSolar/4_Projects/Anträge/EnAccess_2021/enaccess-bms-overview.png"
+       inkscape:export-xdpi="200.1694"
+       inkscape:export-ydpi="200.1694"><tspan
+         sodipodi:role="line"
+         id="tspan13773-62-2"
+         style="text-align:start;text-anchor:start;stroke-width:0.264583"
+         x="105.00294"
+         y="335.19327">12</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;enable-background:new"
+       d="m 100.54166,330.50029 v -2.64584 h 5.29167 v 2.64584"
+       id="path31499-66"
+       inkscape:export-filename="/home/martin/LibreSolar/4_Projects/Anträge/EnAccess_2021/enaccess-bms-overview.png"
+       inkscape:export-xdpi="200.1694"
+       inkscape:export-ydpi="200.1694" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 137.58337,330.50028 v -2.64584 h -5.29167 v 2.64584"
+       id="path31507"
+       inkscape:export-filename="/home/martin/LibreSolar/4_Projects/Anträge/EnAccess_2021/enaccess-bms-overview.png"
+       inkscape:export-xdpi="200.1694"
+       inkscape:export-ydpi="200.1694" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:3.88056px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffeaea;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="94.969742"
+       y="296.0791"
+       id="text36607"
+       inkscape:export-filename="/home/martin/LibreSolar/4_Projects/Anträge/EnAccess_2021/enaccess-bms-overview.png"
+       inkscape:export-xdpi="200.1694"
+       inkscape:export-ydpi="200.1694"><tspan
+         sodipodi:role="line"
+         id="tspan36605"
+         style="font-weight:bold;fill:#ffeaea;fill-opacity:1;stroke-width:0.264583"
+         x="94.969742"
+         y="296.0791">Power Part</tspan><tspan
+         sodipodi:role="line"
+         style="fill:#ffeaea;fill-opacity:1;stroke-width:0.264583"
+         x="94.969742"
+         y="300.92981"
+         id="tspan220720" /></text>
+    <rect
+       style="fill:#005e83;fill-opacity:1;stroke:none;stroke-width:0.264999;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:fill markers stroke;enable-background:new"
+       id="rect14998-1-7-6"
+       width="55.5625"
+       height="29.104166"
+       x="26.458328"
+       y="290.81277"
+       ry="2.6458349"
+       inkscape:export-filename="/home/martin/LibreSolar/4_Projects/Anträge/EnAccess_2021/enaccess-bms-overview.png"
+       inkscape:export-xdpi="200.1694"
+       inkscape:export-ydpi="200.1694" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 140.22916,309.33361 v 21.16667"
+       id="path49933"
+       inkscape:export-filename="/home/martin/LibreSolar/4_Projects/Anträge/EnAccess_2021/enaccess-bms-overview.png"
+       inkscape:export-xdpi="200.1694"
+       inkscape:export-ydpi="200.1694" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 18.520833,330.5003 V 309.33362"
+       id="path50208"
+       inkscape:export-filename="/home/martin/LibreSolar/4_Projects/Anträge/EnAccess_2021/enaccess-bms-overview.png"
+       inkscape:export-xdpi="200.1694"
+       inkscape:export-ydpi="200.1694" />
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.529167;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:fill markers stroke"
+       id="rect3355"
+       width="5.2916665"
+       height="5.2916665"
+       x="137.58333"
+       y="277.58362"
+       ry="1.5874754" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.529167;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 140.22915,278.90655 v 2.64583"
+       id="path53603"
+       inkscape:export-filename="/home/martin/LibreSolar/4_Projects/Anträge/EnAccess_2021/enaccess-bms-overview.png"
+       inkscape:export-xdpi="200.1694"
+       inkscape:export-ydpi="200.1694" />
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.529167;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:fill markers stroke;enable-background:new"
+       id="rect3355-3"
+       width="5.2916665"
+       height="5.2916665"
+       x="15.874998"
+       y="277.58353"
+       ry="1.5874754" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.529167;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 17.197916,280.22945 H 19.84375"
+       id="path53605"
+       inkscape:export-filename="/home/martin/LibreSolar/4_Projects/Anträge/EnAccess_2021/enaccess-bms-overview.png"
+       inkscape:export-xdpi="200.1694"
+       inkscape:export-ydpi="200.1694" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.529167;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;enable-background:new"
+       d="m 138.90624,280.22947 h 2.64583"
+       id="path53605-8"
+       inkscape:export-filename="/home/martin/LibreSolar/4_Projects/Anträge/EnAccess_2021/enaccess-bms-overview.png"
+       inkscape:export-xdpi="200.1694"
+       inkscape:export-ydpi="200.1694" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:3.88056px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="31.945158"
+       y="295.95309"
+       id="text57117"
+       inkscape:export-filename="/home/martin/LibreSolar/4_Projects/Anträge/EnAccess_2021/enaccess-bms-overview.png"
+       inkscape:export-xdpi="200.1694"
+       inkscape:export-ydpi="200.1694"><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';fill:#ffffff;fill-opacity:1;stroke-width:0.264583"
+         x="31.945158"
+         y="295.95309"
+         id="tspan207626">Control Part</tspan><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';fill:#ffffff;fill-opacity:1;stroke-width:0.264583"
+         x="31.945158"
+         y="300.8038"
+         id="tspan207628" /></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:3.88056px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="40.376724"
+       y="286.70642"
+       id="text114635"
+       inkscape:export-filename="/home/martin/LibreSolar/4_Projects/Anträge/EnAccess_2021/enaccess-bms-overview.png"
+       inkscape:export-xdpi="200.1694"
+       inkscape:export-ydpi="200.1694"><tspan
+         sodipodi:role="line"
+         id="tspan114633"
+         style="font-weight:bold;stroke-width:0.264583"
+         x="40.376724"
+         y="286.70642">Libre Solar - Battery Management System</tspan></text>
+    <path
+       inkscape:connector-curvature="0"
+       d="m 140.22916,309.33361 v -1.5875"
+       style="fill:none;stroke:#000000;stroke-width:0.264583;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none"
+       id="path5307-9-6-5"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="/home/martin/LibreSolar/4_Projects/Anträge/EnAccess_2021/enaccess-bms-overview.png"
+       inkscape:export-xdpi="200.1694"
+       inkscape:export-ydpi="200.1694" />
+    <circle
+       cx="307.21695"
+       cy="140.22919"
+       transform="matrix(0,1,1,0,0,0)"
+       style="fill:none;stroke:#000000;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
+       id="path8029-79-22"
+       r="0.52916664"
+       inkscape:export-filename="/home/martin/LibreSolar/4_Projects/Anträge/EnAccess_2021/enaccess-bms-overview.png"
+       inkscape:export-xdpi="200.1694"
+       inkscape:export-ydpi="200.1694" />
+    <path
+       sodipodi:nodetypes="cc"
+       inkscape:connector-curvature="0"
+       d="m 138.90625,301.92528 1.17615,4.7625"
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:round"
+       id="path8033-2-8"
+       inkscape:export-filename="/home/martin/LibreSolar/4_Projects/Anträge/EnAccess_2021/enaccess-bms-overview.png"
+       inkscape:export-xdpi="200.1694"
+       inkscape:export-ydpi="200.1694" />
+    <g
+       transform="matrix(0,-0.26458333,0.26458333,0,-53.895827,485.28152)"
+       id="g2333-0-9"
+       inkscape:export-filename="/home/martin/LibreSolar/4_Projects/Anträge/EnAccess_2021/enaccess-bms-overview.png"
+       inkscape:export-xdpi="200.1694"
+       inkscape:export-ydpi="200.1694">
+      <circle
+         r="2"
+         id="path8029-79-2-7"
+         style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
+         transform="scale(-1,1)"
+         cy="733.70081"
+         cx="-697" />
+      <path
+         id="path8033-2-3-3"
+         style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:round"
+         d="m 705,733.70079 h -6"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="cc" />
+    </g>
+    <g
+       id="g31462-3"
+       transform="rotate(180,73.090482,300.40326)"
+       style="enable-background:new"
+       inkscape:export-filename="/home/martin/LibreSolar/4_Projects/Anträge/EnAccess_2021/enaccess-bms-overview.png"
+       inkscape:export-xdpi="200.1694"
+       inkscape:export-ydpi="200.1694">
+      <rect
+         x="292.79849"
+         y="-128.98305"
+         width="7.9375"
+         height="2.6458333"
+         style="color:#000000;fill:none;stroke:#000000;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:1.76"
+         id="rect10224-9-8-2-43-72-6-2-6-3-9-5-66-1-29-5-7"
+         transform="rotate(90)" />
+      <path
+         inkscape:connector-curvature="0"
+         d="m 127.66013,300.73863 v 1.31762"
+         style="fill:#ffffff;fill-rule:evenodd;stroke:#000000;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
+         id="path1450-1-5-3-4-1-0-3-3-6-5-90-3-0-3-5" />
+      <path
+         inkscape:connector-curvature="0"
+         d="m 127.66013,291.47556 v 1.32292"
+         style="fill:#ffffff;fill-rule:evenodd;stroke:#000000;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
+         id="path1450-1-5-3-4-1-0-3-8-8-0-2-2-8-3-8-9" />
+      <path
+         inkscape:connector-curvature="0"
+         d="m 125.0143,292.79848 h 1.32292"
+         style="fill:#ffffff;fill-rule:evenodd;stroke:#000000;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
+         id="path1450-1-5-3-4-1-0-3-8-8-0-2-2-8-3-8-1-2"
+         sodipodi:nodetypes="cc" />
+      <path
+         inkscape:connector-curvature="0"
+         d="m 125.0143,300.73598 h 1.32292"
+         style="fill:#ffffff;fill-rule:evenodd;stroke:#000000;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
+         id="path1450-1-5-3-4-1-0-3-8-8-0-2-2-8-3-8-1-1-2"
+         sodipodi:nodetypes="cc" />
+    </g>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:3.88056px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="95.245529"
+       y="302.13568"
+       id="text235716"
+       inkscape:export-filename="/home/martin/LibreSolar/4_Projects/Anträge/EnAccess_2021/enaccess-bms-overview.png"
+       inkscape:export-xdpi="200.1694"
+       inkscape:export-ydpi="200.1694"><tspan
+         sodipodi:role="line"
+         style="fill:#ffffff;fill-opacity:1;stroke-width:0.264583"
+         x="95.245529"
+         y="302.13568"
+         id="tspan235718">- Protection</tspan><tspan
+         sodipodi:role="line"
+         style="fill:#ffffff;fill-opacity:1;stroke-width:0.264583"
+         x="95.245529"
+         y="306.98639"
+         id="tspan466">  Switches</tspan><tspan
+         sodipodi:role="line"
+         style="fill:#ffffff;fill-opacity:1;stroke-width:0.264583"
+         x="95.245529"
+         y="311.83707"
+         id="tspan235720">- Current</tspan><tspan
+         sodipodi:role="line"
+         style="fill:#ffffff;fill-opacity:1;stroke-width:0.264583"
+         x="95.245529"
+         y="316.68777"
+         id="tspan235724">  Monitoring</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:3.88056px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="31.750002"
+       y="301.92529"
+       id="text251199"
+       inkscape:export-filename="/home/martin/LibreSolar/4_Projects/Anträge/EnAccess_2021/enaccess-bms-overview.png"
+       inkscape:export-xdpi="200.1694"
+       inkscape:export-ydpi="200.1694"><tspan
+         sodipodi:role="line"
+         id="tspan251197"
+         style="fill:#ffffff;fill-opacity:1;stroke-width:0.264583"
+         x="31.750002"
+         y="301.92529">- Single Cell Voltage </tspan><tspan
+         sodipodi:role="line"
+         style="fill:#ffffff;fill-opacity:1;stroke-width:0.264583"
+         x="31.750002"
+         y="306.776"
+         id="tspan251201">  Monitoring</tspan><tspan
+         sodipodi:role="line"
+         style="fill:#ffffff;fill-opacity:1;stroke-width:0.264583"
+         x="31.750002"
+         y="311.62668"
+         id="tspan251203">- Cell Balancing</tspan><tspan
+         sodipodi:role="line"
+         style="fill:#ffffff;fill-opacity:1;stroke-width:0.264583"
+         x="31.750002"
+         y="316.47739"
+         id="tspan251205">- Communcation</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 140.22915,298.75027 V 282.87528"
+       id="path254994"
+       inkscape:export-filename="/home/martin/LibreSolar/4_Projects/Anträge/EnAccess_2021/enaccess-bms-overview.png"
+       inkscape:export-xdpi="200.1694"
+       inkscape:export-ydpi="200.1694" />
+    <rect
+       style="fill:none;stroke:#000000;stroke-width:0.264584;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;paint-order:fill markers stroke;enable-background:new"
+       id="rect15014-0-7-2-3-49"
+       width="7.9375029"
+       height="26.458342"
+       x="111.125"
+       y="330.50027"
+       ry="7.479496e-05"
+       inkscape:export-filename="/home/martin/LibreSolar/4_Projects/Anträge/EnAccess_2021/enaccess-bms-overview.png"
+       inkscape:export-xdpi="200.1694"
+       inkscape:export-ydpi="200.1694" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:3.88056px;line-height:1.25;font-family:sans-serif;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583;enable-background:new"
+       x="112.89752"
+       y="335.1658"
+       id="text13775-0-50"
+       inkscape:export-filename="/home/martin/LibreSolar/4_Projects/Anträge/EnAccess_2021/enaccess-bms-overview.png"
+       inkscape:export-xdpi="200.1694"
+       inkscape:export-ydpi="200.1694"><tspan
+         sodipodi:role="line"
+         id="tspan13773-62-48"
+         style="text-align:start;text-anchor:start;stroke-width:0.264583"
+         x="112.89752"
+         y="335.1658">13</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;enable-background:new"
+       d="m 108.47917,330.50029 v -2.64584 h 5.29167 v 2.64584"
+       id="path31499-7"
+       inkscape:export-filename="/home/martin/LibreSolar/4_Projects/Anträge/EnAccess_2021/enaccess-bms-overview.png"
+       inkscape:export-xdpi="200.1694"
+       inkscape:export-ydpi="200.1694" />
+    <rect
+       style="fill:none;stroke:#000000;stroke-width:0.264584;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;paint-order:fill markers stroke;enable-background:new"
+       id="rect15014-0-7-2-3-1"
+       width="7.9375029"
+       height="26.458342"
+       x="119.0625"
+       y="330.50027"
+       ry="7.479496e-05"
+       inkscape:export-filename="/home/martin/LibreSolar/4_Projects/Anträge/EnAccess_2021/enaccess-bms-overview.png"
+       inkscape:export-xdpi="200.1694"
+       inkscape:export-ydpi="200.1694" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:3.88056px;line-height:1.25;font-family:sans-serif;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583;enable-background:new"
+       x="120.78451"
+       y="335.16769"
+       id="text13775-0-72"
+       inkscape:export-filename="/home/martin/LibreSolar/4_Projects/Anträge/EnAccess_2021/enaccess-bms-overview.png"
+       inkscape:export-xdpi="200.1694"
+       inkscape:export-ydpi="200.1694"><tspan
+         sodipodi:role="line"
+         id="tspan13773-62-72"
+         style="text-align:start;text-anchor:start;stroke-width:0.264583"
+         x="120.78451"
+         y="335.16769">14</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;enable-background:new"
+       d="m 116.41666,330.50029 v -2.64584 h 5.29167 v 2.64584"
+       id="path31499-26"
+       inkscape:export-filename="/home/martin/LibreSolar/4_Projects/Anträge/EnAccess_2021/enaccess-bms-overview.png"
+       inkscape:export-xdpi="200.1694"
+       inkscape:export-ydpi="200.1694" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;enable-background:new"
+       d="m 124.35416,330.50028 v -2.64584 h 5.29167 v 2.64584"
+       id="path31499-26-1"
+       inkscape:export-filename="/home/martin/LibreSolar/4_Projects/Anträge/EnAccess_2021/enaccess-bms-overview.png"
+       inkscape:export-xdpi="200.1694"
+       inkscape:export-ydpi="200.1694" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 23.812499,327.85444 v -2.64583"
+       id="path306570" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 31.75,327.85444 v -2.64583"
+       id="path306572" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;enable-background:new"
+       d="m 39.6875,327.85444 v -2.64583"
+       id="path306572-0" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;enable-background:new"
+       d="m 47.624999,327.85444 v -2.64583"
+       id="path306572-6" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;enable-background:new"
+       d="m 55.5625,327.85444 v -2.64583"
+       id="path306572-1" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;enable-background:new"
+       d="m 63.499999,327.85444 v -2.64583"
+       id="path306572-5" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;enable-background:new"
+       d="m 71.437499,327.85444 v -2.64583"
+       id="path306572-9" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;enable-background:new"
+       d="m 79.374999,327.85444 v -2.64583"
+       id="path306572-4" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;enable-background:new"
+       d="m 87.312499,327.85444 v -2.64583"
+       id="path306572-90" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;enable-background:new"
+       d="m 95.249999,327.85444 v -2.64583"
+       id="path306572-91" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;enable-background:new"
+       d="m 103.1875,327.85444 v -2.64583"
+       id="path306572-7" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;enable-background:new"
+       d="m 111.125,327.85444 v -2.64583"
+       id="path306572-71" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;enable-background:new"
+       d="m 119.0625,327.85444 v -2.64583"
+       id="path306572-15" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;enable-background:new"
+       d="m 127,327.85444 v -2.64583"
+       id="path306572-97" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;enable-background:new"
+       d="m 134.9375,327.85444 v -2.64583"
+       id="path306572-76" />
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:fill markers stroke"
+       id="rect307141"
+       width="89.958328"
+       height="10.583324"
+       x="34.395832"
+       y="341.08362"
+       ry="2.6458242" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:4.93889px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="39.038773"
+       y="347.69373"
+       id="text83422"
+       inkscape:export-filename="/home/martin/LibreSolar/4_Projects/Anträge/EnAccess_2021/enaccess-bms-overview.png"
+       inkscape:export-xdpi="200.1694"
+       inkscape:export-ydpi="200.1694"><tspan
+         sodipodi:role="line"
+         id="tspan83420"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.93889px;font-family:sans-serif;-inkscape-font-specification:sans-serif;fill:#000000;fill-opacity:1;stroke-width:0.264583"
+         x="39.038773"
+         y="347.69373">12V-48V Lithium-Ion Battery Pack</tspan></text>
+  </g>
+</svg>

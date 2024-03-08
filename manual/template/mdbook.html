@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="$lang$" xml:lang="$lang$"$if(dir)$ dir="$dir$"$endif$>
+<head>
+    <!-- pandoc template based on mdBook theme -->
+    <meta charset="utf-8" />
+    <meta name="generator" content="pandoc" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+$for(author-meta)$
+    <meta name="author" content="$author-meta$" />
+$endfor$
+$if(date-meta)$
+    <meta name="dcterms.date" content="$date-meta$" />
+$endif$
+$if(keywords)$
+    <meta name="keywords" content="$for(keywords)$$keywords$$sep$, $endfor$" />
+$endif$
+    <title>$if(title-prefix)$$title-prefix$ – $endif$$pagetitle$</title>
+
+    <link rel="shortcut icon" href="template/favicon.ico">
+    <link rel="stylesheet" href="template/screen.css" />
+    <link rel="stylesheet" href="template/print.css" media="print">
+    <style>
+        code{white-space: pre-wrap;}
+        span.smallcaps{font-variant: small-caps;}
+        span.underline{text-decoration: underline;}
+        div.column{display: inline-block; vertical-align: top; width: 50%;}
+$if(quotes)$
+        q { quotes: "“" "”" "‘" "’"; }
+$endif$
+    </style>
+$if(highlighting-css)$
+    <style>
+    $highlighting-css$
+    </style>
+$endif$
+$for(css)$
+    <link rel="stylesheet" href="$css$" />
+$endfor$
+
+    <!-- Fonts -->
+    <link rel="stylesheet" href="template/fontawesome/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+$if(math)$
+    $math$
+$endif$
+$for(header-includes)$
+    $header-includes$
+$endfor$
+</head>
+<body class="light">
+
+$for(include-before)$
+    $include-before$
+$endfor$
+
+    <!-- Provide site root to javascript -->
+    <script type="text/javascript">
+        var path_to_root = "";
+        var default_theme = "light";
+    </script>
+
+    <!-- Work around some values being stored in localStorage wrapped in quotes -->
+    <script type="text/javascript">
+        try {
+            var theme = localStorage.getItem('mdbook-theme');
+            var sidebar = localStorage.getItem('mdbook-sidebar');
+
+            if (theme.startsWith('"') && theme.endsWith('"')) {
+                localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+            }
+
+            if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+            }
+        } catch (e) { }
+    </script>
+
+    <!-- Set the theme before any content is loaded, prevents flash -->
+    <script type="text/javascript">
+        var theme;
+        try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+        if (theme === null || theme === undefined) { theme = default_theme; }
+        document.body.className = theme;
+        document.querySelector('html').className = theme + ' js';
+    </script>
+
+    <!-- Hide / unhide sidebar before it is displayed -->
+    <script type="text/javascript">
+        var html = document.querySelector('html');
+        var sidebar = 'hidden';
+        if (document.body.clientWidth >= 1080) {
+            try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+            sidebar = sidebar || 'visible';
+        }
+        html.classList.remove('sidebar-visible');
+        html.classList.add("sidebar-" + sidebar);
+    </script>
+
+    <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+        <div class="toc">
+            $toc$
+        </div>
+    </nav>
+
+    <div id="page-wrapper" class="page-wrapper">
+
+        <div class="page">
+
+            <div id="menu-bar" class="menu-bar">
+                <div id="menu-bar-sticky-container">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fas fa-bars"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">$title$</h1>
+
+                    <div class="right-buttons">
+                        <a onclick="window.print()" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fas fa-print"></i>
+                        </a>
+                        <a href="manual.pdf" title="View PDF file" aria-label="View PDF file">
+                            <i class="fas fa-file-pdf"></i>
+                        </a>
+                        </div>
+                </div>
+            </div>
+
+
+            <div id="content" class="content">
+                <main>
+$body$
+                </main>
+
+                <nav class="nav-wrapper" aria-label="Page navigation">
+                    <!-- Mobile navigation buttons -->
+
+
+
+
+                    <div style="clear: both"></div>
+                </nav>
+            </div>
+        </div>
+
+        <nav class="nav-wide-wrapper" aria-label="Page navigation">
+
+        </nav>
+
+    </div>
+
+    <script src="template/book.js" type="text/javascript" charset="utf-8"></script>
+
+$for(include-after)$
+    $include-after$
+$endfor$
+</body>
+</html>
