@@ -6,8 +6,8 @@
 
   (title_block
     (title "Libre Solar BMS C1")
-    (date "2023-11-03")
-    (rev "0.4.0")
+    (date "2024-03-17")
+    (rev "0.4.1")
     (company "Libre Solar Technologies GmbH")
     (comment 1 "Website: https://libre.solar")
     (comment 2 "Author: Martin Jäger")
@@ -1211,9 +1211,6 @@
     (pin "1" (uuid 4f71537e-60bb-4e36-ae62-e9b30f57b2da))
     (instances
       (project "bms-c1"
-        (path "/5335aa43-6e7e-459f-9425-0b3d35652705/00000000-0000-0000-0000-00005c64ed50"
-          (reference "TP5") (unit 1)
-        )
         (path "/5335aa43-6e7e-459f-9425-0b3d35652705/00000000-0000-0000-0000-000058363b12"
           (reference "TP5") (unit 1)
         )
