@@ -25,7 +25,7 @@ jobs:
       uses: actions/checkout@v3
 
     - name: Run KiBot
-      uses: INTI-CMNB/KiBot@v2_k7
+      uses: INTI-CMNB/KiBot@v2_k8_1_6_5
       with:
         config: kicad/checks.kibot.yaml
         # optional - prefix to output defined in config
