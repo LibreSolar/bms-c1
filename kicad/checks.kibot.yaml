@@ -7,9 +7,9 @@ preflight:
   run_drc: true
   filters:
     # ERC filters
-    - filter: "Error reading simulation model from symbol"
+    - filter: "No simulation model definition found for symbol"
       error: 'simulation_model_issue'
-      regex: "Error reading simulation model from symbol '.*'"
+      regex: "No simulation model definition found for symbol '.*'"
     - filter: "Input Power pin not driven by any Output Power pin"
       error: 'power_pin_not_driven'
       regex: "Input Power pin not driven by any Output Power pin"
