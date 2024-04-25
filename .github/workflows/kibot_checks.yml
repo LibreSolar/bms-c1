@@ -23,6 +23,8 @@ jobs:
     steps:
     - name: Get repo
       uses: actions/checkout@v3
+      with:
+        submodules: "recursive"
 
     - name: Run KiBot
       uses: INTI-CMNB/KiBot@v2_k8_1_6_5

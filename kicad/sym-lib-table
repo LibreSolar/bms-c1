@@ -1,2 +1,5 @@
 (sym_lib_table
+  (version 7)
+  (lib (name "LibreSolar")(type "KiCad")(uri "${KIPRJMOD}/libresolar-symbols/LibreSolar.kicad_sym")(options "")(descr ""))
+  (lib (name "Espressif")(type "KiCad")(uri "${KIPRJMOD}/espressif-libraries/symbols/Espressif.kicad_sym")(options "")(descr ""))
 )

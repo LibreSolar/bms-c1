@@ -11,6 +11,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
         with:
+          submodules: "recursive"
           # So we can run a diff between changes
           fetch-depth: '0'
 

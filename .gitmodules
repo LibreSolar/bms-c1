@@ -1,0 +1,9 @@
+[submodule "kicad/libresolar-symbols"]
+	path = kicad/libresolar-symbols
+	url = https://github.com/LibreSolar/kicad-symbols
+[submodule "kicad/libresolar-footprints"]
+	path = kicad/libresolar-footprints
+	url = https://github.com/LibreSolar/kicad-footprints
+[submodule "kicad/espressif-libraries"]
+	path = kicad/espressif-libraries
+	url = https://github.com/espressif/kicad-libraries
