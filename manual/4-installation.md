@@ -32,9 +32,18 @@ The fixing torque for the nuts is 2.2 Nm. Use of a torque wrench is highly recom
 
 ### Signal connections
 
-The MPC3 / Microfit connector must be equipped with properly crimped wires connected to the cells and the thermistors. Würth sells [pre-crimped wires](https://www.we-online.com/de/components/products/em/connectors/wire-to-board/wr_mpc3/wr_mpc3_pre_crimped_wire) so that no crimping tool is needed (the low-force type is recommended). These wires can be cut in half and connected to an own wiring harness.
+The MPC3 / Microfit connector must be equipped with properly crimped wires connected to the cells and the thermistors. Würth sells [pre-crimped wires](https://www.we-online.com/de/components/products/em/connectors/wire-to-board/wr_mpc3/wr_mpc3_pre_crimped_wire) so that no crimping tool is needed (the low-force type is recommended). These wires can be cut in half and connected to the application specific wiring harness.
 
-If less than 16 cells are used, the unused cell connections have to be short-circuited (either on the PCB using the pads left of the balancing resistors or in the wiring harness). See also the [BQ76952 documentation](https://www.ti.com/product/BQ76952) for further details.
+The first signal connection and the very last one (respectively shown in grey and orange in the connection diagram) are used for powering up the BMS. 
+If less than 16 cells are used :  
+- Route the last wire of the harness (shown in orange) to the before last Microfit pin.
+- Short the unused cell connections: 
+  - on the PCB using the exposed pads as per the schematic below in cyan
+  - or in the wiring harness directly. 
+
+![BMS connections](./images/bms-c1_connections_12s.svg)
+
+See also the [BQ76952 documentation](https://www.ti.com/product/BQ76952) for further details.
 
 At least NTC1 has to be connected and show a valid temperature range for the BMS to allow charging/discharging.
 
