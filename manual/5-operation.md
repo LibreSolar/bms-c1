@@ -4,7 +4,7 @@
 
 If no firmware is flashed on the board, make sure the board is powered through the cell connector. The power wires BAT+ and BAT- are optional.
 
-The firmware is flashed through the USB port. Follow the instructions in the [Firmware repository](https://github.com/LibreSolar/bms-firmware).
+The firmware is flashed through the USB port. Follow the instructions in the [Firmware documentation](https://libre.solar/bms-firmware/src/dev/building_flashing.html).
 
 ## Start-up
 
