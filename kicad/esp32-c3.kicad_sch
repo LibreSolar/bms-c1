@@ -5,7 +5,7 @@
 	(uuid "196d7ab2-b064-443b-bfcf-e3842dfce006")
 	(paper "A4")
 	(title_block
-		(title "Libre Solar BMS C1")
+		(title "Libre Solar BMS C1 lite")
 		(date "2024-03-17")
 		(rev "0.4.1")
 		(company "Libre Solar Technologies GmbH")
@@ -4532,7 +4532,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "0f16986b-fb9a-4816-bea5-1ad91c5a74cb")
 		(property "Reference" "C37"
 			(at 236.982 65.532 0)
@@ -4700,7 +4700,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "1d32165a-7398-497b-96c7-9093bae16f8e")
 		(property "Reference" "R56"
 			(at 232.918 60.96 90)
@@ -4793,7 +4793,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "2cc02f91-3edb-4397-9c6b-cdd8a04a7fcd")
 		(property "Reference" "C36"
 			(at 178.308 38.862 0)
@@ -5380,7 +5380,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "7256d21e-2487-4ea7-afdb-f02bb96f3110")
 		(property "Reference" "U2"
@@ -5513,7 +5513,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "74adf3ab-6283-4d79-bdb0-3e40fc7e22d8")
 		(property "Reference" "D8"
@@ -5623,7 +5623,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "7b9823da-142a-4aa6-8057-0d280aa717c2")
 		(property "Reference" "C21"
 			(at 178.308 117.602 0)
@@ -5728,7 +5728,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "847abfef-d76e-4e0f-a91b-e240c7e13977")
 		(property "Reference" "R64"
 			(at 232.918 71.12 90)
@@ -6350,7 +6350,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "c8ce87c0-5a8c-4baa-aa9c-4a26f24502f7")
 		(property "Reference" "U1"
@@ -6475,7 +6475,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "c9049b5d-c1c2-47e7-a491-1ffb9e5fa080")
 		(property "Reference" "R21"
 			(at 190.5 62.738 90)

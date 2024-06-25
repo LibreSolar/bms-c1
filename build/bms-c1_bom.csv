@@ -1,64 +1,63 @@
-Component,References,Value,Footprint,Description,Quantity Per PCB,Manufacturer,PartNumber,Remarks,LCSC
-1,C27 C29 C32 C33 C35 C38,100pF,C_0603_1608,Unpolarized capacitor,6,Samsung Electro-Mechanics,CL10C101JC8NNNC,"100V, C0G/NP0",C296717
-2,C19 C21 C24 C28 C31 C34 C36 C37 C40 C48 C49 C50 C51 C52,100nF,C_0603_1608,Unpolarized capacitor,14,Samsung Electro-Mechanics,CL10B104KC8NNNC,"min. 100V, X7R",C15725
-3,C1 C2 C3 C4 C5 C6 C7 C8 C9 C10 C11 C12 C13 C14 C15 C16 C26,220nF,C_0603_1608,Unpolarized capacitor,17,Samsung Electro-Mechanics,CL10B224KA8NNNC,"min. 25V, X7R",C21120
-4,C25,1µF,C_1206_3216,Unpolarized capacitor,1,Samsung Electro-Mechanics,CL31B105KCHNNNE,"min. 100V, X5R",C13832
-5,C30 C47,1µF,C_0603_1608,Unpolarized capacitor,2,Samsung Electro-Mechanics,CL10A105KA8NNNC,"min. 25V, X5R min. 10V, X5R",C5673
-6,C46,10µF,C_0805_2012,Unpolarized capacitor,1,Samsung Electro-Mechanics,CL21A106KPFNNNE,"min. 10V, X5R",C17024
-7,C20,2.2µF,C_0603_1608,Unpolarized capacitor,1,Samsung Electro-Mechanics,CL10A225KP8NNNC,"min. 10V, X7R",C1607
-8,C22 C23,2.2µF,C_1210_3225,Unpolarized capacitor,2,Samsung Electro-Mechanics,CL32B225KCJSNNE,"min. 100V, X5R",C55151
-9,C17 C18,47µF,C_1210_3225,Unpolarized capacitor,2,Samsung Electro-Mechanics,CL32B476MPJNNNE,"min. 10V, X5R",C525654
-10,D14 D17 D21 D24,16V,D_SOD-123,Zener diode,4,Diodes Incorporated,MMSZ5246B-7-F,Alternative: Vishay MMSZ5246B-HE3-08,C282317
-11,D11,3.6V,D_SOD-123,Zener diode,1,onsemi,MMSZ4685T1G,,C66886
-12,D19,5.1V,D_SOD-323,Zener diode,1,Diodes Incorporated,BZT52C5V1S-7-F,Vishay BZX384C5V1,C151348
-13,D23,75V,D_SOD-123,Zener diode,1,Diodes Incorporated,MMSZ5267BT1G,,C266795
-14,D2 D5 D10 D15 D16 D20,BAT46W,D_SOD-123,Schottky diode,6,Diodes Incorporated,BAT46W-7-F,Alternative: MCC BAT46WHE3-TP,C83152
-15,D3 D4,ESD5B5.0ST1G,D_SOD-523,"ESD protection diode, 5.0Vrwm, SOD-923",2,onsemi,ESD5B5.0ST1G,,C93623
-16,D22,MURS360,D_SMC,Diode,1,Diodes Incorporated,MURS360,Alternative: Other MURS360,C388245
-17,D8,PESD2CANFD,SOT-23,"Dual Line CAN Bus Protector, 24Vrwm",1,Nexperia,PESD2CANFD24V-TR,Alternative: onsemi ESDONCAN1LT,C552486
-18,D1,PMEG10010ELRX,D_SOD-123F,Schottky diode,1,Nexperia,PMEG10010ELRX,Alternative: Nexperia PMEG10030ELPX,C179426
-19,D13,PMEG10010ELRX,D_SOD-123F,Schottky diode,1,Nexperia,PMEG10010ELRX,Alternative: Nexperia PMEG10030ELPX,C179426
-20,D12,SMCJ70A,D_SMC,Zener diode,1,Bourns,SMCJ70A,Alternative: Diodes Inc. SMCJ70A-13-F,C135194
-21,D9,VSS8D3M10-M3/I,D_SOD-128,Schottky diode,1,Vishay,VSS8D3M10-M3/H,Alternative: Nexperia PMEG10030ELPX,C3760174
-22,J5,B2B-PH-SM4,JST_PH_B2B-PH-SM4-TB_1x02-1MP_P2.00mm_Vertical,"Generic connectable mounting pin connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)",1,JST,B2B-PH-SM4-TB(LF)(SN),Alternative: Würth 620302124022,C160352
-23,J4,B3B-PH-SM4,JST_PH_B3B-PH-SM4-TB_1x03-1MP_P2.00mm_Vertical,"Generic connectable mounting pin connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)",1,JST,B3B-PH-SM4-TB(LF)(SN),Alternative: Würth 620303124022,C160353
-24,J2 J6,B4B-PH-SM4,JST_PH_B4B-PH-SM4-TB_1x04-1MP_P2.00mm_Vertical,"Generic connectable mounting pin connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)",2,JST,B4B-PH-SM4-TB(LF)(SN),Alternative: Würth 620304124022,C160354
-25,J1,MicroFit 2x12,Molex_Micro-Fit_3.0_43045-2410_2x12-1MP_P3.00mm_Horizontal,"Generic connectable mounting pin connector, double row, 02x12, top/bottom pin numbering scheme (row 1: 1...pins_per_row, row2: pins_per_row+1 ... num_pins), script generated (kicad-library-utils/schlib/autogen/connector/)",1,Würth,662024231722,Mating connector: 662024113322,
-26,J3,USB_C_Receptacle_USB2.0,USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal,USB 2.0-only Type-C Receptacle connector,1,GCT,USB4105-GF-A,,
-27,L2,22µH,Bourns_SRN8040TA,"Inductor, small symbol",1,Bourns,SRN8040-220M,Alternative: Tayo Yuden NR8040T220M,C92946
-28,LED2,LED green,LED_0603_1608Metric,Light emitting diode,1,Lite-On,LTST-C190KGKT,green,C125094
-29,LED1,LED red,LED_0603_1608Metric,Light emitting diode,1,Lite-On,LTST-C190KRKT,red,C94869
-30,P1 P2 P3 P4,CONN_01X01,Wuerth_PowerOne_SMD_LF990005,"Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)",4,Erni,225852-E,Alternative: Würth LF990005,C3217898
-31,P5,CONN_01X01,SolderWirePad_1x01_SMD_5x10mm,"Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)",1,,,,
-32,Q11,BSS123N,SOT-23,"N-MOSFET transistor, gate/source/drain",1,Infineon,BSS123N H6327,,C534594
-33,Q10,BSS84,SOT-23,"P-MOSFET transistor, gate/source/drain",1,Nexperia,"BSS84AK,215",at least -20V,C127273
-34,Q1,DMN10H220LE,SOT-223,"N-MOSFET transistor, gate/drain/source, drain connected to mounting plane",1,Diodes Inc.,DMN10H220LE,"100V, >2A, Alternative: IRFM120ATF",C258216
-35,Q2 Q3 Q4 Q5 Q6 Q7 Q8 Q9,IPT012N08N5,Infineon_PG-HSOF-8-1_ThermalVias,"N-MOSFET transistor, gate/source/drain",8,Infineon,IPT012N08N5,Alternative: Huayi HYG012N08NS1TA,C531199
-36,Q12,ZXMP10A17GTA,SOT-223-3_TabPin2,"P-MOSFET transistor, gate/drain/source",1,Diodes Incorporated,ZXMP10A17GTA,Alternative: IRFL9110TRPBF,C32998
-37,R21 R37,0R,R_0603_1608,Resistor,2,Yageo,RC0603FR-070RL,,
-38,R25,10,R_1206_3216,Resistor,1,Yageo,RC1206FR-0710RL,,
-39,R1 R2 R3 R4 R5 R6 R7 R8 R9 R10 R11 R12 R13 R14 R15 R16 R17,20,R_2010_5025,Resistor,17,Yageo,RC2010JK-0720RL,,C163344
-40,R63,40,Bourns_PWR163,Trim-potentiometer,1,Bourns,PWR163S-25-40R0FE,,
-41,R40 R41 R42 R43 R47 R48 R49 R50 R57,47,R_0603_1608,Resistor,9,Yageo,RC0603FR-0747RL,,
-42,R56 R64,62R,R_0603_1608,Resistor,2,Yageo,RC0603FR-0762RL,,
-43,R18,100,R_1206_3216,Resistor,1,Yageo,RC1206FR-07100RL,,
-44,R19 R20 R38 R44,100,R_0603_1608,Resistor,4,Yageo,RC0603FR-07100RL,,
-45,R45,300µ,R_Shunt_5931_Kelvin,Shunt resistor,1,Vishay,WSLP5931L3000FEA,Alternative: Bourns CSS2H-5930R-L300F,
-46,R58,470,R_0603_1608,Resistor,1,Yageo,RC0603FR-07470RL,,
-47,R22 R23 R46,1k,R_0603_1608,Resistor,3,Yageo,RC0603FR-071KL,,
-48,R32 R33,2.2k,R_0603_1608,Resistor,2,Yageo,RC0603FR-072K2L,,
-49,R27 R35 R53 R54,5.1k,R_0603_1608,Resistor,4,Yageo,RC0603FR-075K1L,,
-50,R29 R30 R60 R68,10k,R_0603_1608,Resistor,4,Yageo,RC0603FR-0710KL,,
-51,R31,35.7k,R_0603_1608,Resistor,1,Yageo,RC0603FR-0735K7L,,
-52,R34,52.3k,R_0603_1608,Resistor,1,Yageo,RC0603FR-0752K3L,,
-53,R51 R61,68k,R_0603_1608,Resistor,2,Yageo,RC0603FR-0768KL,,
-54,R28 R65,82k,R_0603_1608,Resistor,2,Yageo,RC0603FR-0782KL,,
-55,R24 R26 R62,1M,R_0603_1608,Resistor,3,Yageo,RC0603FR-071ML,,
-56,R39 R52 R59,10M,R_0603_1608,Resistor,3,Yageo,RC0603FR-0710ML,,
-57,RT1 RT2,10k,R_0603_1608,Thermistor with Negative Temperature Coefficient (NTC),2,TDK,NTCG163JF103FT1S,,
-58,S1 S2,SW_PUSH,SW_SPST_TL3305A,Button,2,E-Switch,TL3305AF160QG,,
-59,U4,BQ76952,TQFP-48_7x7mm_P0.5mm,"Lithium battery monitor, 3-16 cells, integrated balancing, I2C interface, TQFP-48",1,Texas Instruments,BQ76952PFBR,,C2862742
-60,U5,ESP32-C3-MINI-1,ESP32-C3-MINI-1,"ESP32-C3-MINI-1 is a general-purpose Wi-Fi and Bluetooth LE module. This module features a rich set of peripherals and a small size, which makes it an ideal choice for smart home, industrial automation, health care, consumer electronics, etc",1,Espressif Systems,ESP32-C3-MINI-1-N4,,C2838502
-61,U3,LMR38010,SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.4x3.1mm_ThermalVias," SIMPLE SWITCHER® 60-V, 3-A Step-Down Converter With 40-µA IQ",1,Texas Instruments,LMR38010SDDAR,,
-62,U1,SN65HVD230,SOIC-8_3.9x4.9mm_P1.27mm,"CAN Bus Transceivers, 3.3V, 1Mbps, Low-Power capabilities, SOIC-8",1,Texas Instruments,SN65HVD230DR,Alternative: SN65HVD230QDR,C12084
-63,U2,SN65HVD75,SOIC-8_3.9x4.9mm_P1.27mm,"3.3V, RS-485 Transceiver, SOIC-8",1,Texas Instruments,SN65HVD75DR,Alternative: ISL3178E,C57928
+"Reference","Value","Footprint","Qty","LCSC","Manufacturer","PartNumber","Remarks"
+"C1,C2,C3,C4,C5,C6,C7,C8,C9,C10,C11,C12,C13,C14,C15,C16,C26","220nF","LibreSolar:C_0603_1608","17","C21120","Samsung Electro-Mechanics","CL10B224KA8NNNC","min. 25V, X7R"
+"C17,C18","47µF","LibreSolar:C_1210_3225","2","C525654","Samsung Electro-Mechanics","CL32B476MPJNNNE","min. 10V, X5R"
+"C19,C24,C28,C31,C34,C40,C48,C49,C50,C51,C52","100nF","LibreSolar:C_0603_1608","11","C15725","Samsung Electro-Mechanics","CL10B104KC8NNNC","min. 100V, X7R"
+"C20","2.2µF","LibreSolar:C_0603_1608","1","C1607","Samsung Electro-Mechanics","CL10A225KP8NNNC","min. 10V, X7R"
+"C22,C23","2.2µF","LibreSolar:C_1210_3225","2","C55151","Samsung Electro-Mechanics","CL32B225KCJSNNE","min. 100V, X5R"
+"C25","1µF","LibreSolar:C_1206_3216","1","C13832","Samsung Electro-Mechanics","CL31B105KCHNNNE","min. 100V, X5R"
+"C27,C29,C32,C33,C35,C38","100pF","LibreSolar:C_0603_1608","6","C296717","Samsung Electro-Mechanics","CL10C101JC8NNNC","100V, C0G/NP0"
+"C30","1µF","LibreSolar:C_0603_1608","1","C5673","Samsung Electro-Mechanics","CL10A105KA8NNNC","min. 25V, X5R"
+"C46","10µF","LibreSolar:C_0805_2012","1","C17024","Samsung Electro-Mechanics","CL21A106KPFNNNE","min. 10V, X5R"
+"C47","1µF","LibreSolar:C_0603_1608","1","C5673","Samsung Electro-Mechanics","CL10A105KA8NNNC","min. 10V, X5R"
+"D1,D13","PMEG10010ELRX","LibreSolar:D_SOD-123F","2","C179426","Nexperia","PMEG10010ELRX","Alternative: Nexperia PMEG10030ELPX"
+"D2,D5,D10,D15,D16,D20","BAT46W","LibreSolar:D_SOD-123","6","C83152","Diodes Incorporated","BAT46W-7-F","Alternative: MCC BAT46WHE3-TP"
+"D3,D4","ESD5B5.0ST1G","LibreSolar:D_SOD-523","2","C93623","onsemi","ESD5B5.0ST1G",""
+"D9","VSS8D3M10-M3/I","Diode_SMD:D_SOD-128","1","C3760174","Vishay","VSS8D3M10-M3/H","Alternative: Nexperia PMEG10030ELPX"
+"D11","3.6V","LibreSolar:D_SOD-123","1","C66886","onsemi","MMSZ4685T1G",""
+"D12","SMCJ70A","LibreSolar:D_SMC","1","C135194","Bourns","SMCJ70A","Alternative: Diodes Inc. SMCJ70A-13-F"
+"D14,D17,D21,D24","16V","LibreSolar:D_SOD-123","4","C282317","Diodes Incorporated","MMSZ5246B-7-F","Alternative: Vishay MMSZ5246B-HE3-08"
+"D19","5.1V","LibreSolar:D_SOD-323","1","C151348","Diodes Incorporated","BZT52C5V1S-7-F","Vishay BZX384C5V1"
+"D22","MURS360","LibreSolar:D_SMC","1","C388245","Diodes Incorporated","MURS360","Alternative: Other MURS360"
+"D23","75V","LibreSolar:D_SOD-123","1","C266795","Diodes Incorporated","MMSZ5267BT1G",""
+"FID1,FID2","Fiducial","Fiducial:Fiducial_1mm_Mask2mm","2","","","",""
+"H1,H2,H3,H4,H5,H6","MountingHole","MountingHole:MountingHole_3.2mm_M3_Pad_TopBottom","6","","","",""
+"J2,J6,J9","B4B-PH-SM4","Connector_JST:JST_PH_B4B-PH-SM4-TB_1x04-1MP_P2.00mm_Vertical","3","C160354","JST","B4B-PH-SM4-TB(LF)(SN)","Alternative: Würth 620304124022"
+"J3","USB_C_Receptacle_USB2.0","Connector_USB:USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal","1","","GCT","USB4105-GF-A",""
+"J5","B2B-PH-SM4","Connector_JST:JST_PH_B2B-PH-SM4-TB_1x02-1MP_P2.00mm_Vertical","1","C160352","JST","B2B-PH-SM4-TB(LF)(SN)","Alternative: Würth 620302124022"
+"J7","S10B-PH-SM4-TB","Connector_JST:JST_PH_S10B-PH-SM4-TB_1x10-1MP_P2.00mm_Horizontal","1","C265014","JST","S10B-PH-SM4-TB(LF)(SN)","Alternative: Würth 620110131822"
+"J8","S9B-PH-SM4-TB","Connector_JST:JST_PH_S9B-PH-SM4-TB_1x09-1MP_P2.00mm_Horizontal","1","C495694","JST","S9B-PH-SM4-TB(LF)(SN)","Alternative: Würth 620109131822"
+"L2","22µH","LibreSolar:Bourns_SRN8040TA","1","C92946","Bourns","SRN8040-220M","Alternative: Tayo Yuden NR8040T220M"
+"LED1","LED red","LED_SMD:LED_0603_1608Metric","1","C94869","Lite-On","LTST-C190KRKT","red"
+"LED2","LED green","LED_SMD:LED_0603_1608Metric","1","C125094","Lite-On","LTST-C190KGKT","green"
+"LOGO1","OPEN_HARDWARE","Symbol:OSHW-Logo_5.7x6mm_SilkScreen","1","","","",""
+"LOGO2","LIBRE_SOLAR","LibreSolar:LIBRESOLAR_LOGO","1","","","",""
+"NT1","NetTie","NetTie:NetTie-2_SMD_Pad0.5mm","1","","","",""
+"Q3,Q4,Q7,Q8","IPT012N08N5","Package_TO_SOT_SMD:Infineon_PG-HSOF-8-1_ThermalVias","4","C531199","Infineon","IPT012N08N5","Alternative: Huayi HYG012N08NS1TA"
+"Q10","BSS84","LibreSolar:SOT-23","1","C127273","Nexperia","BSS84AK,215","at least -20V"
+"Q11","BSS123N","LibreSolar:SOT-23","1","C534594","Infineon","BSS123N H6327",""
+"Q12","ZXMP10A17GTA","Package_TO_SOT_SMD:SOT-223-3_TabPin2","1","C32998","Diodes Incorporated","ZXMP10A17GTA","Alternative: IRFL9110TRPBF"
+"R1,R2,R3,R4,R5,R6,R7,R8,R9,R10,R11,R12,R13,R14,R15,R16,R17","20","LibreSolar:R_2010_5025","17","C163344","Yageo","RC2010JK-0720RL",""
+"R18","100","LibreSolar:R_1206_3216","1","","Yageo","RC1206FR-07100RL",""
+"R19,R20,R38,R44","100","LibreSolar:R_0603_1608","4","","Yageo","RC0603FR-07100RL",""
+"R22,R23,R46","1k","LibreSolar:R_0603_1608","3","","Yageo","RC0603FR-071KL",""
+"R24,R26,R62","1M","LibreSolar:R_0603_1608","3","","Yageo","RC0603FR-071ML",""
+"R27,R35,R53,R54","5.1k","LibreSolar:R_0603_1608","4","","Yageo","RC0603FR-075K1L",""
+"R28,R65","82k","LibreSolar:R_0603_1608","2","","Yageo","RC0603FR-0782KL",""
+"R29,R30,R60,R68","10k","LibreSolar:R_0603_1608","4","","Yageo","RC0603FR-0710KL",""
+"R31","35.7k","LibreSolar:R_0603_1608","1","","Yageo","RC0603FR-0735K7L",""
+"R32,R33","2.2k","LibreSolar:R_0603_1608","2","","Yageo","RC0603FR-072K2L",""
+"R34","52.3k","LibreSolar:R_0603_1608","1","","Yageo","RC0603FR-0752K3L",""
+"R36,R55,R63,R66","180","Resistor_SMD:R_2512_6332Metric_Pad1.40x3.35mm_HandSolder","4","","-- mixed values --","CR2512-JW-181ELF",""
+"R37","0R","LibreSolar:R_0603_1608","1","","Yageo","RC0603FR-070RL",""
+"R39,R52,R59","10M","LibreSolar:R_0603_1608","3","","Yageo","RC0603FR-0710ML",""
+"R41,R42,R48,R49,R57","47","LibreSolar:R_0603_1608","5","","Yageo","RC0603FR-0747RL",""
+"R45","300µ","LibreSolar:R_Shunt_5931_Kelvin","1","","Vishay","WSLP5931L3000FEA","Alternative: Bourns CSS2H-5930R-L300F"
+"R51,R61","68k","LibreSolar:R_0603_1608","2","","Yageo","RC0603FR-0768KL",""
+"R58","470","LibreSolar:R_0603_1608","1","","Yageo","RC0603FR-07470RL",""
+"RT1,RT2","10k","LibreSolar:R_0603_1608","2","C406719","TDK","NTCG163JF103FT1S",""
+"S1,S2","SW_PUSH","Button_Switch_SMD:SW_SPST_TL3305A","2","C2886899","E-Switch","TL3305AF160QG",""
+"TP1,TP2,TP3,TP4,TP5,TP6,TP7,TP8,TP9,TP10,TP12,TP13,TP14,TP15","TestPoint","TestPoint:TestPoint_Pad_D1.5mm","14","","","",""
+"TP16,TP17,TP18,TP19,TP20,TP21,TP22,TP23,TP24,TP25,TP26,TP27,TP28,TP29,TP30,TP31,TP32","TestPoint","TestPoint:TestPoint_Pad_1.0x1.0mm","17","","","",""
+"U3","LMR38010","LibreSolar:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.4x3.1mm_ThermalVias","1","C3192337","Texas Instruments","LMR38010SDDAR","Alternative: LMR38020SDDAR"
+"U4","BQ76952","Package_QFP:TQFP-48_7x7mm_P0.5mm","1","C2862742","Texas Instruments","BQ76952PFBR",""
+"U5","ESP32-C3-MINI-1","Espressif:ESP32-C3-MINI-1","1","C2838502","Espressif Systems","ESP32-C3-MINI-1-N4",""

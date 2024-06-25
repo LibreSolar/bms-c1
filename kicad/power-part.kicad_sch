@@ -5,7 +5,7 @@
 	(uuid "2eac49ed-0938-421f-8431-00083fef2e45")
 	(paper "A4")
 	(title_block
-		(title "Libre Solar BMS C1")
+		(title "Libre Solar BMS C1 lite")
 		(date "2024-03-17")
 		(rev "0.4.1")
 		(company "Libre Solar Technologies GmbH")
@@ -952,167 +952,6 @@
 					(at 2.54 5.08 270)
 					(length 2.54)
 					(name "D"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
-		(symbol "Device:R_Potentiometer_Trim"
-			(pin_names
-				(offset 1.016) hide)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "RV"
-				(at -4.445 0 90)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "R_Potentiometer_Trim"
-				(at -2.54 0 90)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Trim-potentiometer"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "resistor variable trimpot trimmer"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "Potentiometer*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "R_Potentiometer_Trim_0_1"
-				(polyline
-					(pts
-						(xy 1.524 0.762) (xy 1.524 -0.762)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 0) (xy 1.524 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start 1.016 2.54)
-					(end -1.016 -2.54)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "R_Potentiometer_Trim_1_1"
-				(pin passive line
-					(at 0 3.81 270)
-					(length 1.27)
-					(name "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 3.81 0 180)
-					(length 1.27)
-					(name "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -3.81 90)
-					(length 1.27)
-					(name "3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2363,6 +2202,12 @@
 		(uuid "06fdf89e-a2da-423d-af8f-bffef441e01a")
 	)
 	(junction
+		(at 229.87 111.76)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0798fb4f-f157-4895-9860-3a9a310ffc32")
+	)
+	(junction
 		(at 187.96 68.58)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2471,6 +2316,12 @@
 		(uuid "52ee9294-dca8-458a-9b16-a0d455433079")
 	)
 	(junction
+		(at 219.71 119.38)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "637fb2f2-3227-4cd8-867e-b19917510f2c")
+	)
+	(junction
 		(at 220.98 68.58)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2487,6 +2338,18 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "69704190-fd28-4ff0-8e3d-7a9802479fff")
+	)
+	(junction
+		(at 219.71 104.14)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6e6dea46-8c24-4b15-b29c-d3ad3abff6f3")
+	)
+	(junction
+		(at 219.71 111.76)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7053bd36-8ad3-4845-97fd-827df2a3238f")
 	)
 	(junction
 		(at 180.34 93.98)
@@ -2525,10 +2388,22 @@
 		(uuid "99c31e3d-6c07-4dec-bda2-78edd67b8de8")
 	)
 	(junction
+		(at 229.87 104.14)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a1198301-b850-4f56-b55b-aeb35398224c")
+	)
+	(junction
 		(at 160.02 86.36)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "a4f9cfb2-e62e-47b4-8924-ae42afd8c345")
+	)
+	(junction
+		(at 229.87 119.38)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a60fe83b-8214-49a0-b3af-b3a1a3e7e097")
 	)
 	(junction
 		(at 149.86 68.58)
@@ -2577,12 +2452,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "bb7cbae9-d800-4be4-b871-1d7d302cfc1c")
-	)
-	(junction
-		(at 229.87 119.38)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "be0fa9d1-83f1-4271-88d8-5c7efc593059")
 	)
 	(junction
 		(at 63.5 86.36)
@@ -2718,6 +2587,16 @@
 	)
 	(wire
 		(pts
+			(xy 219.71 96.52) (xy 222.25 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0206cc49-9275-4aeb-a932-0885ba96e74e")
+	)
+	(wire
+		(pts
 			(xy 124.46 154.94) (xy 124.46 156.21)
 		)
 		(stroke
@@ -2748,6 +2627,16 @@
 	)
 	(wire
 		(pts
+			(xy 229.87 104.14) (xy 229.87 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "08d038f1-f2ba-4101-be9b-d85b53dd593f")
+	)
+	(wire
+		(pts
 			(xy 160.02 68.58) (xy 160.02 86.36)
 		)
 		(stroke
@@ -2775,16 +2664,6 @@
 			(type default)
 		)
 		(uuid "0d452416-bfee-410d-8111-b20ab55e2662")
-	)
-	(wire
-		(pts
-			(xy 223.52 113.03) (xy 229.87 113.03)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0d8bf9fa-c0d1-4051-9175-1edd1d268ff0")
 	)
 	(wire
 		(pts
@@ -3078,6 +2957,16 @@
 	)
 	(wire
 		(pts
+			(xy 227.33 111.76) (xy 229.87 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3c069218-0071-410a-a250-9bf16909e164")
+	)
+	(wire
+		(pts
 			(xy 91.44 78.74) (xy 96.52 78.74)
 		)
 		(stroke
@@ -3208,6 +3097,16 @@
 	)
 	(wire
 		(pts
+			(xy 229.87 119.38) (xy 237.49 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "49e6990f-c6f6-40db-9268-1489565a23f6")
+	)
+	(wire
+		(pts
 			(xy 208.28 93.98) (xy 193.04 93.98)
 		)
 		(stroke
@@ -3215,6 +3114,16 @@
 			(type default)
 		)
 		(uuid "4a8fd34e-78f3-4be0-a814-a52d0944965e")
+	)
+	(wire
+		(pts
+			(xy 219.71 111.76) (xy 219.71 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4a9b89f7-4644-4814-8bdb-a1417ec9f214")
 	)
 	(wire
 		(pts
@@ -3238,6 +3147,26 @@
 	)
 	(wire
 		(pts
+			(xy 229.87 96.52) (xy 229.87 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4c2d2bd9-9571-410f-b55f-e82888bf0adb")
+	)
+	(wire
+		(pts
+			(xy 229.87 111.76) (xy 229.87 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4caaafe2-c5d1-4765-996e-95bedbfee954")
+	)
+	(wire
+		(pts
 			(xy 132.08 27.94) (xy 134.62 27.94)
 		)
 		(stroke
@@ -3258,6 +3187,16 @@
 	)
 	(wire
 		(pts
+			(xy 219.71 104.14) (xy 222.25 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "50856d1b-592f-45f5-bfb9-8ccfab2b7594")
+	)
+	(wire
+		(pts
 			(xy 63.5 68.58) (xy 63.5 86.36)
 		)
 		(stroke
@@ -3265,6 +3204,16 @@
 			(type default)
 		)
 		(uuid "51b52f9a-eb87-4a9b-a404-e36eea1d2bd5")
+	)
+	(wire
+		(pts
+			(xy 219.71 119.38) (xy 219.71 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5554e140-ee1a-4296-a664-907cc1196db1")
 	)
 	(wire
 		(pts
@@ -3328,6 +3277,16 @@
 	)
 	(wire
 		(pts
+			(xy 227.33 119.38) (xy 229.87 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "650b662b-f407-4f0b-b3ca-46096b8c6e8f")
+	)
+	(wire
+		(pts
 			(xy 198.12 104.14) (xy 190.5 104.14)
 		)
 		(stroke
@@ -3368,13 +3327,13 @@
 	)
 	(wire
 		(pts
-			(xy 213.36 119.38) (xy 219.71 119.38)
+			(xy 227.33 96.52) (xy 229.87 96.52)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "6f10f646-52fc-4ec1-9aab-9e16cee0badc")
+		(uuid "6f3c4464-61fe-4244-a642-7b501f9a42e8")
 	)
 	(wire
 		(pts
@@ -3455,26 +3414,6 @@
 			(type default)
 		)
 		(uuid "7bb5a41c-3476-4099-8bb9-c253fa610e3e")
-	)
-	(wire
-		(pts
-			(xy 229.87 113.03) (xy 229.87 119.38)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7d604de0-d68c-4a93-8648-49078db53e4e")
-	)
-	(wire
-		(pts
-			(xy 229.87 119.38) (xy 236.22 119.38)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7ecfe90c-bf85-4255-8b0b-4c7e88273c44")
 	)
 	(wire
 		(pts
@@ -3668,6 +3607,16 @@
 	)
 	(wire
 		(pts
+			(xy 219.71 104.14) (xy 219.71 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a6ec9557-dcb1-4199-bd7b-e40dcc8ce979")
+	)
+	(wire
+		(pts
 			(xy 220.98 63.5) (xy 220.98 68.58)
 		)
 		(stroke
@@ -3745,16 +3694,6 @@
 			(type default)
 		)
 		(uuid "b0720689-3db9-4f96-93b4-9242683d558d")
-	)
-	(wire
-		(pts
-			(xy 227.33 119.38) (xy 229.87 119.38)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b099dee7-11b7-4e7c-9daf-2e91da1d341b")
 	)
 	(wire
 		(pts
@@ -3858,6 +3797,16 @@
 	)
 	(wire
 		(pts
+			(xy 219.71 111.76) (xy 222.25 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bb979248-21d7-4f9c-8746-45f47e8e23e9")
+	)
+	(wire
+		(pts
 			(xy 78.74 63.5) (xy 78.74 68.58)
 		)
 		(stroke
@@ -3915,6 +3864,16 @@
 			(type default)
 		)
 		(uuid "c52c20c0-bed7-4507-9141-8a4554ffccc2")
+	)
+	(wire
+		(pts
+			(xy 213.36 119.38) (xy 219.71 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c53b75a3-c8ab-4ec0-b8a5-df408f43b96e")
 	)
 	(wire
 		(pts
@@ -4048,16 +4007,6 @@
 	)
 	(wire
 		(pts
-			(xy 223.52 115.57) (xy 223.52 113.03)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d12d7a47-9dfb-427e-ba3f-24d56f67e9e2")
-	)
-	(wire
-		(pts
 			(xy 238.76 22.86) (xy 238.76 35.56)
 		)
 		(stroke
@@ -4128,6 +4077,16 @@
 	)
 	(wire
 		(pts
+			(xy 227.33 104.14) (xy 229.87 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d5566334-e22a-4ca9-ab4e-dc9bae6c71d3")
+	)
+	(wire
+		(pts
 			(xy 68.58 157.48) (xy 68.58 160.02)
 		)
 		(stroke
@@ -4135,6 +4094,16 @@
 			(type default)
 		)
 		(uuid "d60dbfff-060d-4276-903e-ba540ee29e3b")
+	)
+	(wire
+		(pts
+			(xy 219.71 119.38) (xy 222.25 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d84c7019-eac9-4a92-8f68-13b1416a8116")
 	)
 	(wire
 		(pts
@@ -4511,7 +4480,7 @@
 		)
 		(uuid "e633984f-94e1-4fe7-ad64-f95f76a47f11")
 	)
-	(text "Calculations:\n- Peak current: 60V / 40R = 1.5A\n- Time constant for C_bus 5mF: 0.2s\n- Dissipated energy: 9J\n\nShort circuit must be detected and\ninterrupted within <100 ms to\navoid overloading of the resistor.\n\nMax. continuous current: 0.5 A"
+	(text "Calculations:\n- Peak current: 60V / 45R = 1.33A\n- Time constant for C_bus 5mF: 0.23s\n- Dissipated energy: 9J\n\nShort circuit must be detected and\ninterrupted within <100 ms to\navoid overloading of the resistor.\n\nMax. continuous current: 0.5 A"
 		(exclude_from_sim no)
 		(at 187.96 149.86 0)
 		(effects
@@ -4689,7 +4658,7 @@
 	)
 	(hierarchical_label "PACK+"
 		(shape bidirectional)
-		(at 236.22 119.38 0)
+		(at 237.49 119.38 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5755,6 +5724,100 @@
 		)
 	)
 	(symbol
+		(lib_id "LibreSolar:R")
+		(at 224.79 104.14 270)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "0091bf42-9510-47d7-9d82-4963098aef17")
+		(property "Reference" "R63"
+			(at 224.79 106.045 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "180"
+			(at 224.79 102.235 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_2512_6332Metric_Pad1.40x3.35mm_HandSolder"
+			(at 222.25 108.585 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 224.79 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 224.79 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Bourns "
+			(at 191.77 152.4 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" ""
+			(at 224.79 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PartNumber" "CR2512-JW-181ELF"
+			(at 224.79 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "62eeef10-1392-424a-9756-27b8f6dfc3bc")
+		)
+		(pin "2"
+			(uuid "735ecc59-f868-4bde-bac0-a92d5db52b35")
+		)
+		(instances
+			(project "bms-c1"
+				(path "/5335aa43-6e7e-459f-9425-0b3d35652705/1a7f6efa-ef60-433d-acc0-6f9a9126bc57"
+					(reference "R63")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R_Shunt")
 		(at 121.92 160.02 90)
 		(unit 1)
@@ -6096,7 +6159,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "15df6653-14a6-4185-bdbf-12e1ecec2aaf")
 		(property "Reference" "Q5"
 			(at 92.71 118.11 90)
@@ -6590,103 +6653,6 @@
 			(project "bms-c1"
 				(path "/5335aa43-6e7e-459f-9425-0b3d35652705/1a7f6efa-ef60-433d-acc0-6f9a9126bc57"
 					(reference "R44")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_Potentiometer_Trim")
-		(at 223.52 119.38 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "358f5ae5-bb57-48a1-9a86-5c886f10ce62")
-		(property "Reference" "R63"
-			(at 223.52 124.46 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "40"
-			(at 223.52 121.92 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "LibreSolar:Bourns_PWR163"
-			(at 223.52 119.38 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.mouser.de/datasheet/2/54/pwr163-777985.pdf"
-			(at 223.52 119.38 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 223.52 119.38 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Bourns"
-			(at 223.52 119.38 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "PartNumber" "PWR163S-25-40R0FE"
-			(at 223.52 119.38 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" ""
-			(at 223.52 119.38 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "0933cc47-3eb0-4e4e-8a2d-aeed1b08292b")
-		)
-		(pin "2"
-			(uuid "ff0b9197-234d-4522-8b5d-be9a54557918")
-		)
-		(pin "3"
-			(uuid "07bf3faa-dcf9-4e83-ad39-6f4b7bf19c0c")
-		)
-		(instances
-			(project "bms-c1"
-				(path "/5335aa43-6e7e-459f-9425-0b3d35652705/1a7f6efa-ef60-433d-acc0-6f9a9126bc57"
-					(reference "R63")
 					(unit 1)
 				)
 			)
@@ -7380,7 +7346,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "6a382344-1ba0-4d67-9033-13926c760ef2")
 		(property "Reference" "R47"
 			(at 137.16 59.055 90)
@@ -7995,7 +7961,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "855b21fa-5ee2-469d-8719-ec77051509c2")
 		(property "Reference" "Q9"
 			(at 125.73 118.11 90)
@@ -8201,7 +8167,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "94a27ef0-083f-4404-8c12-d65d7b002220")
 		(property "Reference" "Q2"
 			(at 92.71 64.77 90)
@@ -8589,7 +8555,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "a895e22a-eaed-47f6-96ed-7889a347109c")
 		(property "Reference" "R40"
 			(at 88.9 59.055 90)
@@ -8855,7 +8821,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "b02b17e6-f4b5-428a-927a-9905ac2cc672")
 		(property "Reference" "R43"
 			(at 88.9 112.395 90)
@@ -9224,7 +9190,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "c9b1dbcf-a1c7-4420-a56b-2214b97b859d")
 		(property "Reference" "Q6"
 			(at 125.73 64.77 90)
@@ -9331,7 +9297,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "c9fda848-0251-4c09-9db0-32b68f4f53ef")
 		(property "Reference" "R50"
 			(at 137.16 112.395 90)
@@ -9829,6 +9795,194 @@
 		)
 	)
 	(symbol
+		(lib_id "LibreSolar:R")
+		(at 224.79 96.52 270)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "d3eda13b-21e7-453a-aede-df5ccecfc386")
+		(property "Reference" "R66"
+			(at 224.79 98.425 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "180"
+			(at 224.79 94.615 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_2512_6332Metric_Pad1.40x3.35mm_HandSolder"
+			(at 222.25 100.965 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 224.79 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 224.79 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Bourns"
+			(at 191.77 144.78 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" ""
+			(at 224.79 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PartNumber" "CR2512-JW-181ELF"
+			(at 224.79 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c696348e-2f37-41ff-b715-c9c05f9bb64d")
+		)
+		(pin "2"
+			(uuid "a0067752-9227-49fe-83b3-5e9f0bd8acf0")
+		)
+		(instances
+			(project "bms-c1"
+				(path "/5335aa43-6e7e-459f-9425-0b3d35652705/1a7f6efa-ef60-433d-acc0-6f9a9126bc57"
+					(reference "R66")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LibreSolar:R")
+		(at 224.79 111.76 270)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "d7f5632c-6b0d-4473-a350-5a806a36f6de")
+		(property "Reference" "R55"
+			(at 224.79 113.665 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "180"
+			(at 224.79 109.855 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_2512_6332Metric_Pad1.40x3.35mm_HandSolder"
+			(at 222.25 116.205 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 224.79 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 224.79 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Bourns "
+			(at 191.77 160.02 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" ""
+			(at 224.79 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PartNumber" "CR2512-JW-181ELF"
+			(at 224.79 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "dfea823c-e1e5-49a2-9de7-3b12266fec20")
+		)
+		(pin "2"
+			(uuid "8d8ff816-fce3-4ab1-873f-790cafc73d27")
+		)
+		(instances
+			(project "bms-c1"
+				(path "/5335aa43-6e7e-459f-9425-0b3d35652705/1a7f6efa-ef60-433d-acc0-6f9a9126bc57"
+					(reference "R55")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:Q_NMOS_GSD")
 		(at 129.54 83.82 90)
 		(mirror x)
@@ -10292,6 +10446,100 @@
 			(project "bms-c1"
 				(path "/5335aa43-6e7e-459f-9425-0b3d35652705/1a7f6efa-ef60-433d-acc0-6f9a9126bc57"
 					(reference "R61")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LibreSolar:R")
+		(at 224.79 119.38 270)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "fe4ade65-d0d0-4799-9dfa-d9fb846e06c7")
+		(property "Reference" "R36"
+			(at 224.79 121.285 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "180"
+			(at 224.79 117.475 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_2512_6332Metric_Pad1.40x3.35mm_HandSolder"
+			(at 222.25 123.825 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 224.79 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 224.79 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Bourns"
+			(at 191.77 167.64 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" ""
+			(at 224.79 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PartNumber" "CR2512-JW-181ELF"
+			(at 224.79 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "90e44d59-093d-4fac-8731-1e76c9c50d38")
+		)
+		(pin "2"
+			(uuid "6afedec5-3766-4fe5-842b-25c940f93202")
+		)
+		(instances
+			(project "bms-c1"
+				(path "/5335aa43-6e7e-459f-9425-0b3d35652705/1a7f6efa-ef60-433d-acc0-6f9a9126bc57"
+					(reference "R36")
 					(unit 1)
 				)
 			)

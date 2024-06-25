@@ -5,7 +5,7 @@
 	(uuid "831ceb17-3daf-4bd9-afdd-f3c184f54807")
 	(paper "A4")
 	(title_block
-		(title "Libre Solar BMS C1")
+		(title "Libre Solar BMS C1 lite")
 		(date "2024-03-17")
 		(rev "0.4.1")
 		(company "Libre Solar Technologies GmbH")
@@ -13869,8 +13869,8 @@
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
-		(on_board yes)
-		(dnp no)
+		(on_board no)
+		(dnp yes)
 		(uuid "be15e55a-84a5-4328-955d-067c9ccfcc53")
 		(property "Reference" "Q1"
 			(at 204.47 115.5699 0)
@@ -14200,7 +14200,7 @@
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
-		(on_board yes)
+		(on_board no)
 		(dnp no)
 		(uuid "c64ff700-440b-46ae-a53a-e0e70874da95")
 		(property "Reference" "TP14"
@@ -15350,8 +15350,8 @@
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
-		(on_board yes)
-		(dnp no)
+		(on_board no)
+		(dnp yes)
 		(uuid "dbfeceba-ff7e-41db-ae5e-d60849ce029d")
 		(property "Reference" "R25"
 			(at 198.755 104.14 90)

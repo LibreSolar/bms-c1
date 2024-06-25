@@ -1,8 +1,8 @@
-# Libre Solar BMS C1
+# Libre Solar BMS C1 lite
 
 ![Development Stage](https://img.shields.io/badge/development%20stage-eval-yellow.svg) Tested prototype, only minor issues left.
 
-This repository contains the files for ongoing development of the Libre Solar BMS C1.
+This branch contains all required files for the cost-optimized Libre Solar BMS C1 **lite**. The **full** version of the BMS can be found in the [main branch](https://github.com/LibreSolar/bms-c1) of this repository.
 
 **Remark:** This BMS was previously named **BMS 16S100 SC**. It was renamed to C1 (with C for compact/centralized) because the maximum current and supported number of cells depend on the parts actually populated on the PCB, so these specs should not be encoded in the PCB name.
 
@@ -10,13 +10,13 @@ The development of this BMS is funded by the [EnAccess foundation](https://enacc
 
 Schematic: [PDF file](build/bms-c1.pdf)
 
-Bill of Materials: [CSV file](build/bms-c1_bom.csv) or [interactive HTML BOM](https://libre.solar/bms-c1/bms-c1_ibom.html)
+Bill of Materials: [CSV file](build/bms-c1_bom.csv)
 
 Firmware repository: [LibreSolar/bms-firmware](https://github.com/LibreSolar/bms-firmware)
 
 ![BMS C1](build/bms-c1.jpg)
 
-User manual: [libre.solar/bms-c1/manual/](https://libre.solar/bms-c1/manual/)
+User manual (for non-lite version): [libre.solar/bms-c1/manual/](https://libre.solar/bms-c1/manual/)
 
 Mechanical CAD file: [bms-c1.FCStd](housing/bms-c1.FCStd)
 
@@ -28,8 +28,10 @@ Test report: [testing/v0.3](testing/v0.3/README.md)
 
 ## Features
 
+The main difference compared to full-featured version of the BMS is the reduced number of MOSFETs, removed CAN and RS-485 communication interfaces, cheaper cell connectors (JST PH) and solder-pads instead of SMT screw terminals.
+
 - 3 to 16 Li-ion cells in series
-- Continuous current: 70-100A (depending on used MOSFETs and heat sink)
+- Continuous current: ~~70-100A~~ 50-70A (depending on used MOSFETs and heat sink)
 - Cell types: LiFePO4, Li-ion NMC and others (customizable)
 - Measurements
   - Cell voltages
@@ -40,8 +42,8 @@ Test report: [testing/v0.3](testing/v0.3/README.md)
 - Integrated high-side MOSFET switch and current sensor
 - Espressif ESP32-C3 microcontroller
 - Communication interfaces:
-  - CAN
-  - RS-485 (connector shared with CAN)
+  - ~~CAN~~
+  - ~~RS-485 (connector shared with CAN)~~
   - USB (CDC-ACM and JTAG)
   - USART
   - I2C
@@ -49,7 +51,7 @@ Test report: [testing/v0.3](testing/v0.3/README.md)
   - WiFi
 - Hardware features
   - 4-layer PCB
-  - M5 screw terminals
+  - ~~M5 screw terminals~~ Solder pads for high-current connections
   - Heat sink at back side
 - Applications
   - Off-grid storage
