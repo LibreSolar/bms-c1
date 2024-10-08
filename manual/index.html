@@ -1,0 +1,981 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+    <!-- pandoc template based on mdBook theme -->
+    <meta charset="utf-8" />
+    <meta name="generator" content="pandoc" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+    <meta name="author" content="Martin Jäger" />
+    <meta name="dcterms.date" content="2024-10-08" />
+    <meta name="keywords" content="Markdown, Example" />
+    <title>User Manual – Libre Solar BMS C1</title>
+
+    <link rel="shortcut icon" href="template/favicon.ico">
+    <link rel="stylesheet" href="template/screen.css" />
+    <link rel="stylesheet" href="template/print.css" media="print">
+    <style>
+        code{white-space: pre-wrap;}
+        span.smallcaps{font-variant: small-caps;}
+        span.underline{text-decoration: underline;}
+        div.column{display: inline-block; vertical-align: top; width: 50%;}
+    </style>
+
+    <!-- Fonts -->
+    <link rel="stylesheet" href="template/fontawesome/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+</head>
+<body class="light">
+
+
+    <!-- Provide site root to javascript -->
+    <script type="text/javascript">
+        var path_to_root = "";
+        var default_theme = "light";
+    </script>
+
+    <!-- Work around some values being stored in localStorage wrapped in quotes -->
+    <script type="text/javascript">
+        try {
+            var theme = localStorage.getItem('mdbook-theme');
+            var sidebar = localStorage.getItem('mdbook-sidebar');
+
+            if (theme.startsWith('"') && theme.endsWith('"')) {
+                localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+            }
+
+            if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+            }
+        } catch (e) { }
+    </script>
+
+    <!-- Set the theme before any content is loaded, prevents flash -->
+    <script type="text/javascript">
+        var theme;
+        try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+        if (theme === null || theme === undefined) { theme = default_theme; }
+        document.body.className = theme;
+        document.querySelector('html').className = theme + ' js';
+    </script>
+
+    <!-- Hide / unhide sidebar before it is displayed -->
+    <script type="text/javascript">
+        var html = document.querySelector('html');
+        var sidebar = 'hidden';
+        if (document.body.clientWidth >= 1080) {
+            try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+            sidebar = sidebar || 'visible';
+        }
+        html.classList.remove('sidebar-visible');
+        html.classList.add("sidebar-" + sidebar);
+    </script>
+
+    <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+        <div class="toc">
+            <ul>
+            <li><a href="#introduction" id="toc-introduction"><span
+            class="toc-section-number">1</span> Introduction</a>
+            <ul>
+            <li><a href="#project-background"
+            id="toc-project-background"><span
+            class="toc-section-number">1.1</span> Project
+            background</a></li>
+            <li><a href="#disclaimer" id="toc-disclaimer"><span
+            class="toc-section-number">1.2</span> Disclaimer</a></li>
+            <li><a href="#license" id="toc-license"><span
+            class="toc-section-number">1.3</span> License</a></li>
+            </ul></li>
+            <li><a href="#safety-instructions"
+            id="toc-safety-instructions"><span
+            class="toc-section-number">2</span> Safety
+            Instructions</a></li>
+            <li><a href="#features" id="toc-features"><span
+            class="toc-section-number">3</span> Features</a>
+            <ul>
+            <li><a href="#system-overview"
+            id="toc-system-overview"><span
+            class="toc-section-number">3.1</span> System
+            overview</a></li>
+            <li><a href="#hardware" id="toc-hardware"><span
+            class="toc-section-number">3.2</span> Hardware</a>
+            <ul>
+            <li><a href="#board-design" id="toc-board-design"><span
+            class="toc-section-number">3.2.1</span> Board
+            design</a></li>
+            <li><a href="#mcu-esp32-c3" id="toc-mcu-esp32-c3"><span
+            class="toc-section-number">3.2.2</span> MCU:
+            ESP32-C3</a></li>
+            <li><a href="#bms-ic-bq76952" id="toc-bms-ic-bq76952"><span
+            class="toc-section-number">3.2.3</span> BMS IC:
+            BQ76952</a></li>
+            <li><a href="#balancing" id="toc-balancing"><span
+            class="toc-section-number">3.2.4</span> Balancing</a></li>
+            <li><a href="#protective-switches"
+            id="toc-protective-switches"><span
+            class="toc-section-number">3.2.5</span> Protective
+            switches</a></li>
+            <li><a href="#current-measurement"
+            id="toc-current-measurement"><span
+            class="toc-section-number">3.2.6</span> Current
+            measurement</a></li>
+            <li><a href="#cell-and-thermistor-connectors"
+            id="toc-cell-and-thermistor-connectors"><span
+            class="toc-section-number">3.2.7</span> Cell and thermistor
+            connectors</a></li>
+            <li><a href="#power-connectors"
+            id="toc-power-connectors"><span
+            class="toc-section-number">3.2.8</span> Power
+            connectors</a></li>
+            </ul></li>
+            <li><a href="#communication-interfaces"
+            id="toc-communication-interfaces"><span
+            class="toc-section-number">3.3</span> Communication
+            interfaces</a></li>
+            <li><a href="#firmware" id="toc-firmware"><span
+            class="toc-section-number">3.4</span> Firmware</a></li>
+            </ul></li>
+            <li><a href="#installation" id="toc-installation"><span
+            class="toc-section-number">4</span> Installation</a>
+            <ul>
+            <li><a href="#mechanical-design"
+            id="toc-mechanical-design"><span
+            class="toc-section-number">4.1</span> Mechanical
+            Design</a></li>
+            <li><a href="#connections" id="toc-connections"><span
+            class="toc-section-number">4.2</span> Connections</a>
+            <ul>
+            <li><a href="#power-connections"
+            id="toc-power-connections"><span
+            class="toc-section-number">4.2.1</span> Power
+            connections</a></li>
+            <li><a href="#signal-connections"
+            id="toc-signal-connections"><span
+            class="toc-section-number">4.2.2</span> Signal
+            connections</a></li>
+            <li><a href="#less-than-16-cells"
+            id="toc-less-than-16-cells"><span
+            class="toc-section-number">4.2.3</span> Less than 16
+            cells</a></li>
+            <li><a href="#test-wiring-harness"
+            id="toc-test-wiring-harness"><span
+            class="toc-section-number">4.2.4</span> Test wiring
+            harness</a></li>
+            <li><a href="#connection-order"
+            id="toc-connection-order"><span
+            class="toc-section-number">4.2.5</span> Connection
+            order</a></li>
+            </ul></li>
+            <li><a href="#communication-ports"
+            id="toc-communication-ports"><span
+            class="toc-section-number">4.3</span> Communication
+            ports</a></li>
+            </ul></li>
+            <li><a href="#operation" id="toc-operation"><span
+            class="toc-section-number">5</span> Operation</a>
+            <ul>
+            <li><a href="#firmware-flashing"
+            id="toc-firmware-flashing"><span
+            class="toc-section-number">5.1</span> Firmware
+            flashing</a></li>
+            <li><a href="#start-up" id="toc-start-up"><span
+            class="toc-section-number">5.2</span> Start-up</a></li>
+            <li><a href="#led-indications"
+            id="toc-led-indications"><span
+            class="toc-section-number">5.3</span> LED
+            indications</a></li>
+            <li><a href="#communication-setup"
+            id="toc-communication-setup"><span
+            class="toc-section-number">5.4</span> Communication
+            Setup</a>
+            <ul>
+            <li><a href="#usb-serial" id="toc-usb-serial"><span
+            class="toc-section-number">5.4.1</span> USB Serial</a></li>
+            <li><a href="#uart-serial" id="toc-uart-serial"><span
+            class="toc-section-number">5.4.2</span> UART Serial</a></li>
+            <li><a href="#ble" id="toc-ble"><span
+            class="toc-section-number">5.4.3</span> BLE</a></li>
+            </ul></li>
+            <li><a href="#configuration" id="toc-configuration"><span
+            class="toc-section-number">5.5</span> Configuration</a>
+            <ul>
+            <li><a href="#read-measurements-and-battery-status"
+            id="toc-read-measurements-and-battery-status"><span
+            class="toc-section-number">5.5.1</span> Read measurements
+            and battery status</a></li>
+            <li><a href="#configure-battery-type"
+            id="toc-configure-battery-type"><span
+            class="toc-section-number">5.5.2</span> Configure battery
+            type</a></li>
+            <li><a href="#adjust-thresholds"
+            id="toc-adjust-thresholds"><span
+            class="toc-section-number">5.5.3</span> Adjust
+            thresholds</a></li>
+            </ul></li>
+            </ul></li>
+            <li><a href="#datasheet" id="toc-datasheet"><span
+            class="toc-section-number">6</span> Datasheet</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div id="page-wrapper" class="page-wrapper">
+
+        <div class="page">
+
+            <div id="menu-bar" class="menu-bar">
+                <div id="menu-bar-sticky-container">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fas fa-bars"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Libre Solar BMS C1</h1>
+
+                    <div class="right-buttons">
+                        <a onclick="window.print()" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fas fa-print"></i>
+                        </a>
+                        <a href="manual.pdf" title="View PDF file" aria-label="View PDF file">
+                            <i class="fas fa-file-pdf"></i>
+                        </a>
+                        </div>
+                </div>
+            </div>
+
+
+            <div id="content" class="content">
+                <main>
+<h1 data-number="1" id="introduction"><span
+class="header-section-number">1</span> Introduction</h1>
+<p>The Libre Solar BMS C1 is a flexible Open Source Battery Management
+System (BMS) suitable for various applications.</p>
+<p>This manual describes the usage and most important functions of the
+BMS. Please visit <a
+href="https://learn.libre.solar">learn.libre.solar</a> for general
+information about battery management systems, charge controllers and
+other devices for DC energy systems.</p>
+<p>Read this manual carefully and make sure you understand everything
+before starting with installation of the BMS.</p>
+<p>Same as the hardware and firmware of the BMS, also this manual is
+Open Source. If you find any errors or have suggestions for improvement,
+please contribute to <a href="https://github.com/LibreSolar/bms-c1/">the
+repository on GitHub</a>.</p>
+<h2 data-number="1.1" id="project-background"><span
+class="header-section-number">1.1</span> Project background</h2>
+<p>The main target of the project behind this BMS is to provide a solid
+technical basis for custom developments of organizations working in the
+energy access sector.</p>
+<p>The project is funded by the <a href="https://enaccess.org/">EnAccess
+Foundation</a>.</p>
+<p><img src="./images/enaccess-logo-centered.png" /></p>
+<p>The development is driven by the Libre Solar and EnAccess
+Communities. Visit the following websites for most recent updates:</p>
+<ul>
+<li><p>EnAccess Community: <a
+href="https://community.enaccess.org/">community.enaccess.org</a></p></li>
+<li><p>Libre Solar Community: <a
+href="https://talk.libre.solar/">talk.libre.solar</a></p></li>
+</ul>
+<p>Hardware and firmware source files are published on GitHub:</p>
+<ul>
+<li><p>Hardware Repository: <a
+href="https://github.com/LibreSolar/bms-c1">github.com/LibreSolar/bms-c1</a></p></li>
+<li><p>Firmware Repository: <a
+href="https://github.com/LibreSolar/bms-firmware">github.com/LibreSolar/bms-firmware</a></p></li>
+</ul>
+<h2 data-number="1.2" id="disclaimer"><span
+class="header-section-number">1.2</span> Disclaimer</h2>
+<p>This user manual has been written and checked with care and to the
+best of our knowledge.</p>
+<p>Libre Solar assumes no liability for the accuracy, completeness or
+quality of the information provided. Liability claims against the team
+for material, physical or immaterial damages caused by the use or
+non-use of the information provided or by the use of incorrect and/or
+incomplete information are excluded.</p>
+<p>All information and instructions are non-binding. Libre Solar
+reserves the right to change, supplement or delete parts of the pages or
+the entire document without prior notice.</p>
+<h2 data-number="1.3" id="license"><span
+class="header-section-number">1.3</span> License</h2>
+<p>This user manual document is licensed under the Creative Commons
+Attribution-ShareAlike 4.0 International (CC BY-SA 4.0) License.</p>
+<p><img src="./images/cc-by-sa-centered.png" /></p>
+<p>The full license text is available at <a
+href="https://creativecommons.org/licenses/by-sa/4.0/">https://creativecommons.org/licenses/by-sa/4.0/</a>.</p>
+<h1 data-number="2" id="safety-instructions"><span
+class="header-section-number">2</span> Safety Instructions</h1>
+<ul>
+<li><p>The BMS shall only be used for the intended application.</p></li>
+<li><p>The maximum voltage and current of the connected batteries or
+loads must not exceed the limits of the BMS.</p></li>
+<li><p>Ensure that the BMS is configured correctly for the used battery
+type.</p></li>
+<li><p>Install the device considering general best practices for
+electrical and mechanical installations in accordance to laws in your
+country.</p></li>
+<li><p>An additional fuse must be installed as close to the battery
+positive terminal as possible.</p></li>
+<li><p>As sparks can occur during connection of the battery wires, don’t
+install the BMS close to any flammable materials.</p></li>
+<li><p>The wire cross-section has to be large enough to handle at least
+the maximum specified current of the BMS.</p></li>
+<li><p>Use insulated tools only.</p></li>
+<li><p>Fix the wires outside the BMS to provide a strain relief and
+reduce forces on the terminals.</p></li>
+<li><p>Mount the device on a solid, non-inflammable material only.
+Depending on the ambient conditions and the average current, a heat sink
+may be required.</p></li>
+</ul>
+<h1 data-number="3" id="features"><span
+class="header-section-number">3</span> Features</h1>
+<h2 data-number="3.1" id="system-overview"><span
+class="header-section-number">3.1</span> System overview</h2>
+<p>The BMS is the heart of every Li-ion battery. It is needed to
+equalize series connected cells and protect the battery from current,
+voltages and temperatures outside the allowed operating range.</p>
+<p>Below figure shows a complete battery system with the integrated
+BMS.</p>
+<figure>
+<img src="./images/bms-overview.svg"
+alt="Overview of the BMS integrated into a Li-ion battery pack." />
+<figcaption aria-hidden="true">Overview of the BMS integrated into a
+Li-ion battery pack.</figcaption>
+</figure>
+<p>This BMS has the following high-level features:</p>
+<ul>
+<li>Flexible and fully Open Source design</li>
+<li>Suitable for 12V, 24V or 48V systems (up to 16 LFP cells in
+series)</li>
+<li>Continuous currents of up to 100A</li>
+</ul>
+<p>With above specifications it is suitable for the following
+applications:</p>
+<ul>
+<li>Poductive use appliances like milling machines</li>
+<li>Energy storage for AC mini-grid applications with up to 4 kVA
+inverters</li>
+<li>Second-life batteries built e.g. from recycled EV batteries</li>
+<li>Generic off-grid energy storage e.g. in caravans</li>
+</ul>
+<h2 data-number="3.2" id="hardware"><span
+class="header-section-number">3.2</span> Hardware</h2>
+<figure>
+<img src="./images/bms-c1_overview.svg" alt="BMS Overview" />
+<figcaption aria-hidden="true">BMS Overview</figcaption>
+</figure>
+<h3 data-number="3.2.1" id="board-design"><span
+class="header-section-number">3.2.1</span> Board design</h3>
+<p>All electronics components (power and control) are integrated into a
+single PCB in order to reduce cost and size.</p>
+<p>The board contains the following main subsystems:</p>
+<ul>
+<li>Power part (top left)
+<ul>
+<li>High current terminals</li>
+<li>MOSFETs (4 in parallel, 2 in series for bi-directional
+switching)</li>
+<li>Current measurement shunt</li>
+</ul></li>
+<li>Control part (bottom right)
+<ul>
+<li>Microcontroller: ESP32-C3</li>
+<li>BMS ASIC: Texas Instruments BQ76952</li>
+<li>Internal power supply</li>
+<li>Communication interfaces (CAN, UART, I2C, USB, Bluetooth)</li>
+</ul></li>
+</ul>
+<h3 data-number="3.2.2" id="mcu-esp32-c3"><span
+class="header-section-number">3.2.2</span> MCU: ESP32-C3</h3>
+<p>The <a
+href="https://www.espressif.com/en/products/socs/esp32-c3">Espressif
+ESP32-C3</a> is a single-core microcontroller featuring Wi-Fi, Bluetooth
+5 (LE) and CAN (called TWAI by Espressif). It is based on the
+open-source RISC-V architecture.</p>
+<h3 data-number="3.2.3" id="bms-ic-bq76952"><span
+class="header-section-number">3.2.3</span> BMS IC: BQ76952</h3>
+<p>The <a href="https://www.ti.com/product/BQ76952">Texas Instruments
+BQ76952</a> was selected as the BMS IC as it offers a good compromise
+between accuracy, features and cost.</p>
+<p>Features according to Datasheet:</p>
+<ul>
+<li>Battery monitoring capability for 3-series to 16-series cells</li>
+<li>Integrated charge pump for high-side NFET protection with optional
+autonomous recovery</li>
+<li>Extensive protection suite including voltage, temperature, current,
+and internal diagnostics</li>
+<li>Two independent ADCs</li>
+<li>Support for simultaneous current and voltage sampling</li>
+<li>High-accuracy coulomb counter with input offset error &lt; 1 uV
+(typical)</li>
+<li>High accuracy cell voltage measurement &lt; 10 mV (typical)</li>
+<li>Wide-range current applications (±200-mV measurement range across
+sense resistor)</li>
+<li>Integrated secondary chemical fuse drive protection</li>
+<li>Autonomous or host-controlled cell balancing</li>
+<li>Multiple power modes (typical battery pack operating range
+conditions)</li>
+<li>NORMAL mode: 286 uA</li>
+<li>Multiple SLEEP mode options: 24 uA to 41 uA</li>
+<li>Multiple DEEPSLEEP mode options: 9 uA to 10 uA</li>
+<li>SHUTDOWN mode: 1 uA</li>
+<li>High-voltage tolerance of 85 V on cell connect and select additional
+pins</li>
+<li>Tolerant of random cell attach sequence on production line</li>
+<li>Support for temperature sensing using internal sensor and up to nine
+external thermistors</li>
+<li>Integrated one-time-programmable (OTP) memory programmable by
+customers on production line</li>
+<li>Communication options include 400-kHz I2C, SPI, and HDQ one-wire
+interface</li>
+<li>Dual-programmable LDOs for external system usage</li>
+<li>48-pin TQFP package (PFB)</li>
+</ul>
+<h3 data-number="3.2.4" id="balancing"><span
+class="header-section-number">3.2.4</span> Balancing</h3>
+<p>The BMS features passive balancing with up to 100 mA.</p>
+<h3 data-number="3.2.5" id="protective-switches"><span
+class="header-section-number">3.2.5</span> Protective switches</h3>
+<p>The positive battery terminal can be disconnected by the BMS for
+safety reasons or upon demand of the user via a communicatoin
+interface.</p>
+<p>The disconnect switches are N-channel MOSFETs in a back-to-back
+configuration to be able to interrupt current in both directions (see
+also BQ76952 datasheet). In order to allow the high currents, 4 MOSFETs
+are connected in parallel.</p>
+<p>The bottom side of the PCB can be attached to a heat sink to
+dissipate the heat at high continuous currents.</p>
+<p>The cell connector has a pin to trigger a fuse at the pack positive
+terminal as a secondary protection if the MOSFETs fail short.</p>
+<h3 data-number="3.2.6" id="current-measurement"><span
+class="header-section-number">3.2.6</span> Current measurement</h3>
+<p>The current is measured using a shunt, located in the negative
+voltage path of the battery pack. The shunt voltage is amplified by the
+BQ76952 ASIC and read by the MCU.</p>
+<p>Time-critical safety features like overcurrent and short circuit
+protection are implemented directly in the ASIC and can be calibrated
+via firmware.</p>
+<h3 data-number="3.2.7" id="cell-and-thermistor-connectors"><span
+class="header-section-number">3.2.7</span> Cell and thermistor
+connectors</h3>
+<p>The cells and thermistors are connected to the BMS using <a
+href="https://www.molex.com/molex/products/family/microfit_30">Molex
+Micro-Fit</a> or <a
+href="https://www.we-online.com/katalog/en/em/connectors/wire-to-board/wr_mpc3">Würth
+WR-MPC3</a> series connectors.</p>
+<p>Both series are pin-compatible and there are even more compatible
+connectors in the market for this popular series. The connectors can
+handle up to 5A, which is sufficient even for active balancing.</p>
+<h3 data-number="3.2.8" id="power-connectors"><span
+class="header-section-number">3.2.8</span> Power connectors</h3>
+<p>The BMS is designed for up to 100A continuous current, depending on
+ambient temperatures, heat sink and actually fitted MOSFETs.</p>
+<p>Würth high-power solder terminals with M5 threads are used for
+wire-to-board connections.</p>
+<h2 data-number="3.3" id="communication-interfaces"><span
+class="header-section-number">3.3</span> Communication interfaces</h2>
+<p>One major advantage of an Open Source design is its extensibility and
+adaptation to specific requirements.</p>
+<p>In order to provide the hardware interfaces required to add custom
+extensions, two options are offered. Communication between multiple BMSs
+or other devices like charge controllers can be achieved via CAN bus,
+while the addional interfaces like I2C and UART can be used for
+extension of the board with internal features like displays.</p>
+<p>The MCU features built-in WiFi and Bluetooth communication.</p>
+<p>The serial and Bluetooth communication interfaces use the <a
+href="https://thingset.io/">ThingSet protocol</a> by default, which
+allows to read measurement values from the BMS as well as store custom
+configuration.</p>
+<h2 data-number="3.4" id="firmware"><span
+class="header-section-number">3.4</span> Firmware</h2>
+<p>The firmware is based on <a
+href="https://www.zephyrproject.org/">Zephyr RTOS</a> and thus allows
+for easy integration of additional communication features. The latest
+Zephyr long-term support release is in the process of being certified
+for functional safety according to IEC 61508.</p>
+<p>Amongst all features inherited from underlying Zephyr, the BMS
+firmware has the additional BMS-specific features:</p>
+<ul>
+<li>Monitoring and configuration using the <a
+href="https://thingset.io/">ThingSet</a> protocol (mapping to MQTT, CoAP
+and HTTP possible)
+<ul>
+<li>Serial interface</li>
+<li>CAN bus</li>
+<li>I2C</li>
+<li>Bluetooth</li>
+<li>WiFi</li>
+</ul></li>
+<li>SOC estimation based on coulomb counting</li>
+<li>Configuration options
+<ul>
+<li>Pack layout
+<ul>
+<li>Cell chemistry (LiFePO4, NMC, NCA)</li>
+<li>Nominal capacity</li>
+<li>Number of cells</li>
+<li>Thermistor type</li>
+<li>Shunt resistor</li>
+<li>Custom open circuit voltage (OCV) look-up table</li>
+</ul></li>
+<li>Protection
+<ul>
+<li>Discharge short circuit limit (A)</li>
+<li>Discharge short circuit delay (us)</li>
+<li>Discharge over-current limit (A)</li>
+<li>Discharge over-current delay (ms)</li>
+<li>Charge over-current limit (A)</li>
+<li>Charge over-current delay (ms)</li>
+<li>Cell target charge voltage (V)</li>
+<li>Cell discharge voltage limit (V)</li>
+<li>Cell over-voltage limit (V)</li>
+<li>Cell over-voltage error reset threshold (V)</li>
+<li>Cell over-voltage delay (ms)</li>
+<li>Cell under-voltage limit (V)</li>
+<li>Cell under-voltage error reset threshold (V)</li>
+<li>Cell under-voltage delay (ms)</li>
+<li>Discharge over-temperature (DOT) limit (°C)</li>
+<li>Discharge under-temperature (DUT) limit (°C)</li>
+<li>Charge over-temperature (COT) limit (°C)</li>
+<li>Charge under-temperature (CUT) limit (°C)</li>
+<li>Temperature limit hysteresis (°C)</li>
+</ul></li>
+<li>Balancing
+<ul>
+<li>Enable automatic balancing.</li>
+<li>Balancing cell voltage target difference (V)</li>
+<li>Minimum cell voltage to start balancing (V)</li>
+<li>Current threshold to be considered idle (A)</li>
+<li>Minimum idle duration before balancing (s)</li>
+</ul></li>
+</ul></li>
+</ul>
+<h1 data-number="4" id="installation"><span
+class="header-section-number">4</span> Installation</h1>
+<p><strong>Attention</strong>: The maximum operating voltage of the BMS
+is 60V. The 16s configuration is only feasible for LFP cells. For NMC
+cells, a maximum number of 14 cells may be used.</p>
+<h2 data-number="4.1" id="mechanical-design"><span
+class="header-section-number">4.1</span> Mechanical Design</h2>
+<p>The board dimensions are 70x135 mm² so that it can be easily
+integrated into existing housings with typical 18650 or 2170 cells.</p>
+<figure>
+<img src="./images/bms-c1_heatsink.svg"
+alt="BMS mounted on a heat sink" />
+<figcaption aria-hidden="true">BMS mounted on a heat sink</figcaption>
+</figure>
+<p>Depending on the current requirements and ambient temperatures, a
+heat sink may be required. For good thermal contact, a thermal interface
+material (e.g. Henkel/Bergquist GAP PAD A2000) is required, as shown in
+above picture.</p>
+<h2 data-number="4.2" id="connections"><span
+class="header-section-number">4.2</span> Connections</h2>
+<p>Below picture shows the connections of the cells, the 10k thermistors
+(NTC1 and NTC2) and the high power cables.</p>
+<figure>
+<img src="./images/bms-c1_connections.svg"
+alt="BMS connections for 16s" />
+<figcaption aria-hidden="true">BMS connections for 16s</figcaption>
+</figure>
+<p>The BMS is powered through the BAT+ terminal. If only the cell
+connector is mounted, the power is provided through the additional BAT+
+wire in the cell connector, which has to be connected to the last cell’s
+positive terminal.</p>
+<p>The BMS cannot be powered through the USB port only.</p>
+<h3 data-number="4.2.1" id="power-connections"><span
+class="header-section-number">4.2.1</span> Power connections</h3>
+<p>The high power terminals have an M5 thread and allow to fit wires of
+up to 35 mm² cross-section.</p>
+<p>The nuts and washers should be made from stainless steel to avoid
+corrosion with copper cable lugs.</p>
+<p>The wires must be properly fixed in the housing to reduce stress on
+the soldered terminals on the PCB.</p>
+<p>The fixing torque for the nuts is 2.2 Nm. Use of a torque wrench is
+highly recommended.</p>
+<h3 data-number="4.2.2" id="signal-connections"><span
+class="header-section-number">4.2.2</span> Signal connections</h3>
+<p>The MPC3 / Microfit connector must be equipped with properly crimped
+wires connected to the cells and the thermistors. Würth sells <a
+href="https://www.we-online.com/de/components/products/em/connectors/wire-to-board/wr_mpc3/wr_mpc3_pre_crimped_wire">pre-crimped
+wires</a> so that no crimping tool is needed (the low-force type is
+recommended). These wires can be cut in half and connected to the
+application specific wiring harness.</p>
+<p>The first signal connection and the very last one (respectively shown
+in grey and orange in the connection diagram) are used for powering up
+the BMS.</p>
+<p>Both NTCs have to be connected and indicate a valid temperature range
+for the BMS to allow charging/discharging.</p>
+<h3 data-number="4.2.3" id="less-than-16-cells"><span
+class="header-section-number">4.2.3</span> Less than 16 cells</h3>
+<ul>
+<li>Route the last wire of the harness (shown in orange) to the wire
+before the last Microfit pin.</li>
+<li>Short the unused cell connections:
+<ul>
+<li>on the PCB using the exposed pads as per the schematic below in
+cyan</li>
+<li>or in the wiring harness directly.</li>
+</ul></li>
+</ul>
+<figure>
+<img src="./images/bms-c1_connections_12s.svg"
+alt="BMS connections for 12s" />
+<figcaption aria-hidden="true">BMS connections for 12s</figcaption>
+</figure>
+<p>See also the <a href="https://www.ti.com/product/BQ76952">BQ76952
+documentation</a> for further details.</p>
+<h3 data-number="4.2.4" id="test-wiring-harness"><span
+class="header-section-number">4.2.4</span> Test wiring harness</h3>
+<p>In order to test out the BMS, a test harness as shown in below
+picture can be used instead of an actual battery pack. The harness must
+be powered with a lab power supply set to 12V for the example with a 4s
+configuration. The resistor divider simulates individual cell voltages
+(here around 3V).</p>
+<figure>
+<img src="./images/bms-c1_connections_test_harness.svg"
+alt="BMS test harness for 4s configuration" />
+<figcaption aria-hidden="true">BMS test harness for 4s
+configuration</figcaption>
+</figure>
+<h3 data-number="4.2.5" id="connection-order"><span
+class="header-section-number">4.2.5</span> Connection order</h3>
+<ol type="1">
+<li>Connect the fully wired cell connector. (Note the two separate
+connections to the first cell’s negative terminal)</li>
+<li>Connect the BAT- terminal.</li>
+<li>Connect the BAT+ terminal (with a fuse in line, as shown).</li>
+<li>Connect load or charger.</li>
+</ol>
+<h2 data-number="4.3" id="communication-ports"><span
+class="header-section-number">4.3</span> Communication ports</h2>
+<p>The CAN, UART and I2C communication ports use JST PH connectors. The
+pinout is marked on the PCB.</p>
+<p>The I2C is shared with the BQ76952. It must be ensured that this
+communication is not disturbed by another component on the I2C bus.</p>
+<h1 data-number="5" id="operation"><span
+class="header-section-number">5</span> Operation</h1>
+<h2 data-number="5.1" id="firmware-flashing"><span
+class="header-section-number">5.1</span> Firmware flashing</h2>
+<p>If no firmware is flashed on the board, make sure the board is
+powered through the cell connector. The power wires BAT+ and BAT- are
+optional.</p>
+<p>The firmware is flashed through the USB port. Follow the instructions
+in the <a
+href="https://libre.solar/bms-firmware/src/dev/building_flashing.html">Firmware
+documentation</a>.</p>
+<h2 data-number="5.2" id="start-up"><span
+class="header-section-number">5.2</span> Start-up</h2>
+<p>In order to wake up the BMS chip, short-press the ON/OFF button S1
+(top-right corner).</p>
+<p>If the button is long-pressed for at least 3 seconds, the BMS will go
+into low-power shutdown mode.</p>
+<p>A custom push-button as part of the battery housing can be connected
+to the connector J5 next to the button.</p>
+<h2 data-number="5.3" id="led-indications"><span
+class="header-section-number">5.3</span> LED indications</h2>
+<p>The BMS is equipped with two status LEDs with below indications:</p>
+<p>Red LED:</p>
+<table>
+<thead>
+<tr>
+<th>Status</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>off</td>
+<td>Discharging finished and battery is empty</td>
+</tr>
+<tr>
+<td>on</td>
+<td>Discharging allowed (current below idle threshold)</td>
+</tr>
+<tr>
+<td>blinking slowly</td>
+<td>Discharging active (current above idle threshold)</td>
+</tr>
+<tr>
+<td>flashing quickly</td>
+<td>Discharging error (UV/OT/UT/OC/SC)</td>
+</tr>
+</tbody>
+</table>
+<p>Green LED:</p>
+<table>
+<thead>
+<tr>
+<th>Status</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>off</td>
+<td>Charging finished and battery is full</td>
+</tr>
+<tr>
+<td>on</td>
+<td>Charging allowed (current below idle threshold)</td>
+</tr>
+<tr>
+<td>blinking slowly</td>
+<td>Charging active (current above idle threshold)</td>
+</tr>
+<tr>
+<td>flashing quickly</td>
+<td>Charging error (OV/OT/UT/OC)</td>
+</tr>
+</tbody>
+</table>
+<h2 data-number="5.4" id="communication-setup"><span
+class="header-section-number">5.4</span> Communication Setup</h2>
+<p>Device information, configuration values and measurements can be
+explored using the <a href="https://thingset.io/">ThingSet protocol</a>.
+This protocol is used for the serial interface as well as the Bluetooth
+communication.</p>
+<p>For details regarding the protocol consider the specification linked
+above. The basic setup is explained below.</p>
+<h3 data-number="5.4.1" id="usb-serial"><span
+class="header-section-number">5.4.1</span> USB Serial</h3>
+<p>The USB virtual COM port exposes log data and the Zephyr shell. Among
+other commands, the shell can also be used for communication using the
+ThingSet protocool.</p>
+<p>A terminal program like <code>picocom</code> is recommended:</p>
+<pre><code>picocom /dev/ttyACM0</code></pre>
+<p>The shell command for the ThingSet protocol is <code>thingset</code>.
+Either prefix it for every command or <code>select thingset</code> to
+switch into ThingSet mode.</p>
+<pre><code>select thingset
+?Meas
+:85 {&quot;rPackVoltage_V&quot;:13.71,&quot;rStackVoltage_V&quot;:13.91,&quot;rPackCurrent_A&quot;:0.05,&quot;rBatTemp_degC&quot;:29.4,&quot;rICTemp_degC&quot;:34.2,&quot;rMOSFETTemp_degC&quot;:31.8,&quot;rSOC_pct&quot;:100.0,&quot;rErrorFlags&quot;:0,&quot;rBmsState&quot;:3,&quot;rCellVoltages_V&quot;:[3.495,3.497,3.486,3.495,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000],&quot;rCellAvgVoltage_V&quot;:3.493,&quot;rCellMinVoltage_V&quot;:3.486,&quot;rCellMaxVoltage_V&quot;:3.497,&quot;rBalancingStatus&quot;:0}</code></pre>
+<p>When using the shell, the quotation marks in JSON data have to be
+escaped. See below for an example:</p>
+<pre><code>=Conf {\&quot;sCellOvervoltage_V\&quot;: 3.8}
+:84</code></pre>
+<h3 data-number="5.4.2" id="uart-serial"><span
+class="header-section-number">5.4.2</span> UART Serial</h3>
+<p>The serial interface uses a baud-rate of 115200 bps. Depending on the
+operating system, you can use different tools to communicate with the
+serial interface manually.</p>
+<p>For Linux <a
+href="https://sourceforge.net/projects/cutecom/">CuteCom</a> is
+recommended, as it stores a history of previous commands.</p>
+<p>The <a
+href="https://github.com/ThingSet/thingset-serial2websocket">Serial2Websocket
+Python script</a> can be used as a basis for own scripts to use the
+monitoring data.</p>
+<h3 data-number="5.4.3" id="ble"><span
+class="header-section-number">5.4.3</span> BLE</h3>
+<p>The generic <a
+href="https://github.com/ThingSet/thingset-app">ThingSet app</a> can be
+used to connect to the BMS via Bluetooth LE.</p>
+<p>For own developments see the BLE transport layer specification on the
+ThingSet website and consider the implementation of the device side in
+the <a href="https://github.com/ThingSet/thingset-zephyr-sdk">ThingSet
+Zephyr SDK</a>.</p>
+<h2 data-number="5.5" id="configuration"><span
+class="header-section-number">5.5</span> Configuration</h2>
+<p>The ThingSet protocol itself allows to discover available data items
+for configuration, so this manual will only use some examples for
+demonstration purposes.</p>
+<h3 data-number="5.5.1" id="read-measurements-and-battery-status"><span
+class="header-section-number">5.5.1</span> Read measurements and battery
+status</h3>
+<p>Use the following command to get the current state of the battery,
+including all current, temperature and voltage measurements:</p>
+<pre><code>?Meas</code></pre>
+<h3 data-number="5.5.2" id="configure-battery-type"><span
+class="header-section-number">5.5.2</span> Configure battery type</h3>
+<p>The configuration for a particular cell type and battery size can be
+preset with suitable default values using the two executable data items
+<code>xPresetNMC</code> for NMC cells and <code>xPresetLFP</code> for
+LFP cells. The functions expect a parameter defining the nominal
+capacity of the battery in Ah.</p>
+<p>For an LFP battery with 45 Ah, send the following command to the
+BMS:</p>
+<pre><code>!Conf/xPresetLFP [45]</code></pre>
+<p>The expected response if the parameters were successfully set:</p>
+<pre><code>:84 0</code></pre>
+<h3 data-number="5.5.3" id="adjust-thresholds"><span
+class="header-section-number">5.5.3</span> Adjust thresholds</h3>
+<p>The current configuration can be determined with the following
+command:</p>
+<pre><code>?Conf</code></pre>
+<p>Individual parameters can be adjusted with a command as shown below
+(using the overvoltage threshold as an example):</p>
+<pre><code>=Conf {&quot;sCellOvervoltage_V&quot;: 3.8}</code></pre>
+<h1 data-number="6" id="datasheet"><span
+class="header-section-number">6</span> Datasheet</h1>
+<table>
+<colgroup>
+<col style="width: 37%" />
+<col style="width: 24%" />
+<col style="width: 38%" />
+</colgroup>
+<thead>
+<tr>
+<th style="text-align: left;">Feature</th>
+<th style="text-align: left;">Value</th>
+<th style="text-align: left;">Comment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Battery</strong></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">Nominal voltage range</td>
+<td style="text-align: left;">12 V to 48 V</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">Maximum voltage</td>
+<td style="text-align: left;">70 V</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">Maximum current</td>
+<td style="text-align: left;">70 A - 100 A heat</td>
+<td style="text-align: left;">Depending on ambient conditions and
+sink</td>
+</tr>
+<tr>
+<td style="text-align: left;">Self consumption</td>
+<td style="text-align: left;">&lt; 20 mA</td>
+<td style="text-align: left;">Exact value t.b.d.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Shutdown current</td>
+<td style="text-align: left;">&lt; 1 mA</td>
+<td style="text-align: left;">Exact value t.b.d.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Cell types</td>
+<td style="text-align: left;">LFP, NMC and others</td>
+<td style="text-align: left;">Customizable through firmware</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Interfaces</strong></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">CAN 2.0</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">RS-485 (connector shared with CAN)</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">USB CDC-ACM</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">UART serial</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">I2C</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">Bluetooth</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Protection</strong></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">Over-/undervoltage</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">Overcurrent / Short circuit</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">Over-/undertemperature</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Environmental
+conditions</strong></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">Operating ambient temperature</td>
+<td style="text-align: left;">-10 °C to +50 °C</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">Storage temperature</td>
+<td style="text-align: left;">-20 °C to +60 °C</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">Humidity</td>
+<td style="text-align: left;">&lt;95%, non-condensing</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Mechanical design</strong></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">Screw terminals</td>
+<td style="text-align: left;">M5, torque: 2.2 Nm</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">Weight</td>
+<td style="text-align: left;">t.b.d.</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">Dimensions</td>
+<td style="text-align: left;">70 mm x 135 mm</td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+                </main>
+
+                <nav class="nav-wrapper" aria-label="Page navigation">
+                    <!-- Mobile navigation buttons -->
+
+
+
+
+                    <div style="clear: both"></div>
+                </nav>
+            </div>
+        </div>
+
+        <nav class="nav-wide-wrapper" aria-label="Page navigation">
+
+        </nav>
+
+    </div>
+
+    <script src="template/book.js" type="text/javascript" charset="utf-8"></script>
+
+</body>
+</html>
