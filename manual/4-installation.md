@@ -14,7 +14,7 @@ Depending on the current requirements and ambient temperatures, a heat sink may 
 
 Below picture shows the connections of the cells, the 10k thermistors (NTC1 and NTC2) and the high power cables.
 
-![BMS connections](./images/bms-c1_connections.svg)
+![BMS connections for 16s](./images/bms-c1_connections.svg)
 
 The BMS is powered through the BAT+ terminal. If only the cell connector is mounted, the power is provided through the additional BAT+ wire in the cell connector, which has to be connected to the last cell's positive terminal.
 
@@ -36,19 +36,24 @@ The MPC3 / Microfit connector must be equipped with properly crimped wires conne
 
 The first signal connection and the very last one (respectively shown in grey and orange in the connection diagram) are used for powering up the BMS.
 
-If less than 16 cells are used:
+Both NTCs have to be connected and indicate a valid temperature range for the BMS to allow charging/discharging.
 
-- Route the last wire of the harness (shown in orange) to the before last Microfit pin.
-- Short the unused cell connections: 
+### Less than 16 cells
+
+- Route the last wire of the harness (shown in orange) to the wire before the last Microfit pin.
+- Short the unused cell connections:
   - on the PCB using the exposed pads as per the schematic below in cyan
-  - or in the wiring harness directly. 
+  - or in the wiring harness directly.
 
-
-![BMS connections](./images/bms-c1_connections_12s.svg)
+![BMS connections for 12s](./images/bms-c1_connections_12s.svg)
 
 See also the [BQ76952 documentation](https://www.ti.com/product/BQ76952) for further details.
 
-At least NTC1 has to be connected and show a valid temperature range for the BMS to allow charging/discharging.
+### Test wiring harness
+
+In order to test out the BMS, a test harness as shown in below picture can be used instead of an actual battery pack. The harness must be powered with a lab power supply set to 12V for the example with a 4s configuration. The resistor divider simulates individual cell voltages (here around 3V).
+
+![BMS test harness for 4s configuration](./images/bms-c1_connections_test_harness.svg)
 
 ### Connection order
 
