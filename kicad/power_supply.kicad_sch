@@ -1,7 +1,7 @@
 (kicad_sch
-	(version 20231120)
+	(version 20250114)
 	(generator "eeschema")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(uuid "c7d07fdc-aa65-4ebd-af37-07bc9a025f7f")
 	(paper "A4")
 	(title_block
@@ -15,9 +15,13 @@
 	)
 	(lib_symbols
 		(symbol "Connector:TestPoint"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0.762) hide)
+				(offset 0.762)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -115,11 +119,16 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Device:L_Small"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0.254) hide)
+				(offset 0.254)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -188,32 +197,8 @@
 			)
 			(symbol "L_Small_0_1"
 				(arc
-					(start 0 -2.032)
-					(mid 0.5058 -1.524)
-					(end 0 -1.016)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 0 -1.016)
-					(mid 0.5058 -0.508)
-					(end 0 0)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 0 0)
-					(mid 0.5058 0.508)
+					(start 0 2.032)
+					(mid 0.5058 1.524)
 					(end 0 1.016)
 					(stroke
 						(width 0)
@@ -225,8 +210,32 @@
 				)
 				(arc
 					(start 0 1.016)
-					(mid 0.5058 1.524)
-					(end 0 2.032)
+					(mid 0.5058 0.508)
+					(end 0 0)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0 0)
+					(mid 0.5058 -0.508)
+					(end 0 -1.016)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0 -1.016)
+					(mid 0.5058 -1.524)
+					(end 0 -2.032)
 					(stroke
 						(width 0)
 						(type default)
@@ -274,11 +283,16 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "LibreSolar:C"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0.254) hide)
+				(offset 0.254)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -348,10 +362,10 @@
 			(symbol "C_0_1"
 				(polyline
 					(pts
-						(xy -1.524 -0.508) (xy 1.524 -0.508)
+						(xy -1.524 0.508) (xy 0 0.508) (xy 1.524 0.508)
 					)
 					(stroke
-						(width 0.3302)
+						(width 0.3048)
 						(type default)
 					)
 					(fill
@@ -360,10 +374,10 @@
 				)
 				(polyline
 					(pts
-						(xy -1.524 0.508) (xy 0 0.508) (xy 1.524 0.508)
+						(xy -1.524 -0.508) (xy 1.524 -0.508)
 					)
 					(stroke
-						(width 0.3048)
+						(width 0.3302)
 						(type default)
 					)
 					(fill
@@ -409,11 +423,16 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "LibreSolar:D_Schottky"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0.254) hide)
+				(offset 0.254)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -481,7 +500,7 @@
 			(symbol "D_Schottky_0_1"
 				(polyline
 					(pts
-						(xy -1.016 -1.27) (xy -1.016 1.27)
+						(xy -1.016 1.27) (xy -0.508 1.27) (xy -0.508 0.762)
 					)
 					(stroke
 						(width 0.2032)
@@ -493,10 +512,10 @@
 				)
 				(polyline
 					(pts
-						(xy 1.27 0) (xy -1.27 0)
+						(xy -1.016 -1.27) (xy -1.016 1.27)
 					)
 					(stroke
-						(width 0)
+						(width 0.2032)
 						(type default)
 					)
 					(fill
@@ -517,10 +536,10 @@
 				)
 				(polyline
 					(pts
-						(xy -1.016 1.27) (xy -0.508 1.27) (xy -0.508 0.762)
+						(xy 1.27 0) (xy -1.27 0)
 					)
 					(stroke
-						(width 0.2032)
+						(width 0)
 						(type default)
 					)
 					(fill
@@ -578,6 +597,7 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "LibreSolar:LMR38020"
 			(exclude_from_sim no)
@@ -620,7 +640,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" " SIMPLE SWITCHER® 60-V, 3-A Step-Down Converter With 40-µA IQ"
+			(property "Description" "SIMPLE SWITCHER® 60-V, 3-A Step-Down Converter With 40-µA IQ"
 				(at 0 0 0)
 				(effects
 					(font
@@ -662,16 +682,16 @@
 			)
 			(symbol "LMR38020_1_1"
 				(pin power_in line
-					(at 2.54 -12.7 90)
+					(at -12.7 5.08 0)
 					(length 2.54)
-					(name "GND"
+					(name "VIN"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "1"
+					(number "3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -697,17 +717,17 @@
 						)
 					)
 				)
-				(pin power_in line
-					(at -12.7 5.08 0)
+				(pin output line
+					(at -12.7 -2.54 0)
 					(length 2.54)
-					(name "VIN"
+					(name "PG"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "3"
+					(number "6"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -733,17 +753,17 @@
 						)
 					)
 				)
-				(pin input line
-					(at 12.7 -7.62 180)
+				(pin power_in line
+					(at 2.54 -12.7 90)
 					(length 2.54)
-					(name "FB"
+					(name "GND"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "5"
+					(number "1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -751,17 +771,17 @@
 						)
 					)
 				)
-				(pin output line
-					(at -12.7 -2.54 0)
+				(pin power_in line
+					(at 5.08 -12.7 90)
 					(length 2.54)
-					(name "PG"
+					(name "PADGND"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "6"
+					(number "9"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -805,17 +825,17 @@
 						)
 					)
 				)
-				(pin power_in line
-					(at 5.08 -12.7 90)
+				(pin input line
+					(at 12.7 -7.62 180)
 					(length 2.54)
-					(name "PADGND"
+					(name "FB"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "9"
+					(number "5"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -824,11 +844,16 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "LibreSolar:R"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0.254) hide)
+				(offset 0.254)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -935,6 +960,7 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "power:+3.3V"
 			(power)
@@ -1012,7 +1038,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 0) (xy 0 2.54)
+						(xy 0 2.54) (xy 0.762 1.27)
 					)
 					(stroke
 						(width 0)
@@ -1024,7 +1050,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
+						(xy 0 0) (xy 0 2.54)
 					)
 					(stroke
 						(width 0)
@@ -1038,7 +1064,8 @@
 			(symbol "+3.3V_1_1"
 				(pin power_in line
 					(at 0 0 90)
-					(length 0) hide
+					(length 0)
+					(hide yes)
 					(name "+3V3"
 						(effects
 							(font
@@ -1055,6 +1082,7 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "power:GND"
 			(power)
@@ -1134,7 +1162,8 @@
 			(symbol "GND_1_1"
 				(pin power_in line
 					(at 0 0 270)
-					(length 0) hide
+					(length 0)
+					(hide yes)
 					(name "GND"
 						(effects
 							(font
@@ -1151,12 +1180,17 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "power:PWR_FLAG"
 			(power)
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0) hide)
+				(offset 0)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -1247,7 +1281,52 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
+	)
+	(text "ESP32-C3 requires power supply with at least 500 mA"
+		(exclude_from_sim no)
+		(at 129.54 44.45 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "1b82f4b8-d8c2-477a-8fce-e7454498d593")
+	)
+	(text "Layout for 500 kHz, 1A output"
+		(exclude_from_sim no)
+		(at 129.54 114.3 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "8d3656dd-e4e5-4ae9-bcf1-4ba73ee68d6f")
+	)
+	(text "Battery to 3.3V (SMPS)"
+		(exclude_from_sim no)
+		(at 129.54 38.1 0)
+		(effects
+			(font
+				(size 2.54 2.54)
+			)
+			(justify left bottom)
+		)
+		(uuid "d1e49dea-7034-403c-870b-ac67b3edbda7")
+	)
+	(text "Vref = 1.0V"
+		(exclude_from_sim no)
+		(at 172.72 93.98 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "eeda4907-58fc-440e-b022-04df9fe0b83b")
 	)
 	(junction
 		(at 149.86 96.52)
@@ -1801,53 +1880,8 @@
 		)
 		(uuid "f7b493ef-124e-44bf-ad8a-06037d49e4b8")
 	)
-	(text "ESP32-C3 requires power supply with at least 500 mA"
-		(exclude_from_sim no)
-		(at 129.54 44.45 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "1b82f4b8-d8c2-477a-8fce-e7454498d593")
-	)
-	(text "Layout for 500 kHz, 1A output"
-		(exclude_from_sim no)
-		(at 129.54 114.3 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "8d3656dd-e4e5-4ae9-bcf1-4ba73ee68d6f")
-	)
-	(text "Battery to 3.3V (SMPS)"
-		(exclude_from_sim no)
-		(at 129.54 38.1 0)
-		(effects
-			(font
-				(size 2.54 2.54)
-			)
-			(justify left bottom)
-		)
-		(uuid "d1e49dea-7034-403c-870b-ac67b3edbda7")
-	)
-	(text "Vref = 1.0V"
-		(exclude_from_sim no)
-		(at 172.72 93.98 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "eeda4907-58fc-440e-b022-04df9fe0b83b")
-	)
 	(label "SW"
 		(at 165.1 81.28 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1858,7 +1892,6 @@
 	)
 	(label "VIN"
 		(at 124.46 76.2 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1869,7 +1902,6 @@
 	)
 	(label "FB"
 		(at 165.1 88.9 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1881,7 +1913,6 @@
 	(hierarchical_label "EN"
 		(shape input)
 		(at 124.46 81.28 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1893,7 +1924,6 @@
 	(hierarchical_label "BAT+"
 		(shape input)
 		(at 63.5 76.2 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2418,7 +2448,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "LibreSolar:C_1210_3225"
+		(property "Footprint" "LibreSolar:C_1206_3216"
 			(at 210.82 93.98 0)
 			(effects
 				(font
@@ -2453,7 +2483,7 @@
 				(hide yes)
 			)
 		)
-		(property "PartNumber" "CL32B476MPJNNNE"
+		(property "PartNumber" "CL31A476MPHNNNE"
 			(at 45.72 166.37 0)
 			(effects
 				(font
@@ -2522,7 +2552,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "LibreSolar:C_1210_3225"
+		(property "Footprint" "LibreSolar:C_1206_3216"
 			(at 200.66 93.98 0)
 			(effects
 				(font
@@ -2557,7 +2587,7 @@
 				(hide yes)
 			)
 		)
-		(property "PartNumber" "CL32B476MPJNNNE"
+		(property "PartNumber" "CL31A476MPHNNNE"
 			(at 45.72 166.37 0)
 			(effects
 				(font
@@ -2841,7 +2871,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "LibreSolar:C_1210_3225"
+		(property "Footprint" "LibreSolar:C_1206_3216"
 			(at 96.52 88.9 0)
 			(effects
 				(font
@@ -2894,7 +2924,7 @@
 				(hide yes)
 			)
 		)
-		(property "PartNumber" "CL32B225KCJSNNE"
+		(property "PartNumber" "CL31B225KCHSNNE"
 			(at 96.52 83.82 0)
 			(effects
 				(font
@@ -3196,7 +3226,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "LibreSolar:C_1210_3225"
+		(property "Footprint" "LibreSolar:C_1206_3216"
 			(at 86.36 88.9 0)
 			(effects
 				(font
@@ -3231,7 +3261,7 @@
 				(hide yes)
 			)
 		)
-		(property "PartNumber" "CL32B225KCJSNNE"
+		(property "PartNumber" "CL31B225KCHSNNE"
 			(at 10.16 153.67 0)
 			(effects
 				(font
