@@ -6,8 +6,8 @@
 	(paper "A4")
 	(title_block
 		(title "Libre Solar BMS C1")
-		(date "2024-03-17")
-		(rev "0.4.1")
+		(date "2026-03-29")
+		(rev "0.4.2")
 		(company "Libre Solar Technologies GmbH")
 		(comment 1 "Website: https://libre.solar")
 		(comment 2 "Author: Martin Jäger")

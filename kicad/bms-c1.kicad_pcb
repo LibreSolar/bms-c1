@@ -9,8 +9,8 @@
 	(paper "A4")
 	(title_block
 		(title "Libre Solar BMS C1")
-		(date "2024-03-17")
-		(rev "v0.4.1")
+		(date "2026-03-29")
+		(rev "v0.4.2")
 		(company "Libre Solar Technologies GmbH")
 		(comment 1 "Website: https://libre.solar")
 		(comment 2 "Author: Martin Jäger")
@@ -6889,7 +6889,7 @@
 		(descr "Capacitor SMD 1206, reflow soldering, AVX (see smccp.pdf)")
 		(tags "capacitor 1206")
 		(property "Reference" "C17"
-			(at -4.2 0 180)
+			(at -3.7 0 180)
 			(layer "F.SilkS")
 			(uuid "a4979356-d56f-47b2-a8b3-5f5443625878")
 			(effects
@@ -17162,7 +17162,7 @@
 		(descr "SMD pad as test Point, diameter 1.5mm")
 		(tags "test point SMD pad")
 		(property "Reference" "TP4"
-			(at -1.2 1.9 0)
+			(at -2.1 1.2 0)
 			(layer "F.SilkS")
 			(uuid "0a2915d3-4d74-4bf1-b85b-d0e3626a45e8")
 			(effects
@@ -22478,14 +22478,14 @@
 			(at -2.89 -2.605)
 			(size 0.65 0.65)
 			(drill 0.65)
-			(layers "F&B.Cu" "*.Mask")
+			(layers "*.Cu" "*.Mask")
 			(uuid "8bac6ec6-df2f-4f2f-ac31-8f4e3c613492")
 		)
 		(pad "" np_thru_hole circle
 			(at 2.89 -2.605)
 			(size 0.65 0.65)
 			(drill 0.65)
-			(layers "F&B.Cu" "*.Mask")
+			(layers "*.Cu" "*.Mask")
 			(uuid "858fb099-e1ec-4385-a9cb-9d14f5a32859")
 		)
 		(pad "A1" smd roundrect
@@ -57153,7 +57153,7 @@
 		(descr "Resistor SMD 0603, reflow soldering, Vishay (see dcrcw.pdf)")
 		(tags "resistor 0603")
 		(property "Reference" "R30"
-			(at 3.1 3.8 180)
+			(at 2.4 4 180)
 			(layer "F.SilkS")
 			(uuid "9aa38e64-ef55-4fa4-854f-7bb8f5ff4dfc")
 			(effects
@@ -67632,6 +67632,16 @@
 		(uuid "d62f4254-ead9-458d-8899-b6e2c16aeb62")
 	)
 	(gr_line
+		(start 161.8 87.8)
+		(end 163.2 87)
+		(stroke
+			(width 0.15)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "dd41cb55-68b5-48d0-b395-c52c0634d9e7")
+	)
+	(gr_line
 		(start 75 85)
 		(end 215 85)
 		(stroke
@@ -67866,7 +67876,7 @@
 			(justify left)
 		)
 	)
-	(gr_text "v0.4.1 (03/2024)"
+	(gr_text "v0.4.2 (03/2026)"
 		(at 111 103 0)
 		(layer "F.SilkS")
 		(uuid "82b2b56a-4a10-4d49-ad41-1153a2dc7af6")
