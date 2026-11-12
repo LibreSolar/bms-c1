@@ -31,7 +31,7 @@ tlmgr install \
         needspace \
         pagecolor \
         sourcecodepro \
-        sourcesanspro \
+        sourcesans \
         titling \
         ucharcat \
         ulem \
