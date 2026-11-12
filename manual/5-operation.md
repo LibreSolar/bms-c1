@@ -1,10 +1,13 @@
 # Operation
 
-## Firmware flashing
+## Firmware building and flashing
 
 If no firmware is flashed on the board, make sure the board is powered through the cell connector. The power wires BAT+ and BAT- are optional.
 
-The firmware is flashed through the USB port. Follow the instructions in the [Firmware documentation](https://libre.solar/bms-firmware/src/dev/building_flashing.html).
+The firmware is flashed through the USB port. Follow the instructions in the firmware documentation:
+
+- [Workspace Setup](https://libre.solar/bms-firmware/src/dev/workspace_setup.html)
+- [Building and Flashing](https://libre.solar/bms-firmware/src/dev/building_flashing.html)
 
 ## Start-up
 
@@ -20,21 +23,21 @@ The BMS is equipped with two status LEDs with below indications:
 
 Red LED:
 
-| Status | Meaning |
-|---------|--------|
-| off     | Discharging finished and battery is empty |
-| on      | Discharging allowed (current below idle threshold) |
-| blinking slowly | Discharging active (current above idle threshold) |
-| flashing quickly | Discharging error (UV/OT/UT/OC/SC) |
+| Status           | Meaning                                            |
+| ---------------- | -------------------------------------------------- |
+| off              | Discharging finished and battery is empty          |
+| on               | Discharging allowed (current below idle threshold) |
+| blinking slowly  | Discharging active (current above idle threshold)  |
+| flashing quickly | Discharging error (UV/OT/UT/OC/SC)                 |
 
 Green LED:
 
-| Status | Meaning |
-|---------|--------|
-| off     | Charging finished and battery is full |
-| on      | Charging allowed (current below idle threshold) |
-| blinking slowly | Charging active (current above idle threshold) |
-| flashing quickly | Charging error (OV/OT/UT/OC) |
+| Status           | Meaning                                         |
+| ---------------- | ----------------------------------------------- |
+| off              | Charging finished and battery is full           |
+| on               | Charging allowed (current below idle threshold) |
+| blinking slowly  | Charging active (current above idle threshold)  |
+| flashing quickly | Charging error (OV/OT/UT/OC)                    |
 
 ## Communication Setup
 
@@ -118,7 +121,6 @@ The current configuration can be determined with the following command:
 ```
 
 Individual parameters can be adjusted with a command as shown below (using the overvoltage threshold as an example):
-
 
 ```
 =Conf {"sCellOvervoltage_V": 3.8}
